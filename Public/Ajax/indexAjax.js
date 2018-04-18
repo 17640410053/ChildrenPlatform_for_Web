@@ -98,7 +98,7 @@ function search_item() {
         });
     }else {
         var type_id = $("#category_id").val();
-        window.open(AppUrl+"/Home/Index/search?type_id="+type_id+"&value="+value);
+        window.open(AppUrl+"/Home/Search/search?type_id="+type_id+"&value="+value);
     }
 }
 
