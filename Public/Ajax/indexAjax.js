@@ -62,8 +62,8 @@ function collect(state, commodity_id) {
     } else {
         var collect_num = $("#collect_num").html();
         $.ajax({
-            url: AppUrl+"/Home/Index/collect",
-            data: {"state": state, "user_id": check_user_id, "commodity_id": commodity_id},
+            url: AppUrl+"/Home/Collect/collect",
+            data: {"state": state,"commodity_id": commodity_id},
             type: "POST",
             dataType: "JSON",
             success: function (msg) {
@@ -103,16 +103,3 @@ function search_item() {
 }
 
 
-//右上角弹出提示窗
-function addProductNotice(title, text, type) {
-    $.jGrowl.defaults.closer = false;
-    //Stop jGrowl
-    //$.jGrowl.defaults.sticky = true;
-    var tpl = '<h3>'+text+'</h3>';
-    $.jGrowl(tpl, {
-        life: 4000,
-        header: title,
-        speed: 'slow',
-        theme: type
-    });
-}

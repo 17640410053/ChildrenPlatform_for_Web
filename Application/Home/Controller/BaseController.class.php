@@ -22,4 +22,11 @@ class BaseController extends Controller
         }
         $this -> assign('list',$parent);
     }
+
+    //退出登录
+    public function logout()
+    {
+        session('[destroy]');
+        redirect('index');
+    }
 }

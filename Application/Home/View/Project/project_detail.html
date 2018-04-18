@@ -16,6 +16,7 @@
     </script>
     <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
     <script src="__PUBLIC__/Ajax/project_frontAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -284,7 +285,7 @@
                                             <div class="input-group quantity-control" unselectable="on"
                                                  style="-webkit-user-select: none;">
                                                 <label>数量：</label>
-                                                <input class="form-control" type="text" name="quantity" style="width: 50px"
+                                                <input id="commodity_num" class="form-control" type="text" name="quantity" style="width: 50px"
                                                        value="1">
                                                 <input type="hidden" name="product_id" value="50">
                                                 <span class="input-group-addon product_quantity_down">−</span>
@@ -294,7 +295,7 @@
                                         <div class="cart">
                                             <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
                                                    data-loading-text="Loading..." id="button-cart"
-                                                   class="btn btn-mega btn-lg" onclick="cart.add('42', '1');"
+                                                   class="btn btn-mega btn-lg"  onclick="addCart('{$detail.commodity_id}')"
                                                    data-original-title="添加到购物车">
                                         </div>
                                         <div class="add-to-links wish_comp">
