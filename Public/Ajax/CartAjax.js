@@ -25,7 +25,7 @@ function addCart(commodity_id) {
                 }
             },
             error:function () {
-                addProductNotice('添加到购物车提醒', '<h3>网络错误，添加失败</h3>', 'fail');
+                addProductNotice('添加到购物车提醒', '<h3>网络错误，添加败</h3>', 'fail');
             }
         })
     }
