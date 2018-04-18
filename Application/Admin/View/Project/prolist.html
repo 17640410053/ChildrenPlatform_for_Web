@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="webthemez" name="author"/>
+    <title>项目列表</title>
+
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <script src="__PUBLIC__/Ajax/projectAjax.js"></script>
+
+    <!-- Bootstrap Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Morris Chart Styles-->
+
+    <!-- Custom Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- TABLE STYLES-->
+    <link href="__PUBLIC__/backstage/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div id="wrapper">
+    <include file="public/header"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li>
+                    <a href="{:U('Index/index')}"><i class="fa fa-dashboard"></i> 数据统计</a>
+                </li>
+                <li>
+                    <a href="{:U('Users/userlist')}"><i class="fa fa-desktop"></i> 用户管理</a>
+                </li>
+
+                <li>
+                    <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li>
+                            <a href="#"> 分类管理</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="{:U('Project/prolist')}"> 信息管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                信息管理
+                <small> 操作员：{$Think.session.username}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{:U('Index/index')}"> 主页</a></li>
+                <li class="active"> 信息管理</li>
+                <li><a href="{:U('Project/uploadpro')}"> 添加项目</a></li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            项目列表
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                    <tr>
+                                        <th>图片</th>
+                                        <th>名称</th>
+                                        <th>浏览量</th>
+                                        <th>收藏量</th>
+                                        <th>评分</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="pro" id="pro">
+                                        <tr id="f_{$pro.f_id}">
+                                            <td><img src="__PUBLIC__/Uploads/itempic/{$pro.m_pic}" width="50"></td>
+                                            <td>{$pro.f_name}</td>
+                                            <td>{$pro.hint}</td>
+                                            <td>{$pro.collectnum}</td>
+                                            <td>{$pro.star}<img src="__PUBLIC__/backstage/assets/img/material/star.png"
+                                                                style="margin-bottom: 3.5px"></td>
+                                            <td>
+                                                <if condition="($pro.state eq 0)">
+                                                    <span id="state_{$pro.f_id}" class="label label-success">正常</span>
+                                                    <else/>
+                                                    <span id="state_{$pro.f_id}" class="label label-danger">禁用</span>
+                                                </if>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false"
+                                                            data-toggle="dropdown"> 操作 <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <if condition="($pro.state eq 0)">
+                                                                <a id="change_{$pro.f_id}"
+                                                                   onclick="changeprostate('{$pro.f_id}',1)"
+                                                                   href="javascript:;"><i
+                                                                        class="icon-envelope"></i>暂停使用</a>
+                                                                <else/>
+                                                                <a id="change_{$pro.f_id}"
+                                                                   onclick="changeprostate('{$pro.f_id}',0)"
+                                                                   href="javascript:;"><i
+                                                                        class="icon-envelope"></i>取消禁用</a>
+                                                            </if>
+                                                        </li>
+                                                        <li><a href="prodetail/id/{$pro.f_id}"> 查看详情</a></li>
+                                                        <li><a onclick="delpro('{$pro.f_id}')" href="javascript:;"> 删除项目</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="__PUBLIC__/backstage/assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="__PUBLIC__/backstage/assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
+<!-- Custom Js -->
+<script src="__PUBLIC__/backstage/assets/js/custom-scripts.js"></script>
+
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+</body>
+
+</html>

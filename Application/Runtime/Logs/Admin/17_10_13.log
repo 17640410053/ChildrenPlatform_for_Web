@@ -1,0 +1,83 @@
+[ 2017-10-13T13:54:07+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0565s ]
+SQL: SELECT * FROM `u_information` ORDER BY i_id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-10-13T14:13:25+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Projdect/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `items` ORDER BY f_id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2017-10-13T14:13:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Projdect/uploadpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\a7dd077b528f9de721bacdfd417d8c7d.php 第 327 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+

@@ -1,0 +1,133 @@
+[ 2017-11-23T10:19:21+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053158s ]
+
+[ 2017-11-23T10:19:21+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030213s ]
+
+[ 2017-11-23T10:19:29+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1006s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '675e192c556ac6a22abdcc8e57c25935'  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' E:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 37 行.
+
+[ 2017-11-23T10:19:33+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `index` [ RunTime:0.0987s ]
+SQL: SELECT `pageview` FROM `index` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0748s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `items` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0841s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2017-11-23T10:19:36+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0895s ]
+SQL: SELECT * FROM `u_information` ORDER BY i_id desc  [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-11-23T10:19:49+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0225s ]
+SQL: SELECT * FROM `items` ORDER BY f_id desc  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-11-23T10:19:58+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Carousel/carousellist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0433s ]
+SQL: SELECT * FROM `carousel` ORDER BY c_id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+

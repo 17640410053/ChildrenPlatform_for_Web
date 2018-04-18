@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page needs
+	============================================ -->
+    <title>儿童信息交流平台</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var AppUrl = "__APP__";
+        var check_user_id = "{$Think.session.user_id}"
+    </script>
+    <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Mobile specific metas
+	============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
+
+
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
+    <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/lib.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="__PUBLIC__/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+
+    <link id="color_scheme" href="__PUBLIC__/frontdesk/css/theme.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/frontdesk/css/responsive.css" rel="stylesheet">
+    <style type="text/css">
+        #my_account {
+        }
+    </style>
+</head>
+
+<body class="common-home res layout-home1">
+<div id="wrapper" class="wrapper-full banners-effect-7">
+    <header id="header" class=" variantleft type_1">
+        <div class="header-top compact-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
+                        <h5 class="tabBlockTitle visible-xs">More<a class="expander " href="#TabBlock-1"><i
+                                class="fa fa-angle-down"></i></a></h5>
+                        <div class="tabBlock">
+                            <if condition="($Think.session.user_id eq null)">
+                                <ul class="top-link list-inline" id="lo">
+                                    <li class="account" id="my_account">
+                                        <a href="#" class="btn btn-xs dropdown-toggle"
+                                           data-toggle="dropdown"> <span>请先登录</span> <span
+                                                class="fa fa-angle-down"></span></a>
+                                        <ul class="dropdown-menu ">
+                                            <li class="registration"><a href="#"><i class="fa fa-user"></i> 注 册</a></li>
+                                            <li class="login"><a href="#"><i class="fa fa-pencil-square-o"></i> 登 录</a>
+                                            </li>
+                                        </ul>
+                                </ul>
+                                <else/>
+                                <ul class="top-link list-inline" id="ur">
+                                    <li class="account" id="my_account">
+                                        <a href="#" class="btn btn-xs dropdown-toggle"
+                                           data-toggle="dropdown" id="username"> <span>{$Think.session.username}</span>
+                                            <span
+                                                    class="fa fa-angle-down"></span></a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="#"><i class="fa fa-user"></i> 个人中心</a></li>
+                                            <li><a href="{:U('logout')}"><i class="fa fa-pencil-square-o"></i> 退出登录</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="wishlist"><a href="#" id="wishlist-total"
+                                                            class="top-link-wishlist"><span> 收藏 (<span id="collect_num">{$count_num}</span>)</span></a>
+                                    </li>
+                                    <li class="checkout"><a href="#" class="top-link-checkout"
+                                                            title="Checkout"><span>结算</span></a>
+                                    </li>
+                                    <li class="login"><a href="#" title="Shopping Cart"><span>购物车</span></a></li>
+                                </ul>
+                            </if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Header Top -->
+        <include file="public/regedit"/>
+        <include file="public/login"/>
+        <!-- Header center -->
+        <div class="header-center left">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
+                        <a href="{:U('Index/index')}"><img src="__PUBLIC__/Uploads/logo/logo.png" width="55%"
+                                                           title="Your Store" alt="Your Store"/></a>
+                    </div>
+                    <!-- //end Logo -->
+
+                    <!-- Search -->
+                    <div id="sosearchpro" class="col-sm-7 search-pro">
+                        <div id="search0" class="search input-group">
+                            <div class="select_category filter_type icon-select">
+                                <select class="no-border" name="category_id" id="category_id">
+                                    <option value="0">全 部</option>
+                                    <volist name="list" id="type">
+                                        <option value="{$type.type_id}">{$type.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                            <input class="autosearch-input form-control" id="search_value" type="text" value=""
+                                   size="50"
+                                   autocomplete="off" placeholder="搜 索" name="search">
+                            <span class="input-group-btn">
+						<button onclick="search_item()" class="button-search btn btn-primary"><i
+                                class="fa fa-search"></i></button>
+						</span>
+                        </div>
+                        <input type="hidden" name="route" value="product/search"/>
+                    </div>
+                    <!-- //end Search -->
+
+                    <!-- Secondary menu -->
+                </div>
+
+            </div>
+        </div>
+        <!-- //Header center -->
+        <!-- Header Bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="sidebar-menu col-md-3 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <div class="so-vertical-menu no-gutter compact-hidden">
+                                <nav class="navbar-default">
+
+                                    <div id="hot_hit" class="container-megamenu vertical open">
+                                        <div id="menuHeading">
+                                            <div class="megamenuToogle-wrapper">
+                                                <div class="megamenuToogle-pattern">
+                                                    <div class="container">
+                                                        <div>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        热门点击
+                                                        <i class="fa pull-right arrow-circle fa-chevron-circle-up"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="navbar-header">
+                                            <button type="button" id="show-verticalmenu" data-toggle="collapse"
+                                                    class="navbar-toggle fa fa-list-alt">
+                                            </button>
+                                            热门
+                                        </div>
+                                        <div class="vertical-wrapper">
+                                            <span id="remove-verticalmenu" class="fa fa-times"></span>
+                                            <div class="megamenu-pattern">
+                                                <div class="container">
+                                                    <ul class="megamenu">
+                                                        <volist name="hot" id="subsetType">
+                                                            <li class="item-vertical">
+                                                                <p class="close-menu"></p>
+                                                                <a href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}"
+                                                                   class="clearfix">
+                                                                    <img src="__PUBLIC__/Uploads/type_icon/{$subsetType.image}"
+                                                                         alt="icon">
+                                                                    <span>{$subsetType.name}</span>
+                                                                </a>
+                                                            </li>
+                                                        </volist>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Main menu -->
+                    <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        分类
+                                    </div>
+
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container">
+                                                <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="{:U('Index/index')}">主 页</a>
+                                                    </li>
+                                                    <volist name="list" id="type">
+                                                        <li class="with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}"
+                                                               class="clearfix">
+                                                                <strong>{$type.name}</strong>
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 15%; ">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <ul class="row-list">
+                                                                                <volist name="type[voo]"
+                                                                                        id="subsetType">
+                                                                                    <li><a class="subcategory_item"
+                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsetType_id'])}">{$subsetType.name}</a>
+                                                                                    </li>
+                                                                                </volist>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </volist>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- //end Main menu -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navbar switcher -->
+        <!-- //end Navbar switcher -->
+    </header>
+    <div id="index_body">
+        <div class="main-container container">
+            <div class="row">
+                <div id="content" class="col-md-12 col-sm-12">
+                    <div class="related titleLine products-list grid module ">
+                        <h3 class="modtitle"> &nbsp;搜索结果</h3>
+                        <volist id="search" name="search" empty="$empty">
+                            <div class="releate-products ">
+                                <div class="product-layout">
+                                    <div class="product-item-container">
+                                        <div>
+                                            <div style="width: 130px;float: left;">
+                                                <img src="__PUBLIC__/Uploads/commodity_image/{$search.small_pic}"
+                                                     style="width: 130px">
+                                            </div>
+                                            <div class="right-block" style="display: inline">
+                                                <div class="caption" style="margin-left: 13%;">
+                                                    <h4 style="margin-top:6px "><a target="_blank"
+                                                            href="{:U('Project/project_detail?id='.$search['commodity_id'])}">{$search.name}</a>
+                                                    </h4>
+                                                    <div class="ratings">
+                                                        <div class="rating-box">
+                                                            <if condition="($search.starnum eq 0)">
+                                                                <span style="color: #ebdb2c"> 暂无评价</span>
+                                                                <else/>
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($search.starnum gt 0)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($search.starnum gt 1)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($search.starnum gt 2)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($search.starnum gt 3)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($search.starnum gt 4)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+                                                            </if>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="price">
+                                                        <span class="price-new">￥{$search.price}</span>
+                                                        <!--<span class="price-old">$122.00</span>-->
+                                                        <!--<span class="label label-percent">-40%</span>-->
+                                                    </div>
+                                                </div>
+                                                <div class="button-group" style="margin-left: 13%">
+                                                    <a target="_blank" href="{:U('Project/project_detail?id='.$search['commodity_id'])}">
+                                                        <button class="addToCart" data-toggle="tooltip"
+                                                                title="查看详情">
+                                                            <span class="hidden-xs">查看详情</span></button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="public/foot"/>
+    <!-- //end Footer Container -->
+</div>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/libs.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/application.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/toppanel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/so_megamenu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/addtocart.js"></script>
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+</body>
+</html>

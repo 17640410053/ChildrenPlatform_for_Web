@@ -1,0 +1,317 @@
+[ 2017-11-28T11:22:52+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1725s ]
+ERR: Think\Controller:error方法不存在！
+
+[ 2017-11-28T11:23:01+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0541s ]
+ERR: Think\Controller:error方法不存在！
+
+[ 2017-11-28T11:23:28+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0480s ]
+
+[ 2017-11-28T11:23:33+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0465s ]
+
+[ 2017-11-28T11:26:54+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0325s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0460s ]
+
+[ 2017-11-28T11:27:00+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0417s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-11-28T11:27:18+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410055&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0222s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410055' LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410055','675e192c556ac6a22abdcc8e57c25935','2017-11-28 11:27:18','127.0.0.1') [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0308s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410055' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 11:27:18' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0902s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2331','17640410055','用户_2331','default.jpg') [ RunTime:0.1263s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2331 ) [ RunTime:0.0732s ]
+
+[ 2017-11-28T11:31:35+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410055&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0430s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410055' LIMIT 1   [ RunTime:0.0008s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2331-17640410055' for key 'PRIMARY'
+
+[ 2017-11-28T11:31:45+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0147s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '963-17640410053' for key 'PRIMARY'
+
+[ 2017-11-28T11:32:57+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0371s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0007s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '963-17640410053' for key 'PRIMARY'
+
+[ 2017-11-28T11:33:16+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0306s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0008s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '963-17640410053' for key 'PRIMARY'
+
+[ 2017-11-28T11:33:23+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410056&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0374s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410056' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410056','675e192c556ac6a22abdcc8e57c25935','2017-11-28 11:33:23','127.0.0.1') [ RunTime:0.0786s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0394s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410056' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 11:33:23' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0206s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2332','17640410056','用户_2332','default.jpg') [ RunTime:0.0694s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2332 ) [ RunTime:0.0661s ]
+
+[ 2017-11-28T11:34:11+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410056&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0390s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410056' LIMIT 1   [ RunTime:0.0013s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2332-17640410056' for key 'PRIMARY'
+
+[ 2017-11-28T11:34:35+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410056&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0224s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410056' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-11-28T11:35:01+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410056&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0200s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410056' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-11-28T11:35:09+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410057&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0286s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410057' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410057','675e192c556ac6a22abdcc8e57c25935','2017-11-28 11:35:09','127.0.0.1') [ RunTime:0.0735s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0211s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410057' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 11:35:09' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0185s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2333','17640410057','用户_2333','default.jpg') [ RunTime:0.0742s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2333 ) [ RunTime:0.0746s ]
+
+[ 2017-11-28T11:35:22+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410055&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0373s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410055' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-11-28T11:36:06+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410055&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0377s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410055' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-11-28T11:36:47+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410059&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0371s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410059' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410059','675e192c556ac6a22abdcc8e57c25935','2017-11-28 11:36:47','127.0.0.1') [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0384s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410059' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 11:36:47' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0218s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2334','17640410059','用户_2334','default.jpg') [ RunTime:0.0691s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2334 ) [ RunTime:0.1029s ]
+
+[ 2017-11-28T11:37:13+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410059&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0291s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410059' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-11-28T11:37:31+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410059&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0385s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410059' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-11-28T11:38:37+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410059&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0363s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410059' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-11-28T11:52:07+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0258s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-11-28T12:10:34+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lov
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0491s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+
+[ 2017-11-28T12:10:47+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lov1312313131321231231
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0339s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+
+[ 2017-11-28T12:10:57+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0356s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+
+[ 2017-11-28T12:11:46+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0182s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+
+[ 2017-11-28T12:12:18+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0349s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1116 行.
+
+[ 2017-11-28T12:17:46+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lov
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0366s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-11-28T12:17:57+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0637s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-11-28T12:19:11+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0304s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410051','675e192c556ac6a22abdcc8e57c25935','2017-11-28 12:19:11','127.0.0.1') [ RunTime:0.0837s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0314s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410051' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 12:19:11' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0299s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2335','17640410051','用户_2335','default.jpg') [ RunTime:0.1035s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2335 ) [ RunTime:0.0721s ]
+
+[ 2017-11-28T12:19:18+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410051&password=Lov
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0473s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410051' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-11-28T12:19:23+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410050&password=Lov
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0430s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410050' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-11-28T12:19:31+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410050&password=Lovdaskdjasjdklasjdjaslkdjas
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0405s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410050' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-11-28T12:19:41+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410050&password=Lovekn0827
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0404s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410050' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410050','675e192c556ac6a22abdcc8e57c25935','2017-11-28 12:19:41','127.0.0.1') [ RunTime:0.0719s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0390s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410050' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-11-28 12:19:41' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0228s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('2336','17640410050','用户_2336','default.jpg') [ RunTime:0.1088s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 2336 ) [ RunTime:0.1737s ]
+
+[ 2017-11-28T17:28:52+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id%20=%20963
+NOTIC: [8] Undefined index: id E:\wamp\www\ChildrenPlatform\Application\Api\Controller\UserController.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0617s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2017-11-28T17:29:07+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0011s ]
+ERR: Think\Controller:ajaxRetutn方法不存在！
+
+[ 2017-11-28T17:29:14+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963.com
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0702s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'com ) LIMIT 1' at line 1
+
+[ 2017-11-28T17:29:57+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963.com
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0332s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'com )' at line 1
+
+[ 2017-11-28T17:30:01+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 )  [ RunTime:0.0010s ]
+ERR: Think\Controller:ajaxRetutn方法不存在！
+
+[ 2017-11-28T17:30:13+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0351s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 )  [ RunTime:0.0006s ]
+
+[ 2017-11-28T17:30:20+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0609s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 )  [ RunTime:0.0007s ]
+
+[ 2017-11-28T17:30:33+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0366s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-11-28T17:32:08+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0479s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0387s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-11-28T17:32:30+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-28T17:33:49+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0708s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-28T17:34:43+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-28T18:28:43+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/Api/User/userInformation/id/963
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( u_id = 963 ) LIMIT 1   [ RunTime:0.0004s ]
+

@@ -1,0 +1,90 @@
+[ 2017-10-18T09:53:07+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Image
+
+[ 2017-10-18T09:53:09+08:00 ] 127.0.0.1 /ChildrenPlatform/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载模块:Header
+
+[ 2017-10-18T09:53:09+08:00 ] 127.0.0.1 /ChildrenPlatform/js/themejs/so_megamenu.js?_=1508291588244
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+ERR: 无法加载模块:Js
+
+[ 2017-10-18T11:16:45+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/Uploads/itempic/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T11:16:51+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/Uploads/itempic/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T11:16:59+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/Uploads/itempic/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T11:17:29+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/Uploads/itempic/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T11:30:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/Uploads/itempic/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T12:29:01+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T12:30:23+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T12:30:36+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T12:30:57+08:00 ] 127.0.0.1 /ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Public
+
+[ 2017-10-18T13:18:40+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:Image
+
+[ 2017-10-18T13:18:40+08:00 ] 127.0.0.1 /ChildrenPlatform/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+ERR: 无法加载模块:Header
+
+[ 2017-10-18T13:18:40+08:00 ] 127.0.0.1 /ChildrenPlatform/js/themejs/so_megamenu.js?_=1508303920149
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 无法加载模块:Js
+

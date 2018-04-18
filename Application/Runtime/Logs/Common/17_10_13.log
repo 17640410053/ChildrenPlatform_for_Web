@@ -1,0 +1,6 @@
+[ 2017-10-13T13:53:43+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+ERR: 无法加载模块:Image
+

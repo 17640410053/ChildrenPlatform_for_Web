@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="webthemez" name="author"/>
+    <title>添加项目</title>
+    <!-- Bootstrap Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
+
+    <link href="__PUBLIC__/backstage/assets/css/select2.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/backstage/assets/css/checkbox3.min.css" rel="stylesheet">
+    <!-- Custom Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
+    <script src="__PUBLIC__/take_photo/js/takeimg.js"></script>
+    <script src="__PUBLIC__/Ajax/projectAjax.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <include file="public/header"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li>
+                    <a href="{:U('Index/index')}"><i class="fa fa-dashboard"></i> 数据统计</a>
+                </li>
+                <li>
+                    <a href="{:U('Users/userlist')}"><i class="fa fa-desktop"></i> 用户管理</a>
+                </li>
+
+                <li>
+                    <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li>
+                            <a href="#"> 分类管理</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="{:U('Project/prolist')}"> 信息管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                添加信息
+                <small> 操作员：{$Think.session.username}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{:U('Index/index')}"> 主页</a></li>
+                <li class="active"><a href="{:U('Project/prolist')}"> 信息管理</a></li>
+                <li class="active"> 添加信息</li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="card-title">
+                                <div class="title">填写表单</div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-inline" method="post" action="{:U('up_pro')}"
+                                  enctype="multipart/form-data" onsubmit="return check();">
+                                <div class="form-group">
+                                    <label for="exampleInputName2">名 称：</label>
+                                    <input class="form-control" id="exampleInputName2" type="text" placeholder="输入名称"
+                                           name="f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">价 格：￥</label>
+                                    <input class="form-control" id="exampleInputEmail2" type="text"
+                                           placeholder="单位“元”，例如“50”" name="price">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputName2">地 址：</label>
+                                    <input class="form-control" id="exampleInputName2" type="text"
+                                           placeholder="输入地址，若无可以为空" name="address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2">类 型：</label>
+                                    <select class="selectbox" style="width: 200px" name="type">
+                                        <option value="0" disabled selected>请选择类型</option>
+                                        <volist name="list" id="li">
+                                            <optgroup label="{$li.type}">
+                                                <volist name="li[voo]" id="lio">
+                                                    <option value="{$lio.s_id}">{$lio.type}</option>
+                                                </volist>
+                                            </optgroup>
+                                        </volist>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputName2">电 话：</label>
+                                    <input class="form-control" id="exampleInputName2" type="phone"
+                                           placeholder="输入联系电话，可以为空" name="telephone">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputName2">网络地址：</label>
+                                    <input class="form-control" id="exampleInputName2" type="text"
+                                           placeholder="输入url地址，不可为空" style="width: 510px" name="url">
+                                </div>
+                                <br>
+                                <!--小图-->
+                                <div class="form-group">
+                                    <label for="exampleInputName2">选择封面：</label>
+                                    <div class="col-sm-9 big-photo" style="margin-left: 5%">
+                                        <div id="preview">
+                                            <img id="imghead" border="0" src="__PUBLIC__/take_photo/img/photo_icon.png"
+                                                 width="100" height="100" onclick="$('#previewImg').click();">
+                                        </div>
+                                        <input type="file" name="s_img" onchange="previewImage(this)"
+                                               style="display: none;" id="previewImg">
+                                    </div>
+                                </div>
+                                <!--中图-->
+                                <div class="form-group">
+                                    <label for="exampleInputName2">选择封面：</label>
+                                    <div class="col-sm-9 big-photo" style="margin-left: 5%">
+                                        <div id="m_preview">
+                                            <img id="m_imghead" border="0"
+                                                 src="__PUBLIC__/take_photo/img/m_photo_icon.png"
+                                                 width="200" height="100" onclick="$('#m_previewImg').click();">
+                                        </div>
+                                        <input type="file" name="m_img" onchange="m_previewImage(this)"
+                                               style="display: none;" id="m_previewImg">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">提 交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="__PUBLIC__/backstage/assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery.metisMenu.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/select2.full.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".selectbox").select2();
+    });
+</script>
+<!-- Custom Js -->
+<script src="__PUBLIC__/backstage/assets/js/custom-scripts.js"></script>
+
+</body>
+
+</html>

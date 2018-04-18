@@ -1,0 +1,688 @@
+[ 2017-10-11T14:32:26+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0782s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0729s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000871s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-10-11T14:32:36+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0621s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000752s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2017-10-11T14:33:11+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0269s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '176410410054' LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('176410410054','675e192c556ac6a22abdcc8e57c25935','2017-10-11 14:33:11','127.0.0.1') [ RunTime:0.0487s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0126s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '176410410054' AND `password` = '675e192c556ac6a22abdcc8e57c25935' AND `createtime` = '2017-10-11 14:33:11' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0119s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'u_id' cannot be null
+
+[ 2017-10-11T14:33:44+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0468s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '176410410054' LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('176410410054','202cb962ac59075b964b07152d234b70','2017-10-11 14:33:44','127.0.0.1') [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0390s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '176410410054' AND `password` = '202cb962ac59075b964b07152d234b70' AND `createtime` = '2017-10-11 14:33:44' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0208s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'u_id' cannot be null
+
+[ 2017-10-11T14:33:51+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0568s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000778s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-10-11T14:34:05+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0168s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '15140814872' LIMIT 1   [ RunTime:0.0016s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('15140814872','202cb962ac59075b964b07152d234b70','2017-10-11 14:34:04','127.0.0.1') [ RunTime:0.0572s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0383s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '15140814872' AND `password` = '202cb962ac59075b964b07152d234b70' AND `createtime` = '2017-10-11 14:34:04' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0230s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`) VALUES ('34','15140814872','用户_34') [ RunTime:0.0569s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 34 ) [ RunTime:0.0485s ]
+
+[ 2017-10-11T14:34:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000774s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2017-10-11T14:34:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-10-11T14:34:07+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+ERR: 非法操作:header
+
+[ 2017-10-11T14:34:07+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/js/themejs/so_megamenu.js?_=1507703646529
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 非法操作:js
+
+[ 2017-10-11T15:35:40+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0493s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000761s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000863s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-10-11T15:35:58+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0317s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '176410410054' LIMIT 1   [ RunTime:0.0014s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('176410410054','202cb962ac59075b964b07152d234b70','2017-10-11 15:35:58','127.0.0.1') [ RunTime:0.0679s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0182s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '176410410054' AND `password` = '202cb962ac59075b964b07152d234b70' AND `createtime` = '2017-10-11 15:35:58' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0319s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'u_id' cannot be null
+
+[ 2017-10-11T15:36:15+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0267s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410054' LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410054','202cb962ac59075b964b07152d234b70','2017-10-11 15:36:14','127.0.0.1') [ RunTime:0.0729s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0157s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410054' AND `password` = '202cb962ac59075b964b07152d234b70' AND `createtime` = '2017-10-11 15:36:14' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0156s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`) VALUES ('36','17640410054','用户_36') [ RunTime:0.0738s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 36 ) [ RunTime:0.0495s ]
+
+[ 2017-10-11T15:36:16+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0292s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000797s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-10-11T15:36:17+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0269s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410054' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+
+[ 2017-10-11T15:38:01+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0110s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410056' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+
+[ 2017-10-11T15:43:53+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/registration.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0448s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `user` WHERE `telephone` = '17640410054' LIMIT 1   [ RunTime:0.0012s ]
+SQL: INSERT INTO `user` (`telephone`,`password`,`createtime`,`ip`) VALUES ('17640410054','202cb962ac59075b964b07152d234b70','2017-10-11 15:43:52','127.0.0.1') [ RunTime:0.0583s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0265s ]
+SQL: SELECT `u_id` FROM `user` WHERE `telephone` = '17640410054' AND `password` = '202cb962ac59075b964b07152d234b70' AND `createtime` = '2017-10-11 15:43:52' AND `ip` = '127.0.0.1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0120s ]
+SQL: INSERT INTO `u_information` (`u_id`,`telephone`,`username`,`pic`) VALUES ('37','17640410054','用户_37','default.jpg') [ RunTime:0.0579s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `user` SET `num`=num+1 WHERE ( u_id = 37 ) [ RunTime:0.0494s ]
+
+[ 2017-10-11T15:43:54+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0254s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000764s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000862s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-10-11T15:43:54+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2017-10-11T15:43:55+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+ERR: 非法操作:header
+
+[ 2017-10-11T15:43:55+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/js/themejs/so_megamenu.js?_=1507707834409
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+ERR: 非法操作:js
+
+[ 2017-10-11T15:45:38+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000848s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000974s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-10-11T16:30:26+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000991s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2017-10-11T16:39:35+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0496s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000774s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000879s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-10-11T16:39:51+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 3   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001675s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001848s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 852 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+

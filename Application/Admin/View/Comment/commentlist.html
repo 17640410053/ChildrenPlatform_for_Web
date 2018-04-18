@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="webthemez" name="author"/>
+    <title>用户列表</title>
+    <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <!-- Bootstrap Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Morris Chart Styles-->
+
+    <!-- Custom Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- TABLE STYLES-->
+    <link href="__PUBLIC__/backstage/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
+    <script src="__PUBLIC__/Ajax/carouselAjax.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <include file="public/header"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li>
+                    <a href="{:U('Index/index')}"><i class="fa fa-dashboard"></i> 数据统计</a>
+                </li>
+                <li>
+                    <a href="{:U('Users/userlist')}"><i class="fa fa-desktop"></i> 用户管理</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="#"> 分类管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Project/prolist')}"> 信息管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="active-menu" href="{:U('Comment/commentlist')}"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                评论管理
+                <small> 操作员：{$Think.session.username}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{:U('Index/index')}"> 主页</a></li>
+                <li class="active"> 评论管理</li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            项目列表
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                    <tr>
+                                        <th>图片</th>
+                                        <th>名称</th>
+                                        <th>评论数</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="item" id="it">
+                                        <tr>
+                                            <td><img src="__PUBLIC__/Uploads/itempic/{$it.m_pic}" width="50"></td>
+                                            <td>{$it.f_name}</td>
+                                            <td>{$it.comment_num}</td>
+                                            <td>
+                                                <if condition="($it.state eq 0)">
+                                                    <span class="label label-success">正常</span>
+                                                    <else/>
+                                                    <span class="label label-danger">禁用</span>
+                                                </if>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a  href="{:U('Comment/commentdetail?id='.$it['f_id'])}">
+                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false"> 查看评论</button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/backstage/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="__PUBLIC__/backstage/assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="__PUBLIC__/backstage/assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
+<!-- Custom Js -->
+<script src="__PUBLIC__/backstage/assets/js/custom-scripts.js"></script>
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+
+</body>
+
+</html>

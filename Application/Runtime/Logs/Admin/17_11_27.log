@@ -1,0 +1,188 @@
+[ 2017-11-27T22:09:26+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-11-27T22:09:26+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-11-27T22:09:36+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.2017s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '675e192c556ac6a22abdcc8e57c25935'  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' C:\inetpub\wwwroot\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 37 行.
+
+[ 2017-11-27T22:09:39+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `index` [ RunTime:0.0015s ]
+SQL: SELECT `pageview` FROM `index` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `items` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-11-27T22:09:50+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `items` ORDER BY f_id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-11-27T22:10:07+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Project/prodetail/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE ( f_id = 20 )  [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `2lvtype` WHERE `s_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-11-27T22:12:16+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Project/up_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0019s ]
+SQL: SELECT `s_pic` FROM `items` WHERE ( f_id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `m_pic` FROM `items` WHERE ( f_id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `items` SET `m_pic`='5a1c1d3fb68f7.jpg' WHERE ( f_id = 20 ) [ RunTime:0.0560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-11-27T22:12:18+08:00 ] 124.93.196.8 /ChildrenPlatform/Admin/Project/prodetail/id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE ( f_id = 20 )  [ RunTime:0.0002s ]
+SQL: SELECT `type` FROM `2lvtype` WHERE `s_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Admin\cd798dd650aa4f34e6d5e3cbb3c0e30f.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+

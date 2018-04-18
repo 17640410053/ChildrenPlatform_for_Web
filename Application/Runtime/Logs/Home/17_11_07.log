@@ -1,0 +1,242 @@
+[ 2017-11-07T18:01:57+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/projectdetail/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0243s ]
+SQL: UPDATE `items` SET `hint`=hint+1 WHERE ( f_id=22 ) [ RunTime:0.0813s ]
+SQL: SELECT * FROM `items` WHERE ( f_id=22 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `star` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `star` WHERE `u_id` = 963 AND `f_id` = 22  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0205s ]
+SQL: SELECT `type` FROM `2lvtype` WHERE `s_id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( f_id=22 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `u_information` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `comment` WHERE ( f_id=22 ) ORDER BY datetime desc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `u_information` WHERE ( u_id = 963 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0108s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 22 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 21 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 12 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 9 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE `u_id` = 963 AND `state` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 934 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 934 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 988 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 993 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 993 行.
+NOTIC: [8] Undefined index: type E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 993 行.
+NOTIC: [8] Undefined variable: ho_1_list E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1025 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Undefined variable: ho_1_list E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1025 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Undefined variable: ho_1_list E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1025 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Undefined variable: ho_1_list E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1025 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\10228148ef29efb0d4bb1fcab8e8a467.php 第 1052 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-11-07T18:01:57+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/projectdetail/id/image/demo/content/payment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-11-07T18:02:05+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=13 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0102s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 20 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 15 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=8 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 22 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 21 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 12 AND `u_id` = 963  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 23 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 13 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=6 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 24 AND `u_id` = 963  [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 14 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=15 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=7 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 9 AND `u_id` = 963  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=9 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 19 AND `u_id` = 963  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=16 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=3 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=14 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=12 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=10 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=5 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `items` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `carousel` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE `u_id` = 963 AND `state` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 987 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 987 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1075 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1075 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2017-11-07T21:01:23+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.357239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020912s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0552s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0411s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=13 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0077s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 20 AND `u_id` = 0  [ RunTime:0.0021s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 15 AND `u_id` = 0  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=8 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0023s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 22 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 21 AND `u_id` = 0  [ RunTime:0.0017s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 12 AND `u_id` = 0  [ RunTime:0.0018s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 23 AND `u_id` = 0  [ RunTime:0.0017s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 13 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=6 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 24 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 14 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=15 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=7 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0021s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 9 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=9 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0020s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 19 AND `u_id` = 0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=16 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=3 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=14 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=12 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=10 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `items` WHERE ( s_id=5 ) ORDER BY hint desc LIMIT 8   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0659s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `items` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0278s ]
+SQL: SELECT * FROM `carousel` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE `u_id` = 0 AND `state` = 1 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] Undefined index: u_id E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 71 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 855 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 987 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 987 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1033 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1075 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1075 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' E:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.746716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.746895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.063277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.063389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.041435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.041739s ]
+

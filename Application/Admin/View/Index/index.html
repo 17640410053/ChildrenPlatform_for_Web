@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="webthemez" name="author"/>
+    <title>儿童生活娱乐信息共享平台</title>
+    <!-- Bootstrap Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- Morris Chart Styles-->
+    <link href="__PUBLIC__/backstage/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link rel="stylesheet" href="__PUBLIC__/backstage/assets/js/Lightweight-Chart/cssCharts.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <include file="public/header"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a class="active-menu" href="{:U('Index/index')}"><i class="fa fa-dashboard"></i> 数据统计</a>
+                </li>
+                <li>
+                    <a href="{:U('Users/userlist')}"><i class="fa fa-desktop"></i> 用户管理</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#"> 分类管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Project/prolist')}"> 信息管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="{:U('Comment/commentlist')}"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                数据统计
+                <small> 操作员：{$Think.session.username}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{:U('Index/index')}"> 主页</a></li>
+                <li class="active"> 数据统计</li>
+            </ol>
+
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="board">
+                        <div class="panel panel-primary">
+                            <div class="number">
+                                <h3>
+                                    <h3> {$pageview}</h3>
+                                    <small> 访问量</small>
+                                </h3>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-eye fa-5x red"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="board">
+                        <div class="panel panel-primary">
+                            <div class="number">
+                                <h3>
+                                    <h3> {$item}</h3>
+                                    <small> 项目</small>
+                                </h3>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-shopping-cart fa-5x blue"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="board">
+                        <div class="panel panel-primary">
+                            <div class="number">
+                                <h3>
+                                    <h3> {$comment}</h3>
+                                    <small> 评论信息</small>
+                                </h3>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-comments fa-5x green"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="board">
+                        <div class="panel panel-primary">
+                            <div class="number">
+                                <h3>
+                                    <h3>{$user}</h3>
+                                    <small> 用户</small>
+                                </h3>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-user fa-5x yellow"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="__PUBLIC__/backstage/assets/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+<script src="__PUBLIC__/backstage/assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/morris/morris.js"></script>
+
+
+<script src="__PUBLIC__/backstage/assets/js/easypiechart.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/easypiechart-data.js"></script>
+
+<script src="__PUBLIC__/backstage/assets/js/Lightweight-Chart/jquery.chart.js"></script>
+
+<!-- Custom Js -->
+<script src="__PUBLIC__/backstage/assets/js/custom-scripts.js"></script>
+
+
+<!-- Chart Js -->
+<script type="text/javascript" src="__PUBLIC__/backstage/assets/js/Chart.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/backstage/assets/js/chartjs.js"></script>
+
+</body>
+
+</html>

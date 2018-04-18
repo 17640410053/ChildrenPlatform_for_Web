@@ -1,0 +1,30 @@
+[ 2017-10-20T12:25:27+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:Image
+
+[ 2017-10-20T13:31:12+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载模块:Image
+
+[ 2017-10-20T13:31:49+08:00 ] 127.0.0.1 /ChildrenPlatform/image/demo/shop/category/health-beauty.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+ERR: 无法加载模块:Image
+
+[ 2017-10-20T13:31:50+08:00 ] 127.0.0.1 /ChildrenPlatform/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+ERR: 无法加载模块:Header
+
+[ 2017-10-20T13:31:50+08:00 ] 127.0.0.1 /ChildrenPlatform/js/themejs/so_megamenu.js?_=1508477509963
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Js
+

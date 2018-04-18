@@ -1,0 +1,12 @@
+[ 2017-11-26T10:02:01+08:00 ] 127.0.0.1 /ChildrenPlatform/user.php?action=userLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载模块:User
+
+[ 2017-11-26T16:26:23+08:00 ] 127.0.0.1 /ChildrenPlatform/index/API/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+ERR: 无法加载模块:Index
+

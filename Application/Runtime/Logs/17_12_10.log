@@ -1,0 +1,360 @@
+[ 2017-12-10T23:05:15+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/type?id=1
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `items` WHERE ( m_id = 1 ) ORDER BY hint desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-10T23:05:15+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0334s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc  [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 11 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 7 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 14 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-12-10T23:05:15+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0511s ]
+SQL: SELECT * FROM `items` ORDER BY hint desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 11 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 7 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-10T23:05:15+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/type?id=2
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0526s ]
+SQL: SELECT * FROM `items` WHERE ( m_id = 2 ) ORDER BY hint desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 7 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-12-10T23:05:16+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/type?id=3
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `items` WHERE ( m_id = 3 ) ORDER BY hint desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 11 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-10T23:05:16+08:00 ] 124.93.196.28 /ChildrenPlatform/api.php/Api/Home/type?id=4
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `items` WHERE ( m_id = 4 ) ORDER BY hint desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `maintype` WHERE ( m_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `type` FROM `2lvtype` WHERE ( s_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+

@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="webthemez" name="author"/>
+    <title>查看详情</title>
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <!-- Bootstrap Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
+
+    <link href="__PUBLIC__/backstage/assets/css/select2.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/backstage/assets/css/checkbox3.min.css" rel="stylesheet">
+    <!-- Custom Styles-->
+    <link href="__PUBLIC__/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
+    <script src="__PUBLIC__/take_photo/js/takeimg.js"></script>
+    <script src="__PUBLIC__/Ajax/projectAjax.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <include file="public/header"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li>
+                    <a href="{:U('Index/index')}"><i class="fa fa-dashboard"></i> 数据统计</a>
+                </li>
+                <li>
+                    <a href="{:U('Users/userlist')}"><i class="fa fa-desktop"></i> 用户管理</a>
+                </li>
+
+                <li>
+                    <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li>
+                            <a href="#"> 分类管理</a>
+                        </li>
+                        <li>
+                            <a class="active-menu" href="{:U('Project/prolist')}"> 信息管理</a>
+                        </li>
+                        <li>
+                            <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+
+    <div id="page-wrapper">
+        <div class="header">
+            <h1 class="page-header">
+                查看详情
+                <small> 操作员：{$Think.session.username}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{:U('Index/index')}"> 主页</a></li>
+                <li class="active"><a href="{:U('Project/prolist')}"> 信息管理</a></li>
+                <li class="active"> 查看详情</li>
+            </ol>
+        </div>
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="card-title">
+                                <div class="title">查看详情</div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-inline" name="up_pro_form" id="up_pro_form" action="{:U('Project/up_img')}" method="post" enctype="multipart/form-data" onsubmit="return check();">
+                                <volist name="pro_detail" id="pro">
+                                    <div class="form-group">
+                                        <label>名 称：</label>
+                                        <span id="f_name">{$pro.f_name}</span>
+                                        <img onclick="up_name('{$pro.f_id}')" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label>价 格：￥</label>
+                                        <span id="price">{$pro.price}</span>
+                                        <img onclick="up_price('{$pro.f_id}')" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label>地 址：</label>
+                                        <span id="address"><if condition="($pro.address eq null)">此项目未填写地址！<else/>{$pro.address}</if></span>
+                                        <img onclick="up_address('{$pro.f_id}')" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label>电 话：</label>
+                                        <span id="telephone"><if condition="($pro.telephone eq null)">此项目无联系电话！<else/>{$pro.telephone}</if></span>
+                                        <img onclick="up_telephone('{$pro.f_id}')" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <br>
+                                    <div class="form-group" id="data_type">
+                                        <label>类 型：</label>
+                                        <span id="type">{$pro.s_id}</span>
+                                        <img style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png"
+                                             onclick="show_up_type()" href="javascript:;">
+                                    </div>
+                                    <div id="up_type" class="form-group">
+                                        <label>类 型：</label>
+                                        <select class="selectbox" style="width: 200px" name="type" id="sel_up_type">
+                                            <option value="0" disabled selected>请选择类型</option>
+                                            <volist name="list" id="li">
+                                                <optgroup label="{$li.type}">
+                                                    <volist name="li[voo]" id="lio">
+                                                        <option value="{$lio.s_id}">{$lio.type}</option>
+                                                    </volist>
+                                                </optgroup>
+                                            </volist>
+                                        </select>
+                                        <a class="btn btn-default" style="background: #00EEEE" onclick="up_type('{$pro.f_id}')" href="javascript:;">确认</a>
+                                        <a class="btn btn-default" onclick="hide_up_type()" href="javascript:;">取消</a>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label>网络地址：</label>
+                                        <a href="{$pro.url}" target="_blank" id="url">{$pro.url}</a>
+                                        <img onclick="up_url('{$pro.f_id}')" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <br>
+                                    <!--小图-->
+                                    <div class="form-group" id="s_img_show">
+                                        <label>封面（little）：</label>
+                                        <div class="col-sm-9 big-photo" style="margin-left: 5%">
+                                            <div id="preview">
+                                                <img id="imghead" border="0"
+                                                     src="__PUBLIC__/Uploads/itempic/{$pro.s_pic}"
+                                                     width="100" height="100">
+                                            </div>
+                                            <input type="file" name="s_img" onchange="previewImage(this)"
+                                                   style="display: none;" id="previewImg">
+                                            <div id="s_img__up_sum">
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px"  onclick="up_s_img('{$pro.f_id}')" href="javascript:;" >确认</a>
+                                                <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()"  href="javascript:;">取消</a>
+                                            </div>
+                                        </div>
+                                        <img onclick="$('#previewImg').click();" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+                                    <!--中图-->
+                                    <div class="form-group" id="m_img_show">
+                                        <label>封面（middle）：</label>
+                                        <div class="col-sm-9 big-photo" style="margin-left: 5%">
+                                            <div id="m_preview">
+                                                <img id="m_imghead" border="0"
+                                                     src="__PUBLIC__/Uploads/itempic/{$pro.m_pic}"
+                                                     width="200" height="100">
+                                            </div>
+                                            <input type="file" name="m_img" onchange="m_previewImage(this)"
+                                                   style="display: none;" id="m_previewImg">
+                                            <div id="m_img__up_sum">
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px" onclick="up_m_img('{$pro.f_id}')" href="javascript:;" >确定</a>
+                                                <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()" href="javascript:;">取消</a>
+                                            </div>
+                                        </div>
+                                        <img onclick="$('#m_previewImg').click();" href="javascript:;"
+                                             style="margin-left:10px "
+                                             src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
+                                    </div>
+
+                                </volist>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="__PUBLIC__/backstage/assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="__PUBLIC__/backstage/assets/js/jquery.metisMenu.js"></script>
+<script src="__PUBLIC__/backstage/assets/js/select2.full.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#s_img__up_sum").hide();
+        $("#m_img__up_sum").hide();
+        $("#up_type").hide();
+        $(".selectbox").select2();
+    });
+</script>
+<!-- Custom Js -->
+<script src="__PUBLIC__/backstage/assets/js/custom-scripts.js"></script>
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+
+</body>
+
+</html>

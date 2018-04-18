@@ -1,0 +1,104 @@
+[ 2017-11-28T01:27:54+08:00 ] 113.108.10.5 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `maintype` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `2lvtype` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `maintype`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 2 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 C:\inetpub\wwwroot\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `2lvtype` WHERE ( m_id = 4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `2lvtype` ORDER BY hint desc LIMIT 12   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `items` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 13 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0015s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 20 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 40 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 15 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 39 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 12 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 35 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 36 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 37 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 8 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 22 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 21 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 12 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 23 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 13 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 6 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 24 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 14 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 15 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 7 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 9 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 9 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 19 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 16 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 33 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 34 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 3 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 30 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 31 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 29 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 14 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 41 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 10 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `f_id` = 32 AND `u_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE `s_id` = 5 AND `state` = 0 ORDER BY hint desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `items` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `carousel` WHERE ( state = 0 ) ORDER BY hint desc LIMIT 4   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE `u_id` = 0 AND `state` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `index` [ RunTime:0.0015s ]
+SQL: UPDATE `index` SET `pageview`=pageview+1 WHERE ( id = 1 ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: u_id C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 853 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 994 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 994 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1057 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1102 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1102 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' C:\inetpub\wwwroot\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
