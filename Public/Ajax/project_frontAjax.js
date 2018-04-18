@@ -113,7 +113,7 @@ window.onload = function (){
             }else {
                 PostbirdAlertBox.alert({
                     'title': '提示',
-                    'content': "请勿重复评论",
+                    'content': "你已发表过评价",
                     'okBtn': '确认',
                 })
             }

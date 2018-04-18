@@ -48,6 +48,7 @@ jQuery(document).ready(function () {
     )
 });
 
+//添加/取消收藏
 function collect(state, commodity_id) {
     if (check_user_id == "") {
         PostbirdAlertBox.confirm({
@@ -68,13 +69,15 @@ function collect(state, commodity_id) {
             success: function (msg) {
                 if (msg == 1) {
                     $("#collect_btn_" + commodity_id).attr("onclick", "collect('1','" + commodity_id + " ')");
-                    $("#collect_font_" + commodity_id).html("取消收藏");
+                    $("#collect_font_" + commodity_id).html(" 取消收藏");
                     $("#collect_num").html(parseInt(collect_num)+1);
+                    addProductNotice('收藏物品提醒', '<h3>已添加到你的收藏列表</h3>', 'success');
                 }
                 if (msg == 2) {
                     $("#collect_btn_" + commodity_id).attr("onclick", "collect('0','" + commodity_id + " ')");
-                    $("#collect_font_" + commodity_id).html("添加到我的收藏");
+                    $("#collect_font_" + commodity_id).html(" 添加到我的收藏");
                     $("#collect_num").html(parseInt(collect_num)-1);
+                    addProductNotice('收藏物品提醒', '<h3>已从你的收藏列表移除</h3>', 'success');
                 }
             },
             error:function () {
@@ -84,6 +87,7 @@ function collect(state, commodity_id) {
     }
 }
 
+//搜索功能
 function search_item() {
     var value = $("#search_value").val();
     if(value == ""){
@@ -94,6 +98,21 @@ function search_item() {
         });
     }else {
         var type_id = $("#category_id").val();
-        window.open("search?type_id="+ type_id + "&value=" + value);
+        window.open(AppUrl+"/Home/Index/search?type_id="+type_id+"&value="+value);
     }
+}
+
+
+//右上角弹出提示窗
+function addProductNotice(title, text, type) {
+    $.jGrowl.defaults.closer = false;
+    //Stop jGrowl
+    //$.jGrowl.defaults.sticky = true;
+    var tpl = '<h3>'+text+'</h3>';
+    $.jGrowl(tpl, {
+        life: 4000,
+        header: title,
+        speed: 'slow',
+        theme: type
+    });
 }

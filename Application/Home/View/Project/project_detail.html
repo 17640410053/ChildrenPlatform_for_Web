@@ -241,12 +241,7 @@
                                        onclick="$('a[href=\'#tab-1\']').trigger('click'); return false;"><span
                                             id="count-1">{$detail.count}</span>条评论</a> |
                                     <a class="write_review_button" href=""
-                                       onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">添加评论</a> |
-                                    <if condition="($detail.collect_state eq 1)">
-                                        <a id="collect_btn_{$detail.commodity_id}" onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"><span id="collect_font_{$detail.commodity_id}"> 取消收藏</span></a>
-                                        <else/>
-                                        <a id="collect_btn_{$detail.commodity_id}" onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"><span id="collect_font_{$detail.commodity_id}"> 添加到我的收藏</span></a>
-                                    </if>
+                                       onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">添加评论</a>
                                 </div>
 
                                 <div class="product-label form-group">
@@ -288,8 +283,8 @@
                                         <div class="option quantity">
                                             <div class="input-group quantity-control" unselectable="on"
                                                  style="-webkit-user-select: none;">
-                                                <label>Qty</label>
-                                                <input class="form-control" type="text" name="quantity"
+                                                <label>数量：</label>
+                                                <input class="form-control" type="text" name="quantity" style="width: 50px"
                                                        value="1">
                                                 <input type="hidden" name="product_id" value="50">
                                                 <span class="input-group-addon product_quantity_down">−</span>
@@ -297,24 +292,32 @@
                                             </div>
                                         </div>
                                         <div class="cart">
-                                            <input type="button" data-toggle="tooltip" title="" value="Add to Cart"
+                                            <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
                                                    data-loading-text="Loading..." id="button-cart"
                                                    class="btn btn-mega btn-lg" onclick="cart.add('42', '1');"
-                                                   data-original-title="Add to Cart">
+                                                   data-original-title="添加到购物车">
                                         </div>
                                         <div class="add-to-links wish_comp">
                                             <ul class="blank list-inline">
                                                 <li class="wishlist">
-                                                    <a class="icon" data-toggle="tooltip" title=""
-                                                       onclick="wishlist.add('50');"
-                                                       data-original-title="Add to Wish List"><i
-                                                            class="fa fa-heart"></i>
-                                                    </a>
+                                                    <if condition="($detail.collect_state eq 1)">
+                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon" data-toggle="tooltip" title=""
+                                                           onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"
+                                                           data-original-title="取消收藏"><i
+                                                                class="fa fa-heart"></i><span id="collect_font_{$detail.commodity_id}"> 取消收藏</span>
+                                                        </a>
+                                                        <else/>
+                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon" data-toggle="tooltip" title=""
+                                                           onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"
+                                                           data-original-title="添加到我的收藏"><i
+                                                                class="fa fa-heart"></i><span id="collect_font_{$detail.commodity_id}"> 添加到我的收藏</span>
+                                                        </a>
+                                                    </if>
                                                 </li>
                                                 <li class="compare">
                                                     <a class="icon" data-toggle="tooltip" title=""
                                                        onclick="compare.add('50');"
-                                                       data-original-title="Compare this Product"><i
+                                                       data-original-title="举报此商品"><i
                                                             class="fa fa-exchange"></i>
                                                     </a>
                                                 </li>

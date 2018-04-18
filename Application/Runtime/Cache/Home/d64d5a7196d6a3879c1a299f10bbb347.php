@@ -855,10 +855,7 @@
                                        onclick="$('a[href=\'#tab-1\']').trigger('click'); return false;"><span
                                             id="count-1"><?php echo ($detail["count"]); ?></span>条评论</a> |
                                     <a class="write_review_button" href=""
-                                       onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">添加评论</a> |
-                                    <?php if(($detail["collect_state"] == 1)): ?><a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 取消收藏</span></a>
-                                        <?php else: ?>
-                                        <a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 添加到我的收藏</span></a><?php endif; ?>
+                                       onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">添加评论</a>
                                 </div>
 
                                 <div class="product-label form-group">
@@ -890,6 +887,53 @@
                                         </div>
                                         <div class="model" style="margin-bottom: 10px"><span>官网：</span><a
                                                 target="_blank" href="<?php echo ($detail["url"]); ?>"> 点击浏览</a></div>
+                                    </div>
+                                </div>
+
+                                <div id="product">
+                                    <div class="form-group box-info-product">
+                                        <div class="option quantity">
+                                            <div class="input-group quantity-control" unselectable="on"
+                                                 style="-webkit-user-select: none;">
+                                                <label>数量：</label>
+                                                <input class="form-control" type="text" name="quantity" style="width: 50px"
+                                                       value="1">
+                                                <input type="hidden" name="product_id" value="50">
+                                                <span class="input-group-addon product_quantity_down">−</span>
+                                                <span class="input-group-addon product_quantity_up">+</span>
+                                            </div>
+                                        </div>
+                                        <div class="cart">
+                                            <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
+                                                   data-loading-text="Loading..." id="button-cart"
+                                                   class="btn btn-mega btn-lg" onclick="cart.add('42', '1');"
+                                                   data-original-title="添加到购物车">
+                                        </div>
+                                        <div class="add-to-links wish_comp">
+                                            <ul class="blank list-inline">
+                                                <li class="wishlist">
+                                                    <?php if(($detail["collect_state"] == 1)): ?><a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon" data-toggle="tooltip" title=""
+                                                           onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
+                                                           data-original-title="取消收藏"><i
+                                                                class="fa fa-heart"></i><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 取消收藏</span>
+                                                        </a>
+                                                        <?php else: ?>
+                                                        <a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon" data-toggle="tooltip" title=""
+                                                           onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
+                                                           data-original-title="添加到我的收藏"><i
+                                                                class="fa fa-heart"></i><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 添加到我的收藏</span>
+                                                        </a><?php endif; ?>
+                                                </li>
+                                                <li class="compare">
+                                                    <a class="icon" data-toggle="tooltip" title=""
+                                                       onclick="compare.add('50');"
+                                                       data-original-title="举报此商品"><i
+                                                            class="fa fa-exchange"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <!-- end box info product -->
