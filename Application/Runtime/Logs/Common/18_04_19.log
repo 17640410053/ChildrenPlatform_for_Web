@@ -1,0 +1,12 @@
+[ 2018-04-19T17:39:24+08:00 ] 192.168.191.1 /ChildrenPlatform/Public/uploads/user_image/59f2cf619d05c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001822s ]
+ERR: 无法加载模块:Public
+
+[ 2018-04-19T17:39:24+08:00 ] 192.168.191.1 /ChildrenPlatform/Public/uploads/user_image/59f2cf619d05c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
