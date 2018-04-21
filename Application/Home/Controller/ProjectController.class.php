@@ -63,8 +63,14 @@ class ProjectController extends BaseController
         }
         $this->assign('hot', $hot);
 
-        //查询收藏数
-        $this->get_collect_num();
+        if (I('session.user_id') != null){
+            //查询购物车
+            $this->getUserCart();
+
+            //查询收藏数
+            $this->get_collect_num();
+        }
+
 
         //浏览量+1
         $commodity_sql->where("commodity_id=$id")->setInc('hintNum');
@@ -115,8 +121,14 @@ class ProjectController extends BaseController
         //浏览量+1
         $List->where("type_id=$id")->setInc('hintNum');
 
-        //查询收藏数
-        $this->get_collect_num();
+        if (I('session.user_id') != null){
+            //查询购物车
+            $this->getUserCart();
+
+            //查询收藏数
+            $this->get_collect_num();
+        }
+
 
         //显示页面
         $this->display();
@@ -169,8 +181,14 @@ class ProjectController extends BaseController
         $List2->where("subsetType_id=$id")->setInc('clickNum');
         $List->where("type_id=$type_id")->setInc('clickNum');
 
-        //查询收藏数
-        $this->get_collect_num();
+        if (I('session.user_id') != null){
+            //查询购物车
+            $this->getUserCart();
+
+            //查询收藏数
+            $this->get_collect_num();
+        }
+
 
         //显示页面
         $this->display();

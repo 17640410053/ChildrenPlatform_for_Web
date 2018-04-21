@@ -53,8 +53,12 @@ class IndexController extends BaseController
         //轮播图查询
         $this->carousel = $carousel_id->where("state = 0")->order('hintNum desc')->limit(4)->select();
 
-        //查询收藏数
-        $this->get_collect_num();
+        if (I('session.user_id') != null){
+            //查询购物车
+            $this->getUserCart();
+            //查询收藏数
+            $this->get_collect_num();
+        }
 
         //浏览量+1
 //        M('index')->where("id = 1")->setInc('pageview');

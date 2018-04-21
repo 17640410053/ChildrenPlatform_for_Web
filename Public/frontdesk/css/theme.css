@@ -2022,7 +2022,7 @@ ul.footer-directory {
     padding: 15px;
     border-radius: 0;
     border-top: 3px solid #F4A137;
-    min-width: 300px; }
+    min-width: 500px; }
     @media (min-width: 1200px) {
       .shopping_cart .shoppingcart-box:before {
         content: "";

@@ -10,6 +10,7 @@
         var check_user_id = "{$Think.session.user_id}"
     </script>
     <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -141,7 +142,81 @@
                         <input type="hidden" name="route" value="product/search"/>
                     </div>
                     <!-- //end Search -->
+                    <div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
+                        <!--cart-->
+                        <div id="cart" class=" btn-group btn-shopping-cart">
+                            <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+                                <div class="shopcart">
+                                    <span class="handle pull-left"></span>
+                                    <span class="title">我的购物车</span>
+                                    <if condition="($Think.session.user_id eq null)">
+                                        <p class="text-shopping-cart cart-total-full">请先登录 </p>
+                                        <else/>
+                                        <p class="text-shopping-cart cart-total-full"> <span id="cart_num">{$cart_data.cart_num}</span>件物品 - 共 ￥<span id="total_price">{$cart_data.total_price}</span> 元</p>
+                                    </if>
+                                </div>
+                            </a>
 
+                            <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+                                <if condition="($Think.session.user_id eq null)">
+                                    <p class="text-center"><span>你还未登录，请先登录</span> </p>
+                                    <p class="text-center">
+                                        <a
+                                            class="btn btn-mega checkout-cart login" href="#"><i class="fa fa-share"></i>立即登录</a>
+                                        <a
+                                                class="btn btn-mega checkout-cart registration" href="#"><i class="fa fa-share"></i>立即注册</a>
+                                    </p>
+                                    <else/>
+                                    <li>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                            <volist name="cart_list" id="cart">
+                                            <tr id="cart_{$cart.commodity_id}">
+                                                <td class="text-center" style="width:70px">
+                                                    <a href="{:U('Project/project_detail?id='.$cart['commodity_id'])}"> <img src="__PUBLIC__/Uploads/commodity_image/{$cart.voo.small_pic}"
+                                                                                 style="width:70px" alt="{$cart.voo.name}"
+                                                                                 title="{$cart.voo.name}" class="preview"> </a>
+                                                </td>
+                                                <td class="text-left"><a class="cart_product_name" href="{:U('Project/project_detail?id='.$cart['commodity_id'])}">{$cart.voo.name}</a></td>
+                                                <td class="text-center"> x{$cart.commodity_num}</td>
+                                                <td class="text-center"> ￥{$cart.voo.price}</td>
+                                                <td class="text-right">
+                                                    <a href="{:U('Project/project_detail?id='.$cart['commodity_id'])}" class="fa fa-edit"></a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a onclick="deleteCart('{$cart.commodity_id}')" class="fa fa-times fa-delete"></a>
+                                                </td>
+                                            </tr>
+                                            </volist>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>商品数量</strong>
+                                                    </td>
+                                                    <td class="text-right"><span id="cart_num_table">{$cart_data.cart_num}</span> 件</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥<span id="total_price_table">{$cart_data.total_price}</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-right"><a
+                                                    class="btn btn-mega checkout-cart" href="#"><i class="fa fa-share"></i>去结算</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </if>
+                            </ul>
+                        </div>
+                        <!--//cart-->
+                    </div>
                     <!-- Secondary menu -->
                 </div>
 

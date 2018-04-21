@@ -10,6 +10,7 @@
         var check_user_id = "<?php echo (session('user_id')); ?>"
     </script>
     <script src="/ChildrenPlatform/Public/Ajax/indexAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -753,7 +754,75 @@
                         <input type="hidden" name="route" value="product/search"/>
                     </div>
                     <!-- //end Search -->
+                    <div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
+                        <!--cart-->
+                        <div id="cart" class=" btn-group btn-shopping-cart">
+                            <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+                                <div class="shopcart">
+                                    <span class="handle pull-left"></span>
+                                    <span class="title">我的购物车</span>
+                                    <?php if(($_SESSION['user_id']== null)): ?><p class="text-shopping-cart cart-total-full">请先登录 </p>
+                                        <?php else: ?>
+                                        <p class="text-shopping-cart cart-total-full"> <span id="cart_num"><?php echo ($cart_data["cart_num"]); ?></span>件物品 - 共 ￥<span id="total_price"><?php echo ($cart_data["total_price"]); ?></span> 元</p><?php endif; ?>
+                                </div>
+                            </a>
 
+                            <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+                                <?php if(($_SESSION['user_id']== null)): ?><p class="text-center"><span>你还未登录，请先登录</span> </p>
+                                    <p class="text-center">
+                                        <a
+                                            class="btn btn-mega checkout-cart login" href="#"><i class="fa fa-share"></i>立即登录</a>
+                                        <a
+                                                class="btn btn-mega checkout-cart registration" href="#"><i class="fa fa-share"></i>立即注册</a>
+                                    </p>
+                                    <?php else: ?>
+                                    <li>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                            <?php if(is_array($cart_list)): $i = 0; $__LIST__ = $cart_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart): $mod = ($i % 2 );++$i;?><tr id="cart_<?php echo ($cart["commodity_id"]); ?>">
+                                                <td class="text-center" style="width:70px">
+                                                    <a href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"> <img src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($cart["voo"]["small_pic"]); ?>"
+                                                                                 style="width:70px" alt="<?php echo ($cart["voo"]["name"]); ?>"
+                                                                                 title="<?php echo ($cart["voo"]["name"]); ?>" class="preview"> </a>
+                                                </td>
+                                                <td class="text-left"><a class="cart_product_name" href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"><?php echo ($cart["voo"]["name"]); ?></a></td>
+                                                <td class="text-center"> x<?php echo ($cart["commodity_num"]); ?></td>
+                                                <td class="text-center"> ￥<?php echo ($cart["voo"]["price"]); ?></td>
+                                                <td class="text-right">
+                                                    <a href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>" class="fa fa-edit"></a>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a onclick="deleteCart('<?php echo ($cart["commodity_id"]); ?>')" class="fa fa-times fa-delete"></a>
+                                                </td>
+                                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>商品数量</strong>
+                                                    </td>
+                                                    <td class="text-right"><span id="cart_num_table"><?php echo ($cart_data["cart_num"]); ?></span> 件</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥<span id="total_price_table"><?php echo ($cart_data["total_price"]); ?></span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-right"><a
+                                                    class="btn btn-mega checkout-cart" href="#"><i class="fa fa-share"></i>去结算</a>
+                                            </p>
+                                        </div>
+                                    </li><?php endif; ?>
+                            </ul>
+                        </div>
+                        <!--//cart-->
+                    </div>
                     <!-- Secondary menu -->
                 </div>
 
