@@ -814,7 +814,7 @@
                                     </p>
                                     <?php else: ?>
                                     <li>
-                                        <table class="table table-striped">
+                                        <table id="cart_table" class="table table-striped">
                                             <tbody>
                                             <?php if(is_array($cart_list)): $i = 0; $__LIST__ = $cart_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart): $mod = ($i % 2 );++$i;?><tr id="cart_<?php echo ($cart["commodity_id"]); ?>">
                                                     <td class="text-center" style="width:70px">
