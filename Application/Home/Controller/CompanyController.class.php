@@ -31,4 +31,12 @@ class CompanyController extends BaseController
             $this->display();
         }
     }
+
+    public function add_commodity(){
+        //分类查询，连表查询
+        $this->type_query();
+
+
+        $this->display();
+    }
 }

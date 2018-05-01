@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($detail["name"]); ?></title>
+    <title></title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -25,9 +25,6 @@
     <link rel="apple-touch-icon-precomposed" href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
 
-
-    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -50,7 +47,7 @@
 
 </head>
 
-<body class="res layout-subpage banners-effect-6">
+<body class="res layout-subpage">
 
 
 <div id="wrapper" class="wrapper-full ">
@@ -908,146 +905,77 @@
     <!-- //Header Container  -->
     <!-- Main Container  -->
     <div class="main-container container">
+        <ul class="breadcrumb">
+            <li><a><i class="fa fa-home"></i></a></li>
+            <li><a>发布商品信息</a></li>
+        </ul>
         <div class="row">
-            <!--Left Part Start -->
-            <aside class="col-sm-4 col-md-3" id="column-left">
-                <div class="module menu-category titleLine">
-                    <h3 class="modtitle"><?php echo ($detail["name"]); ?></h3>
-                    <div class="modcontent">
-                        <div class="box-category">
-                            <ul id="cat_accordion" class="list-group">
-                                <li>
-                                    <a href="" class="cutom-parent">查看企业详情</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="" class="cutom-parent">查看订单列表</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-                </div>
-            </aside>
-            <!--Left Part End -->
-            <!--Middle Part Start-->
-            <div id="content" class="col-md-9 col-sm-8">
-                <div class="products-category">
-                    <!-- Filters -->
-                    <div class="product-filter filters-panel">
-                        <div class="row">
-                            <div class="col-md-2 visible-lg">
-                                <div class="view-mode">
-                                    <div class="list-view">
-                                        <button class="btn btn-default grid active" data-view="grid"
-                                                data-toggle="tooltip" data-original-title="九宫格"><i
-                                                class="fa fa-th"></i></button>
-                                        <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
-                                                data-original-title="列表"><i class="fa fa-th-list"></i></button>
-                                    </div>
-                                </div>
+            <div id="content" class="col-sm-12">
+                <form action="" method="post" enctype="multipart/form-data"
+                      class="form-horizontal account-register clearfix">
+                    <fieldset id="account">
+                        <legend>请认真填写以下信息</legend>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-firstname">商品名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" value="" placeholder="请输入商品的名称"
+                                       id="input-firstname" class="form-control">
                             </div>
                         </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-lastname">商品地址</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="address" value="" placeholder="请输入商品的地址" id="input-lastname"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-email">Url</label>
+                            <div class="col-sm-10">
+                                <input type="email" name="url" value="" placeholder="请输入商品的网络地址" id="input-email"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-telephone">联系方式</label>
+                            <div class="col-sm-10">
+                                <input type="tel" name="telephone" value="" placeholder="请输入联系方式" id="input-telephone"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="input-fax">价格</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="price" value="" placeholder="请输入商品的价格" id="input-fax"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="input-fax">简介</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="intro" value="" placeholder="请输入商品的简介" id="input-fax"
+                                       class="form-control">
+                            </div>
+                        </div><div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-fax">详情</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="detail" value="" placeholder="请输入商品的详细信息" id="input-fax"
+                                   class="form-control">
+                        </div>
                     </div>
-                    <!-- //end Filters -->
-                    <!--changed listings-->
-                    <div class="products-list row grid">
-                        <?php if(is_array($company_goods)): $i = 0; $__LIST__ = $company_goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goods): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
-                                <div class="product-item-container">
-                                    <div class="left-block">
-                                        <div class="product-image-container">
-                                            <img data-src="image/demo/shop/product/e11.jpg"
-                                                 src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($goods["small_pic"]); ?>"
-                                                 alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                        </div>
-                                        <!--end countdown box-->
-                                        <!--full quick view block-->
-                                        <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
-                                           href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"> 查看详情</a>
-                                        <!--end full quick view block-->
-                                    </div>
-                                    <div class="right-block">
-                                        <div class="caption">
-                                            <h4><a target="_blank"
-                                                   href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"><?php echo ($goods["name"]); ?></a>
-                                            </h4>
-                                            <div class="ratings">
-                                                <div class="rating-box">
-                                                    <?php if(($goods["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                        <?php else: ?>
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="price-new">￥<?php echo ($goods["price"]); ?></span>
-                                                <!--<span class="price-old">$122.00</span>-->
-                                                <!--<span class="label label-percent">-40%</span>-->
-                                            </div>
-                                            <div class="description item-desc hidden">
-                                                <p><?php echo ($goods["intro"]); ?></p>
-                                            </div>
-                                        </div>
-                                        <div class="button-group">
-                                            <button class="compare" type="button" data-toggle="tooltip" title="修改商品信息"
-                                                    onclick="cart.add('42', '1');"><i class="fa fa-exchange"></i> <span
-                                                    class="hidden-xs"> 修改</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="下架商品"
-                                                    onclick="wishlist.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 下架</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="删除商品"
-                                                    onclick="compare.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 删除</span></button>
-                                        </div>
-                                    </div><!-- right block -->
-
-                                </div>
-                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </div>                    <!--// End Changed listings-->
-                    <!-- Filters -->
-                    <!-- //end Filters -->
-
-                </div>
-
+                    </fieldset>
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <input type="submit" value="确认发布" class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
             </div>
-
-
         </div>
-        <!--Middle Part End-->
     </div>
+    <!-- //Main Container -->
+
+
     <!-- Footer Container -->
     <footer class="footer-container">
     <section class="footer-top">
@@ -1124,6 +1052,10 @@
 
 </div>
 
+
+<!-- Preloading Screen -->
+<!-- End Preloading Screen -->
+
 <!-- Include Libs & Plugins
 	============================================ -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -1146,7 +1078,6 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/so_megamenu.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
-<script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
 
 </body>
 </html>

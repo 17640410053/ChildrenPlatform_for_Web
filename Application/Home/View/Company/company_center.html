@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title></title>
+    <title>{$detail.name}</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -26,6 +26,8 @@
     <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
 
 
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="__PUBLIC__/Ajax/CompanyAjax.js"></script>
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -142,7 +144,7 @@
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="" class="cutom-parent">发布商品信息</a><span
+                                    <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>

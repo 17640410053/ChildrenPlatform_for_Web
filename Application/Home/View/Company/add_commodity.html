@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic page needs
+	============================================ -->
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
+
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
+    <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/lib.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="__PUBLIC__/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+
+    <link id="color_scheme" href="__PUBLIC__/frontdesk/css/theme.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/frontdesk/css/responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body class="res layout-subpage">
+
+
+<div id="wrapper" class="wrapper-full ">
+    <!-- Header Container  -->
+    <header id="header" class=" variantleft type_1">
+        <include file="public/header"/>
+        <!-- //Header center -->
+        <!-- Header Bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- Main menu -->
+                    <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        分类
+                                    </div>
+
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container">
+                                                <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="{:U('Index/index')}">主 页</a>
+                                                    </li>
+                                                    <volist name="list" id="type">
+                                                        <li class="with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}"
+                                                               class="clearfix">
+                                                                <strong>{$type.name}</strong>
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 15%; ">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <ul class="row-list">
+                                                                                <volist name="type[voo]"
+                                                                                        id="subsetType">
+                                                                                    <li><a class="subcategory_item"
+                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}">{$subsetType.name}</a>
+                                                                                    </li>
+                                                                                </volist>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </volist>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- //end Main menu -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navbar switcher -->
+        <!-- //end Navbar switcher -->
+    </header>
+    <!-- //Header Container  -->
+    <!-- Main Container  -->
+    <div class="main-container container">
+        <ul class="breadcrumb">
+            <li><a><i class="fa fa-home"></i></a></li>
+            <li><a>发布商品信息</a></li>
+        </ul>
+        <div class="row">
+            <div id="content" class="col-sm-12">
+                <form action="" method="post" enctype="multipart/form-data"
+                      class="form-horizontal account-register clearfix">
+                    <fieldset id="account">
+                        <legend>请认真填写以下信息</legend>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-firstname">商品名称</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" value="" placeholder="请输入商品的名称"
+                                       id="input-firstname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-lastname">商品地址</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="address" value="" placeholder="请输入商品的地址" id="input-lastname"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-email">Url</label>
+                            <div class="col-sm-10">
+                                <input type="email" name="url" value="" placeholder="请输入商品的网络地址" id="input-email"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-telephone">联系方式</label>
+                            <div class="col-sm-10">
+                                <input type="tel" name="telephone" value="" placeholder="请输入联系方式" id="input-telephone"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="input-fax">价格</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="price" value="" placeholder="请输入商品的价格" id="input-fax"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="input-fax">简介</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="intro" value="" placeholder="请输入商品的简介" id="input-fax"
+                                       class="form-control">
+                            </div>
+                        </div><div class="form-group">
+                        <label class="col-sm-2 control-label" for="input-fax">详情</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="detail" value="" placeholder="请输入商品的详细信息" id="input-fax"
+                                   class="form-control">
+                        </div>
+                    </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <input type="submit" value="确认发布" class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- //Main Container -->
+
+
+    <!-- Footer Container -->
+    <include file="public/foot"/>
+    <!-- //end Footer Container -->
+
+</div>
+
+
+<!-- Preloading Screen -->
+<!-- End Preloading Screen -->
+
+<!-- Include Libs & Plugins
+	============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/libs.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
+
+
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/so_megamenu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/addtocart.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/application.js"></script>
+
+</body>
+</html>
+
