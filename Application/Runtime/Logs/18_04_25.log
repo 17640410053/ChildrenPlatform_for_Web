@@ -1,0 +1,1473 @@
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=3
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.2188s ]
+SQL: SELECT * FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.1378s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=4
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.2312s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 4 ) ORDER BY hintNum desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1215s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1216s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=3
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.2290s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 3 ) ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1368s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1104s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=2
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.2237s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 2 ) ORDER BY hintNum desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1408s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1110s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.2300s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1375s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1029s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T12:40:43+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.2280s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1379s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1101s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T12:40:45+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=3
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T12:40:46+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userInformation?id=3
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:10:03+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/user/userLogin?telephone=13132131231&password=12321
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.1728s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13132131231' AND `password` = '8542516f8870173d7d1daba1daaaf0a1' LIMIT 1   [ RunTime:0.0065s ]
+
+[ 2018-04-25T13:10:08+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/user/userLogin?telephone=13132131231&password=12321
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0502s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13132131231' AND `password` = '8542516f8870173d7d1daba1daaaf0a1' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-25T13:10:16+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/user/userLogin?telephone=13132131231&password=12321
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0244s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13132131231' AND `password` = '8542516f8870173d7d1daba1daaaf0a1' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T13:14:23+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=1
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0919s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 1 ) ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0339s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0312s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:14:23+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=2
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0845s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 2 ) ORDER BY hintNum desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0510s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0325s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:14:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=3
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0980s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 3 ) ORDER BY hintNum desc  [ RunTime:0.0839s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0717s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0561s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:14:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=4
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0960s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 4 ) ORDER BY hintNum desc  [ RunTime:0.0846s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0674s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0741s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T13:14:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0786s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0888s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0718s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0660s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:14:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1057s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0874s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0662s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0720s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=2
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1138s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 2 ) ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0825s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0966s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=4
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1226s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 4 ) ORDER BY hintNum desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0930s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0928s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=3
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1223s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 3 ) ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1000s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1028s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=1
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1173s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 1 ) ORDER BY hintNum desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1018s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1025s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1150s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1056s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0903s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-25T13:15:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1155s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1220s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0815s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=4
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1232s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 4 ) ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1093s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0941s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=2
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1523s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 2 ) ORDER BY hintNum desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1139s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0904s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=1
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1571s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 1 ) ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0997s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.1089s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=3
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1405s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 3 ) ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1156s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0936s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1400s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1043s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0963s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-04-25T13:22:12+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/comp
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.1347s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.1142s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0986s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 11 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 10 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 16 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 6 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 13 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T15:16:32+08:00 ] 127.0.0.1 /ChildrenPlatform/api.php/api/Commodity/commoditydetail?commodity_id=12
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.3226s ]
+SQL: SELECT * FROM `commodity` WHERE ( commodity_id = 12 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0327s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0219s ]
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsettype_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-04-25T17:55:16+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/Home/type?id=1
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `commodity` WHERE ( type_id = 1 ) ORDER BY hintNum desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0209s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0183s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT `name` FROM `subsettype` WHERE ( subsetType_id = 3 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-04-25T17:56:19+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userLogin?telelphone=17640410053&password=Lovely0827
+NOTIC: [8] Undefined index: telephone F:\wamp\www\ChildrenPlatform\Application\Api\Controller\UserController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.1379s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = null AND `password` = '73b07d76fa37bebacc35c43f03bd6231' LIMIT 1   [ RunTime:0.0246s ]
+
+[ 2018-04-25T17:59:24+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telelphone=17640410053&password=Lovely0827
+NOTIC: [8] Undefined index: telephone F:\wamp\www\ChildrenPlatform\Application\Api\Controller\UserController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0586s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+
+[ 2018-04-25T17:59:38+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telelphone=17640410053&password=Lovely0827
+NOTIC: [8] Undefined index: telephone F:\wamp\www\ChildrenPlatform\Application\Api\Controller\UserController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0244s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+
+[ 2018-04-25T18:00:18+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovely0827
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0299s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `users` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0009s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-17640410053' for key 'PRIMARY'
+
+[ 2018-04-25T18:00:25+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovely0827
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0420s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `users` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-17640410053' for key 'PRIMARY'
+
+[ 2018-04-25T18:01:01+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640410053&password=Lovely0827
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0263s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `users` WHERE `telephone` = '17640410053' LIMIT 1   [ RunTime:0.0004s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-17640410053' for key 'PRIMARY'
+
+[ 2018-04-25T18:02:08+08:00 ] 192.168.191.1 /ChildrenPlatform/api.php/Api/User/userRegister?telephone=17640412053&password=Lovely0827
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0577s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1007 行.
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 1288 行.
+SQL: SELECT * FROM `users` WHERE `telephone` = '17640412053' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`regTime`,`loginTime`,`loginIp`,`regIp`) VALUES ('17640412053','73b07d76fa37bebacc35c43f03bd6231','2018-04-25 18:02:08','2018-04-25 18:02:08','192.168.191.1','192.168.191.1') [ RunTime:0.2847s ]
+

@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic page needs
+	============================================ -->
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
+
+
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
+    <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/lib.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="__PUBLIC__/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+
+    <link id="color_scheme" href="__PUBLIC__/frontdesk/css/theme.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/frontdesk/css/responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body class="res layout-subpage banners-effect-6">
+
+
+<div id="wrapper" class="wrapper-full ">
+    <!-- Header Container  -->
+    <header id="header" class=" variantleft type_1">
+        <div class="header-top compact-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
+                        <h5 class="tabBlockTitle visible-xs">More<a class="expander " href="#TabBlock-1"><i
+                                class="fa fa-angle-down"></i></a></h5>
+                        <div class="tabBlock">
+                            <if condition="($Think.session.user_id eq null)">
+                                <ul class="top-link list-inline" id="lo">
+                                    <li class="account" id="my_account">
+                                        <a href="#" class="btn btn-xs dropdown-toggle"
+                                           data-toggle="dropdown"> <span>请先登录</span> <span
+                                                class="fa fa-angle-down"></span></a>
+                                        <ul class="dropdown-menu ">
+                                            <li class="registration"><a href="#"><i class="fa fa-user"></i> 注 册</a></li>
+                                            <li class="login"><a href="#"><i class="fa fa-pencil-square-o"></i> 登 录</a>
+                                            </li>
+                                        </ul>
+                                </ul>
+                                <else/>
+                                <ul class="top-link list-inline" id="ur">
+                                    <li class="account" id="my_account">
+                                        <a href="#" class="btn btn-xs dropdown-toggle"
+                                           data-toggle="dropdown" id="username"> <span>{$Think.session.username}</span>
+                                            <span
+                                                    class="fa fa-angle-down"></span></a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a href="#"><i class="fa fa-user"></i> 个人中心</a></li>
+                                            <li><a href="{:U('logout')}"><i class="fa fa-pencil-square-o"></i> 退出登录</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="wishlist"><a href="#" id="wishlist-total"
+                                                            class="top-link-wishlist"><span> 收藏 (<span id="collect_num">{$count_num}</span>)</span></a>
+                                    </li>
+                                    <li class="checkout"><a href="#" class="top-link-checkout"
+                                                            title="Checkout"><span>结算</span></a>
+                                    </li>
+                                    <li class="login"><a href="#" title="Shopping Cart"><span>购物车</span></a></li>
+                                </ul>
+                            </if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //Header Top -->
+        <!-- Header center -->
+        <div class="header-center left">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
+                        <a href="{:U('Index/index')}"><img src="__PUBLIC__/Uploads/logo/logo.png" width="55%"
+                                                           title="Your Store" alt="Your Store"/></a>
+                    </div>
+                    <!-- //end Logo -->
+
+                    <!-- Search -->
+                    <div id="sosearchpro" class="col-sm-7 search-pro">
+                        <div id="search0" class="search input-group">
+                            <div class="select_category filter_type icon-select">
+                                <select class="no-border" name="category_id" id="category_id">
+                                    <option value="0">全 部</option>
+                                    <volist name="list" id="type">
+                                        <option value="{$type.type_id}">{$type.name}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                            <input class="autosearch-input form-control" id="search_value" type="text" value=""
+                                   size="50"
+                                   autocomplete="off" placeholder="搜 索" name="search">
+                            <span class="input-group-btn">
+						<button onclick="search_item()" class="button-search btn btn-primary"><i
+                                class="fa fa-search"></i></button>
+						</span>
+                        </div>
+                        <input type="hidden" name="route" value="product/search"/>
+                    </div>
+                    <!-- //end Search -->
+                    <div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
+                        <!--cart-->
+                        <div id="cart" class=" btn-group btn-shopping-cart">
+                            <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+                                <div class="shopcart">
+                                    <span class="handle pull-left"></span>
+                                    <span class="title">我的购物车</span>
+                                    <if condition="($Think.session.user_id eq null)">
+                                        <p class="text-shopping-cart cart-total-full">请先登录 </p>
+                                        <else/>
+                                        <p class="text-shopping-cart cart-total-full"><span id="cart_num">{$cart_data.cart_num}</span>件物品
+                                            - 共 ￥<span id="total_price">{$cart_data.total_price}</span> 元</p>
+                                    </if>
+                                </div>
+                            </a>
+
+                            <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+                                <if condition="($Think.session.user_id eq null)">
+                                    <p class="text-center"><span>你还未登录，请先登录</span></p>
+                                    <p class="text-center">
+                                        <a
+                                                class="btn btn-mega checkout-cart login" href="#"><i
+                                                class="fa fa-share"></i>立即登录</a>
+                                        <a
+                                                class="btn btn-mega checkout-cart registration" href="#"><i
+                                                class="fa fa-share"></i>立即注册</a>
+                                    </p>
+                                    <else/>
+                                    <li>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                            <volist name="cart_list" id="cart">
+                                                <tr id="cart_{$cart.commodity_id}">
+                                                    <td class="text-center" style="width:70px">
+                                                        <a href="{:U('Project/project_detail?id='.$cart['commodity_id'])}">
+                                                            <img src="__PUBLIC__/Uploads/commodity_image/{$cart.voo.small_pic}"
+                                                                 style="width:70px" alt="{$cart.voo.name}"
+                                                                 title="{$cart.voo.name}" class="preview"> </a>
+                                                    </td>
+                                                    <td class="text-left"><a class="cart_product_name"
+                                                                             href="{:U('Project/project_detail?id='.$cart['commodity_id'])}">{$cart.voo.name}</a>
+                                                    </td>
+                                                    <td class="text-center"> x{$cart.commodity_num}</td>
+                                                    <td class="text-center"> ￥{$cart.voo.price}</td>
+                                                    <td class="text-right">
+                                                        <a href="{:U('Project/project_detail?id='.$cart['commodity_id'])}"
+                                                           class="fa fa-edit"></a>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a onclick="deleteCart('{$cart.commodity_id}')"
+                                                           class="fa fa-times fa-delete"></a>
+                                                    </td>
+                                                </tr>
+                                            </volist>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left"><strong>商品数量</strong>
+                                                    </td>
+                                                    <td class="text-right"><span id="cart_num_table">{$cart_data.cart_num}</span>
+                                                        件
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><strong>总价</strong>
+                                                    </td>
+                                                    <td class="text-right">￥<span id="total_price_table">{$cart_data.total_price}</span>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-right"><a
+                                                    class="btn btn-mega checkout-cart" href="#"><i
+                                                    class="fa fa-share"></i>去结算</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </if>
+                            </ul>
+                        </div>
+                        <!--//cart-->
+                    </div>
+                    <!-- Secondary menu -->
+                </div>
+
+            </div>
+        </div>
+        <!-- //Header center -->
+        <!-- Header Bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- Main menu -->
+                    <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        分类
+                                    </div>
+
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container">
+                                                <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="{:U('Index/index')}">主 页</a>
+                                                    </li>
+                                                    <volist name="list" id="type">
+                                                        <li class="with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}"
+                                                               class="clearfix">
+                                                                <strong>{$type.name}</strong>
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 15%; ">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <ul class="row-list">
+                                                                                <volist name="type[voo]"
+                                                                                        id="subsetType">
+                                                                                    <li><a class="subcategory_item"
+                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsetType_id'])}">{$subsetType.name}</a>
+                                                                                    </li>
+                                                                                </volist>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </volist>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- //end Main menu -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navbar switcher -->
+        <!-- //end Navbar switcher -->
+    </header>
+    <!-- //Header Container  -->
+    <!-- Main Container  -->
+    <div class="main-container container">
+        <div class="row">
+            <!--Left Part Start -->
+            <aside class="col-sm-4 col-md-3" id="column-left">
+                <div class="module menu-category titleLine">
+                    <h3 class="modtitle">{$detail.name}</h3>
+                    <div class="modcontent">
+                        <div class="box-category">
+                            <ul id="cat_accordion" class="list-group">
+                                <li class="hadchild"><a href="category.html" class="cutom-parent">Smartphone &
+                                    Tablets</a> <span class="button-view  fa fa-plus-square-o"></span>
+                                    <ul style="display: block;">
+                                        <li><a href="category.html">Men's Watches</a></li>
+                                        <li><a href="category.html">Women's Watches</a></li>
+                                        <li><a href="category.html">Kids' Watches</a></li>
+                                        <li><a href="category.html">Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hadchild"><a class="cutom-parent" href="category.html">Electronics</a> <span
+                                        class="button-view  fa fa-plus-square-o"></span>
+                                    <ul style="display: none;">
+                                        <li><a href="category.html">Cycling</a></li>
+                                        <li><a href="category.html">Running</a></li>
+                                        <li><a href="category.html">Swimming</a></li>
+                                        <li><a href="category.html">Football</a></li>
+                                        <li><a href="category.html">Golf</a></li>
+                                        <li><a href="category.html">Windsurfing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hadchild"><a href="category.html" class="cutom-parent">Shoes</a> <span
+                                        class="button-view  fa fa-plus-square-o"></span>
+                                    <ul style="display: none;">
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hadchild"><a href="category.html" class="cutom-parent">Watches</a> <span
+                                        class="button-view  fa fa-plus-square-o"></span>
+                                    <ul style="display: none;">
+                                        <li><a href="category.html">Men's Watches</a></li>
+                                        <li><a href="category.html">Women's Watches</a></li>
+                                        <li><a href="category.html">Kids' Watches</a></li>
+                                        <li><a href="category.html">Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hadchild"><a href="category.html" class="cutom-parent">Jewellery</a> <span
+                                        class="button-view  fa fa-plus-square-o"></span>
+                                    <ul style="display: none;">
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                        <li><a href="category.html">Sub Categories</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="category.html" class="cutom-parent">Health &amp; Beauty</a> <span
+                                        class="dcjq-icon"></span></li>
+                                <li class=""><a href="category.html" class="cutom-parent">Kids &amp; Babies</a> <span
+                                        class="dcjq-icon"></span></li>
+                                <li class=""><a href="category.html" class="cutom-parent">Sports</a> <span
+                                        class="dcjq-icon"></span></li>
+                                <li class=""><a href="category.html" class="cutom-parent">Home &amp; Garden</a><span
+                                        class="dcjq-icon"></span></li>
+                                <li class=""><a href="category.html" class="cutom-parent">Wines &amp; Spirits</a> <span
+                                        class="dcjq-icon"></span></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </aside>
+            <!--Left Part End -->
+            <!--Middle Part Start-->
+            <div id="content" class="col-md-9 col-sm-8">
+                <div class="products-category">
+                    <!-- Filters -->
+                    <div class="product-filter filters-panel">
+                        <div class="row">
+                            <div class="col-md-2 visible-lg">
+                                <div class="view-mode">
+                                    <div class="list-view">
+                                        <button class="btn btn-default grid active" data-view="grid"
+                                                data-toggle="tooltip" data-original-title="九宫格"><i
+                                                class="fa fa-th"></i></button>
+                                        <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
+                                                data-original-title="列表"><i class="fa fa-th-list"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //end Filters -->
+                    <!--changed listings-->
+                    <div class="products-list row grid">
+                        <volist name="company_goods" id="goods">
+                            <div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
+                                <div class="product-item-container">
+                                    <div class="left-block">
+                                        <div class="product-image-container">
+                                            <img data-src="image/demo/shop/product/e11.jpg"
+                                                 src="__PUBLIC__/Uploads/commodity_image/{$goods.small_pic}"
+                                                 alt="Apple Cinema 30&quot;" class="img-responsive"/>
+                                        </div>
+                                        <!--end countdown box-->
+                                        <!--full quick view block-->
+                                        <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank" href="{:U('Project/project_detail?id='.$goods['commodity_id'])}"> 查看详情</a>
+                                        <!--end full quick view block-->
+                                    </div>
+                                    <div class="right-block">
+                                        <div class="caption">
+                                            <h4><a target="_blank" href="{:U('Project/project_detail?id='.$goods['commodity_id'])}">{$goods.name}</a></h4>
+                                            <div class="ratings">
+                                                <div class="rating-box">
+                                                    <if condition="($goods.starnum eq 0)">
+                                                        <span style="color: #ebdb2c"> 暂无评价</span>
+                                                        <else/>
+                                                        <span class="fa fa-stack">
+                                                                                    <if condition="($goods.starnum gt 0)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                        <span class="fa fa-stack">
+                                                                                    <if condition="($goods.starnum gt 1)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                        <span class="fa fa-stack">
+                                                                                    <if condition="($goods.starnum gt 2)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                        <span class="fa fa-stack">
+                                                                                    <if condition="($goods.starnum gt 3)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                        <span class="fa fa-stack">
+                                                                                    <if condition="($goods.starnum gt 4)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+                                                    </if>
+                                                </div>
+                                            </div>
+                                            <div class="price">
+                                                <span class="price-new">￥{$goods.price}</span>
+                                                <!--<span class="price-old">$122.00</span>-->
+                                                <!--<span class="label label-percent">-40%</span>-->
+                                            </div>
+                                            <div class="description item-desc hidden">
+                                                <p>{$goods.intro}</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- right block -->
+
+                                </div>
+                            </div>
+                        </volist>
+                    </div>                    <!--// End Changed listings-->
+                    <!-- Filters -->
+                    <!-- //end Filters -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--Middle Part End-->
+    </div>
+    <!-- Footer Container -->
+    <include file="public/foot"/>
+    <!-- //end Footer Container -->
+
+</div>
+
+<!-- Include Libs & Plugins
+	============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/libs.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
+
+
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/so_megamenu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/addtocart.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/application.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/cpanel.js"></script>
+
+</body>
+</html>
+
