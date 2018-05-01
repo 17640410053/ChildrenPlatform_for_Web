@@ -74,7 +74,9 @@
                                             <span
                                                     class="fa fa-angle-down"></span></a>
                                         <ul class="dropdown-menu ">
-                                            <li><a href="#"><i class="fa fa-user"></i> 个人信息</a></li>
+                                            <?php if(($_SESSION['company_user_id']== null)): ?><li><a href=""><i class="fa fa-user"></i> 个人中心</a></li>
+                                                <?php else: ?>
+                                                <li><a href="<?php echo U('Company/company_center');?>"><i class="fa fa-user"></i> 个人中心</a></li><?php endif; ?>
                                             <li><a href="<?php echo U('Index/logout');?>"><i class="fa fa-pencil-square-o"></i>
                                                 退出登录</a>
                                             </li>

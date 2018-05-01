@@ -93,6 +93,7 @@ class IndexController extends BaseController
     public function login()
     {
         $user_sql = M('users');
+        $company_user_sql = M('companyusers');
         $userinfor_sql = M('userinfor');
         $login['telephone'] = $_POST['telephone'];
         $login['password'] = md5($_POST['password']);
@@ -100,7 +101,22 @@ class IndexController extends BaseController
         $user_id = $user_sql-> where($login) -> getField('user_id');
         $telephone = $user_sql -> where($login) -> getField('telephone');
         if ($user_id == null) {
-            $this->ajaxReturn($arr, json);
+            $company_user_id = $company_user_sql ->where($login)->getField('companyUser_id');
+            if ($company_user_id == null){
+                $this->ajaxReturn($arr, json);
+            }else{
+                $username = $company_user_sql -> where("companyUser_id = $company_user_id") -> getField('username');
+                session('company_user_id', $company_user_id);
+                session('user_id', $company_user_id);
+                session('username', $username);
+                $data['loginTime'] = date('Y-m-d H:i:s');
+                $data['loginIp'] = get_client_ip();
+                $company_user_sql-> where($login) ->setInc('loginNum');
+                $company_user_sql-> where($login) ->save($data);
+                $arr['flag'] = 1;
+                $arr['username'] = $username;
+                $this->ajaxReturn($arr, json);
+            }
         } else {
             $state = $user_sql -> where($login) -> getField('state');
             if ($state == 1) {
