@@ -45,12 +45,12 @@
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/ImgCropping/css/cropper.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/ImgCropping/css/ImgCropping.css">
 
     <link id="color_scheme" href="/ChildrenPlatform/Public/frontdesk/css/theme.css" rel="stylesheet">
 
     <link href="/ChildrenPlatform/Public/frontdesk/css/responsive.css" rel="stylesheet">
-
-
 </head>
 
 <body class="res layout-subpage">
@@ -931,7 +931,7 @@
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-firstname">商品类型</label>
                             <div class="col-sm-10">
-                                <select  name="subsetType_id" class="form-control">
+                                <select name="subsetType_id" class="form-control">
                                     <option value="0" disabled selected>请选择类型</option>
                                     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["name"]); ?>">
                                             <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["subsettype_id"]); ?>"><?php echo ($lio["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -980,13 +980,58 @@
                                 <input type="text" name="intro" value="" placeholder="请输入商品的简介" id="input-fax"
                                        class="form-control">
                             </div>
-                        </div><div class="form-group">
-                        <label class="col-sm-2 control-label" for="input-fax">详情</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="detail" value="" placeholder="请输入商品的详细信息" id="input-fax"
-                                   class="form-control">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="input-fax">详情</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="detail" value="" placeholder="请输入商品的详细信息" id="input-fax"
+                                       class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div style="float: left;margin-left: 15%">
+                                <label id="replaceImg" class="l-btn">添加小图</label>
+                                <div style="width: 200px;height: 200px;border: solid 1px #555;margin-top: 10px">
+                                    <img id="finalImg" src="" width="100%">
+                                </div>
+                            </div>
+                            <div style="float: left;margin-left: 10%">
+                                <label id="replaceImg" class="l-btn">添加横图</label>
+                                <div style="width: 200px;height: 100px;border: solid 1px #555;margin-top: 10px">
+                                    <img id="finalImg" src="" width="100%">
+                                </div>
+                            </div>
+                            <!--图片裁剪框 start-->
+                            <div style="display: none" class="tailoring-container">
+                                <div class="black-cloth" onclick="closeTailor(this)"></div>
+                                <div class="tailoring-content">
+                                    <div class="tailoring-content-one">
+                                        <label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+                                            <input type="file" accept="image/jpg,image/jpeg,image/png" name="file"
+                                                   id="chooseImg" class="hidden"
+                                                   onchange="selectImg(this)">
+                                            选择图片
+                                        </label>
+                                        <div class="close-tailoring" onclick="closeTailor(this)">×</div>
+                                    </div>
+                                    <div class="tailoring-content-two">
+                                        <div class="tailoring-box-parcel">
+                                            <img id="tailoringImg">
+                                        </div>
+                                        <div class="preview-box-parcel">
+                                            <p>图片预览：</p>
+                                            <div class="square previewImg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tailoring-content-three">
+                                        <label class="l-btn cropper-reset-btn">复位</label>
+                                        <label class="l-btn cropper-rotate-btn">旋转</label>
+                                        <label class="l-btn cropper-scaleX-btn">换向</label>
+                                        <label class="l-btn sureCut" id="sureCut">确定</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="buttons">
                         <div class="pull-right">
@@ -1096,6 +1141,8 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
 
 
+<script src="/ChildrenPlatform/Public/ImgCropping/js/cropper.min.js"></script>
+<script src="/ChildrenPlatform/Public/Ajax/ImgCroppingAjax.js"></script>
 <!-- Theme files
 ============================================ -->
 
