@@ -15922,3 +15922,1540 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000423s ]
 
+[ 2018-05-01T15:04:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 91 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 781 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 813 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-05-01T15:04:21+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 91 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 781 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 813 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-05-01T15:07:05+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 91 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 781 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 813 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2018-05-01T15:08:25+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0338s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0192s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 91 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 781 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 813 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-05-01T15:17:34+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 91 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 763 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 781 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 813 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 879 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-05-01T15:18:04+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0215s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 93 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 765 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 765 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 783 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 815 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 821 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 881 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-05-01T15:19:36+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 93 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 741 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 765 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 765 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 783 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 815 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 821 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 869 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2018-05-01T15:20:13+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 745 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 873 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2018-05-01T15:20:15+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 745 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Undefined variable: list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 873 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-05-01T15:22:42+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2018-05-01T15:23:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-05-01T15:32:08+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000399s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-05-01T15:32:31+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0171s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`childplatform`.`commodity`, CONSTRAINT `commodity关联company-company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`company_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+
+[ 2018-05-01T15:32:43+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0391s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-05-01T15:32:56+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0116s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`childplatform`.`commodity`, CONSTRAINT `commodity关联company-company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`company_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+
+[ 2018-05-01T15:34:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0205s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`childplatform`.`commodity`, CONSTRAINT `commodity关联company-company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`company_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+
+[ 2018-05-01T15:34:42+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0258s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-05-01T15:35:45+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0189s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-05-01T15:36:04+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0436s ]
+SQL: INSERT INTO `commodity` (`name`,`type_id`,`subsetType_id`,`company_id`,`address`,`url`,`telephone`,`price`,`intro`,`detail`) VALUES ('dsajdkl','2','5','1','dahjsdkh','dhasjkdh','dajkshd','50','dhkajh','dakjdhad') [ RunTime:0.0739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002325s ]
+
+[ 2018-05-01T15:37:49+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0255s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-05-01T15:38:12+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-05-01T15:39:33+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2018-05-01T15:42:16+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: s_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-05-01T15:43:34+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000443s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-05-01T15:44:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-05-01T15:46:48+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0314s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-05-01T15:52:11+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0190s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000712s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-05-01T15:52:44+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0472s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0366s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0192s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 938 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-05-01T16:01:00+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0122s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-05-01T16:02:13+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0185s ]
+SQL: SELECT `type_id` FROM `subsettype` WHERE ( subsetType_id = 2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0193s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0169s ]
+SQL: INSERT INTO `commodity` (`name`,`subsetType_id`,`address`,`url`,`telephone`,`price`,`intro`,`detail`,`type_id`,`company_id`) VALUES ('水蜜桃','2','大连甘井子区215号','','1387463284','120','没有简介','这个是水蜜桃，重量20斤','1','1') [ RunTime:0.1393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2018-05-01T16:03:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Project/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0122s ]
+SQL: SELECT `type_id` FROM `subsettype` WHERE ( subsetType_id = 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0130s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0110s ]
+SQL: INSERT INTO `commodity` (`name`,`subsetType_id`,`address`,`url`,`telephone`,`price`,`intro`,`detail`,`type_id`,`company_id`) VALUES ('这是玩具','7','大连甘井子区215号','','1387463284','120','没有简介','这个是水蜜桃，重量20斤','2','1') [ RunTime:0.1599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-05-01T16:03:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0457s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0182s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000367s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2018-05-01T16:04:51+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` ORDER BY clickNum desc LIMIT 12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 13 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0008s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 20 AND `user_id` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 40 AND `user_id` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 15 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 39 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 12 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 35 AND `user_id` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 36 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 37 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 8 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 22 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 21 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 12 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 23 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 13 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 6 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 24 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 14 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 15 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 7 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 9 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 19 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 16 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 33 AND `user_id` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 34 AND `user_id` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 3 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 30 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 31 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 29 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 14 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 41 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 10 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 32 AND `user_id` = 0  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 5 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE ( state = 0 ) ORDER BY hintNum desc LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `carousel` WHERE ( state = 0 ) ORDER BY hintNum desc LIMIT 4   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000699s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] Undefined index: user_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: user_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 767 行.
+NOTIC: [8] Undefined index: user_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 776 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1060 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1078 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1078 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1186 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1186 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-05-01T16:05:09+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0146s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13342235110' AND `password` = '73b07d76fa37bebacc35c43f03bd6231' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `telephone` FROM `users` WHERE `telephone` = '13342235110' AND `password` = '73b07d76fa37bebacc35c43f03bd6231' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `companyUser_id` FROM `companyusers` WHERE `telephone` = '13342235110' AND `password` = '73b07d76fa37bebacc35c43f03bd6231' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `username` FROM `companyusers` WHERE ( companyUser_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `companyusers` SET `loginNum`=loginNum+1 WHERE `telephone` = '13342235110' AND `password` = '73b07d76fa37bebacc35c43f03bd6231' [ RunTime:0.0790s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `companyusers` SET `loginTime`='2018-05-01 16:05:08',`loginIp`='127.0.0.1' WHERE `telephone` = '13342235110' AND `password` = '73b07d76fa37bebacc35c43f03bd6231' [ RunTime:0.0709s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Home\Controller\IndexController.class.php 第 118 行.
+
+[ 2018-05-01T16:05:10+08:00 ] 127.0.0.1 /ChildrenPlatform/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0172s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `collect` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `search` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` ORDER BY clickNum desc LIMIT 12   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 13 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0007s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 20 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 40 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 15 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 39 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 12 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 35 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 36 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 37 AND `user_id` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 8 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 22 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 21 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 12 AND `user_id` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 23 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 13 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 6 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 24 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 14 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 15 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 7 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 9 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 19 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 16 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 33 AND `user_id` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 34 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 3 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 30 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 31 AND `user_id` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 29 AND `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 14 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 41 AND `user_id` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 10 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0005s ]
+SQL: SELECT `state` FROM `collect` WHERE `commodity_id` = 32 AND `user_id` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commodity` WHERE `subsetType_id` = 5 AND `state` = 0 ORDER BY hintNum desc LIMIT 8   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `search` ORDER BY time desc LIMIT 8   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `commodity` WHERE ( state = 0 ) ORDER BY hintNum desc LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `carousel` WHERE ( state = 0 ) ORDER BY hintNum desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cart` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cart` WHERE ( user_id=1 )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `collect` WHERE `user_id` = 1 AND `state` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000754s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000899s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 937 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1060 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Undefined index: type F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1065 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1078 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1078 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1141 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1186 行.
+NOTIC: [8] Use of undefined constant hot_vo - assumed 'hot_vo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1186 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+NOTIC: [8] Use of undefined constant vo2 - assumed 'vo2' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 1247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-05-01T16:05:17+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/company_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0196s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `commodity` WHERE ( company_id = 4 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 94 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 766 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 766 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 784 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 816 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 822 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\1953e78ca7641c53e231a505aecab628.php 第 882 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-05-01T16:05:18+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/header/header1-container.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+ERR: 非法操作:header
+
+[ 2018-05-01T16:05:18+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/js/themejs/so_megamenu.js?_=1525161917458
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+ERR: 非法操作:js
+
+[ 2018-05-01T16:05:31+08:00 ] 127.0.0.1 /ChildrenPlatform/Home/Company/add_commodity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `companyusers` [ RunTime:0.0168s ]
+SQL: SELECT `company_id` FROM `companyusers` WHERE ( companyUser_id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `company` WHERE ( company_id = 4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined variable: count_num F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 97 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 769 行.
+NOTIC: [8] Undefined variable: cart_list F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 787 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 819 行.
+NOTIC: [8] Undefined variable: cart_data F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 825 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 885 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Home\c2ecbb925b541bd7da055d02569a0c8d.php 第 937 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+

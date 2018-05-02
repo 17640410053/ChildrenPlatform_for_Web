@@ -14,6 +14,10 @@
     ============================================ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+    <script>
+        var AppUrl = "/ChildrenPlatform";
+    </script>
+
     <!-- Favicon
     ============================================ -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -25,6 +29,8 @@
     <link rel="apple-touch-icon-precomposed" href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
 
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -911,7 +917,7 @@
         </ul>
         <div class="row">
             <div id="content" class="col-sm-12">
-                <form action="" method="post" enctype="multipart/form-data"
+                <form id="add_commodity_form" action="" method="post" enctype="multipart/form-data"
                       class="form-horizontal account-register clearfix">
                     <fieldset id="account">
                         <legend>请认真填写以下信息</legend>
@@ -920,6 +926,24 @@
                             <div class="col-sm-10">
                                 <input type="text" name="name" value="" placeholder="请输入商品的名称"
                                        id="input-firstname" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-firstname">商品类型</label>
+                            <div class="col-sm-10">
+                                <select  name="subsetType_id" class="form-control">
+                                    <option value="0" disabled selected>请选择类型</option>
+                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["name"]); ?>">
+                                            <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["subsettype_id"]); ?>"><?php echo ($lio["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </optgroup><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-firstname">所属企业</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="company_id" value="<?php echo ($detail["name"]); ?>" placeholder="请输入商品的企业归属"
+                                       id="input-firstname" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="form-group required">
@@ -932,7 +956,7 @@
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-email">Url</label>
                             <div class="col-sm-10">
-                                <input type="email" name="url" value="" placeholder="请输入商品的网络地址" id="input-email"
+                                <input type="url" name="url" value="" placeholder="请输入商品的网络地址" id="input-email"
                                        class="form-control">
                             </div>
                         </div>
@@ -966,7 +990,8 @@
                     </fieldset>
                     <div class="buttons">
                         <div class="pull-right">
-                            <input type="submit" value="确认发布" class="btn btn-primary">
+                            <input type="reset" value="重置" class="btn btn-primary">
+                            <input type="button" value="确认发布" class="btn btn-primary" onclick="add_commodity()">
                         </div>
                     </div>
                 </form>

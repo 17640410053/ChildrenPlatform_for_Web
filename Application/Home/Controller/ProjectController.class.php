@@ -202,12 +202,12 @@ class ProjectController extends BaseController
             //防止中文乱码
             header("Content-type:text/html; charset=utf-8");
             $tempdata = error($comment->getError());
-            echo json_encode($tempdata);
-        }
-        if (false != $comment->add($data)) {
-            $tempdata = "发布成功";
-        } else {
-            $tempdata = "发布失败";
+        }else{
+            if (false != $comment->add($data)) {
+                $tempdata = "发布成功";
+            } else {
+                $tempdata = "发布失败";
+            }
         }
         echo json_encode($tempdata);
     }
@@ -230,5 +230,25 @@ class ProjectController extends BaseController
             $tempdata = "发布失败";
         }
         echo json_encode($tempdata);
+    }
+
+    public function add_commodity(){
+        $subsetType_id = I('post.subsetType_id');
+        $company_user_id = I('session.company_user_id');
+        $_POST['type_id'] = M('subsettype')->where("subsetType_id = $subsetType_id")->getField("type_id");
+        $_POST['company_id'] = M('companyusers')->where("companyUser_id=$company_user_id")->getField('company_id');
+        $commodity_sql = D('commodity');
+        if (!$data = $commodity_sql->create()){
+            //防止中文乱码
+            header("Content-type:text/html; charset=utf-8");
+            $temp = error($commodity_sql->getError());
+        }else{
+            if (false!=$commodity_sql->add()){
+                $temp = "发布成功";
+            }else{
+                $temp = "发布失败";
+            }
+        }
+        echo json_encode($temp);
     }
 }
