@@ -16,6 +16,7 @@
 
     <script>
         var AppUrl = "__APP__";
+        var image_state = 0;
     </script>
 
     <!-- Favicon
@@ -217,15 +218,15 @@
                         </div>
                         <div class="form-group">
                             <div style="float: left;margin-left: 15%">
-                                <label id="replaceImg" class="l-btn">添加小图</label>
-                                <div style="width: 200px;height: 200px;border: solid 1px #555;margin-top: 10px">
-                                    <img id="finalImg" src="" width="100%">
+                                <label id="replaceImg_small" class="l-btn">添加小图</label>
+                                <div style="width: 200px;height: 200px;border: solid 1px #555;margin-top: 10px;overflow: hidden;">
+                                    <img id="finalImg_small" src="" width="100%">
                                 </div>
                             </div>
                             <div style="float: left;margin-left: 10%">
-                                <label id="replaceImg" class="l-btn">添加横图</label>
-                                <div style="width: 200px;height: 100px;border: solid 1px #555;margin-top: 10px">
-                                    <img id="finalImg" src="" width="100%">
+                                <label id="replaceImg_middle" class="l-btn">添加横图</label>
+                                <div style="width: 400px;height: 200px;border: solid 1px #555;margin-top: 10px;overflow: hidden;">
+                                    <img id="finalImg_middle" src="" width="100%">
                                 </div>
                             </div>
                             <!--图片裁剪框 start-->
