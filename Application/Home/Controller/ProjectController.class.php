@@ -234,12 +234,14 @@ class ProjectController extends BaseController
 
     public function add_commodity()
     {
+        //判断填写是否为空
         if ($_POST['small_pic'] == "" || $_POST['middle_pic'] == "" ||
-            $_POST['name'] == "" || $_POST['type_id'] == "" ||
+            $_POST['name'] == "" || $_POST['subsetType_id'] == "" ||
             $_POST['address'] == "" || $_POST['url'] == "" ||
             $_POST['telephone'] == "" || $_POST['price'] == "" ||
             $_POST['intro'] == "" || $_POST['detail'] == "") {
-            $temp = "请填写完整信息！";
+            $temp['state'] = 0;
+            $temp['message'] = "请填写完整信息！";
             echo json_encode($temp);
         } else {
             $_POST['small_pic'] = $this->base64_upload($_POST['small_pic']);
@@ -252,12 +254,15 @@ class ProjectController extends BaseController
             if (!$data = $commodity_sql->create()) {
                 //防止中文乱码
                 header("Content-type:text/html; charset=utf-8");
-                $temp = error($commodity_sql->getError());
+                $temp['state'] = 1;
+                $temp['message'] = error($commodity_sql->getError());
             } else {
                 if (false != $commodity_sql->add()) {
-                    $temp = "发布成功";
+                    $temp['state'] = 1;
+                    $temp['message'] = "发布成功";
                 } else {
-                    $temp = "发布失败";
+                    $temp['state'] = 1;
+                    $temp['message'] = "发布失败";
                 }
             }
             echo json_encode($temp);

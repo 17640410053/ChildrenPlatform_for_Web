@@ -924,7 +924,7 @@
                 <form id="add_commodity_form" action="" method="post" enctype="multipart/form-data"
                       class="form-horizontal account-register clearfix">
                     <fieldset id="account">
-                        <legend>请认真填写以下信息</legend>
+                        <legend>请完整填写以下信息</legend>
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-firstname">商品名称</label>
                             <div class="col-sm-10">

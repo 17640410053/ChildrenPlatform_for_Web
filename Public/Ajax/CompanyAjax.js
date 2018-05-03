@@ -10,12 +10,14 @@ function add_commodity() {
             // console.log(msg);
             PostbirdAlertBox.alert({
                 'title': '提示',
-                'content': msg,
+                'content': msg.message,
                 'okBtn': '确定',
                 'onConfirm': function () {
-                    $('#add_commodity_form')[0].reset();
-                    $('#finalImg_small').attr("src", "");
-                    $('#finalImg_middle').attr("src", "");
+                    if (msg.state != 0) {
+                        $('#add_commodity_form')[0].reset();
+                        $('#finalImg_small').attr("src", "");
+                        $('#finalImg_middle').attr("src", "");
+                    }
                 }
             });
         },
