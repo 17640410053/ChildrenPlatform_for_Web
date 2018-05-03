@@ -32,6 +32,9 @@
 
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
+
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -926,13 +929,13 @@
                             <label class="col-sm-2 control-label" for="input-firstname">商品名称</label>
                             <div class="col-sm-10">
                                 <input type="text" name="name" value="" placeholder="请输入商品的名称"
-                                       id="input-firstname" class="form-control">
+                                       id="input-firstname" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-firstname">商品类型</label>
                             <div class="col-sm-10">
-                                <select name="subsetType_id" class="form-control">
+                                <select name="subsetType_id" class="form-control" required>
                                     <option value="0" disabled selected>请选择类型</option>
                                     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["name"]); ?>">
                                             <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["subsettype_id"]); ?>"><?php echo ($lio["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -951,42 +954,42 @@
                             <label class="col-sm-2 control-label" for="input-lastname">商品地址</label>
                             <div class="col-sm-10">
                                 <input type="text" name="address" value="" placeholder="请输入商品的地址" id="input-lastname"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-email">Url</label>
                             <div class="col-sm-10">
                                 <input type="url" name="url" value="" placeholder="请输入商品的网络地址" id="input-email"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-telephone">联系方式</label>
                             <div class="col-sm-10">
                                 <input type="tel" name="telephone" value="" placeholder="请输入联系方式" id="input-telephone"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-fax">价格</label>
                             <div class="col-sm-10">
                                 <input type="text" name="price" value="" placeholder="请输入商品的价格" id="input-fax"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-fax">简介</label>
                             <div class="col-sm-10">
                                 <input type="text" name="intro" value="" placeholder="请输入商品的简介" id="input-fax"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-fax">详情</label>
                             <div class="col-sm-10">
                                 <input type="text" name="detail" value="" placeholder="请输入商品的详细信息" id="input-fax"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -1151,6 +1154,7 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/so_megamenu.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
+<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>
 </html>

@@ -32,7 +32,7 @@ class ProjectController extends BaseController
 
         //查询物品详情
         $detail['subsettype_id'] = $subsettype->where($re)->getField("name");
-        $detail['count'] =$comment_sql->where("commodity_id=$id")->count();
+        $detail['count'] = $comment_sql->where("commodity_id=$id")->count();
         $company_id = $detail['company_id'];
         $detail['company_id'] = $company_sql->where("company_id = $company_id")->getField("name");
         $check_collect['commodity_id'] = $id;
@@ -63,7 +63,7 @@ class ProjectController extends BaseController
         }
         $this->assign('hot', $hot);
 
-        if (I('session.user_id') != null){
+        if (I('session.user_id') != null) {
             //查询购物车
             $this->getUserCart();
 
@@ -121,7 +121,7 @@ class ProjectController extends BaseController
         //浏览量+1
         $List->where("type_id=$id")->setInc('hintNum');
 
-        if (I('session.user_id') != null){
+        if (I('session.user_id') != null) {
             //查询购物车
             $this->getUserCart();
 
@@ -181,7 +181,7 @@ class ProjectController extends BaseController
         $List2->where("subsetType_id=$id")->setInc('clickNum');
         $List->where("type_id=$type_id")->setInc('clickNum');
 
-        if (I('session.user_id') != null){
+        if (I('session.user_id') != null) {
             //查询购物车
             $this->getUserCart();
 
@@ -202,7 +202,7 @@ class ProjectController extends BaseController
             //防止中文乱码
             header("Content-type:text/html; charset=utf-8");
             $tempdata = error($comment->getError());
-        }else{
+        } else {
             if (false != $comment->add($data)) {
                 $tempdata = "发布成功";
             } else {
@@ -232,23 +232,60 @@ class ProjectController extends BaseController
         echo json_encode($tempdata);
     }
 
-    public function add_commodity(){
-        $subsetType_id = I('post.subsetType_id');
-        $company_user_id = I('session.company_user_id');
-        $_POST['type_id'] = M('subsettype')->where("subsetType_id = $subsetType_id")->getField("type_id");
-        $_POST['company_id'] = M('companyusers')->where("companyUser_id=$company_user_id")->getField('company_id');
-        $commodity_sql = D('commodity');
-        if (!$data = $commodity_sql->create()){
-            //防止中文乱码
-            header("Content-type:text/html; charset=utf-8");
-            $temp = error($commodity_sql->getError());
-        }else{
-            if (false!=$commodity_sql->add()){
-                $temp = "发布成功";
-            }else{
-                $temp = "发布失败";
+    public function add_commodity()
+    {
+        if ($_POST['small_pic'] == "" || $_POST['middle_pic'] == "" ||
+            $_POST['name'] == "" || $_POST['type_id'] == "" ||
+            $_POST['address'] == "" || $_POST['url'] == "" ||
+            $_POST['telephone'] == "" || $_POST['price'] == "" ||
+            $_POST['intro'] == "" || $_POST['detail'] == "") {
+            $temp = "请填写完整信息！";
+            echo json_encode($temp);
+        } else {
+            $_POST['small_pic'] = $this->base64_upload($_POST['small_pic']);
+            $_POST['middle_pic'] = $this->base64_upload($_POST['middle_pic']);
+            $subsetType_id = I('post.subsetType_id');
+            $company_user_id = I('session.company_user_id');
+            $_POST['type_id'] = M('subsettype')->where("subsetType_id = $subsetType_id")->getField("type_id");
+            $_POST['company_id'] = M('companyusers')->where("companyUser_id=$company_user_id")->getField('company_id');
+            $commodity_sql = D('commodity');
+            if (!$data = $commodity_sql->create()) {
+                //防止中文乱码
+                header("Content-type:text/html; charset=utf-8");
+                $temp = error($commodity_sql->getError());
+            } else {
+                if (false != $commodity_sql->add()) {
+                    $temp = "发布成功";
+                } else {
+                    $temp = "发布失败";
+                }
             }
+            echo json_encode($temp);
         }
-        echo json_encode($temp);
+    }
+
+    //base64编码图片上传
+    public function base64_upload($base64)
+    {
+        $base64_image = str_replace(' ', '+', $base64);
+        //post的数据里面，加号会被替换为空格，需要重新替换回来，如果不是post的数据，则注释掉这一行
+        if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $base64_image, $result)) {
+            //匹配成功
+            if ($result[2] == 'jpeg') {
+                $image_name = uniqid() . '.jpg';
+                //纯粹是看jpeg不爽才替换的
+            } else {
+                $image_name = uniqid() . '.' . $result[2];
+            }
+            $image_file = "./Public/Uploads/commodity_image/{$image_name}";
+            //服务器文件存储路径
+            if (file_put_contents($image_file, base64_decode(str_replace($result[1], '', $base64_image)))) {
+                return $image_name;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 }
