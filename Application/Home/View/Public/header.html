@@ -114,7 +114,7 @@
                             </p>
                             <else/>
                             <li>
-                                <table class="table table-striped">
+                                <table id="cart_table" class="table table-striped">
                                     <tbody>
                                     <volist name="cart_list" id="cart">
                                         <tr id="cart_{$cart.commodity_id}">
@@ -127,7 +127,7 @@
                                             <td class="text-left"><a class="cart_product_name"
                                                                      href="{:U('Project/project_detail?id='.$cart['commodity_id'])}">{$cart.voo.name}</a>
                                             </td>
-                                            <td class="text-center"> x{$cart.commodity_num}</td>
+                                            <td class="text-center"> x<span id="commodity_num_{$cart.commodity_id}"> {$cart.commodity_num}</span></td>
                                             <td class="text-center"> ￥{$cart.voo.price}</td>
                                             <td class="text-right">
                                                 <a href="{:U('Project/project_detail?id='.$cart['commodity_id'])}"

@@ -786,7 +786,7 @@
                             </p>
                             <?php else: ?>
                             <li>
-                                <table class="table table-striped">
+                                <table id="cart_table" class="table table-striped">
                                     <tbody>
                                     <?php if(is_array($cart_list)): $i = 0; $__LIST__ = $cart_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart): $mod = ($i % 2 );++$i;?><tr id="cart_<?php echo ($cart["commodity_id"]); ?>">
                                             <td class="text-center" style="width:70px">
@@ -798,7 +798,7 @@
                                             <td class="text-left"><a class="cart_product_name"
                                                                      href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"><?php echo ($cart["voo"]["name"]); ?></a>
                                             </td>
-                                            <td class="text-center"> x<?php echo ($cart["commodity_num"]); ?></td>
+                                            <td class="text-center"> x<span id="commodity_num_<?php echo ($cart["commodity_id"]); ?>"> <?php echo ($cart["commodity_num"]); ?></span></td>
                                             <td class="text-center"> ￥<?php echo ($cart["voo"]["price"]); ?></td>
                                             <td class="text-right">
                                                 <a href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"

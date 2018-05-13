@@ -3,19 +3,8 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class UserController extends Controller
+class UserController extends BaseController
 {
-    //转化JSON数据
-    public static function json($code, $message = '', $data = array())
-    {
-        $result = array(
-            'code' => $code,//状态
-            'message' => urlencode($message),//提示信息
-            'data' => $data//数据
-        );
-        return urldecode(json_encode($result));
-    }
-
     //登录接口
     public function userLogin()
     {

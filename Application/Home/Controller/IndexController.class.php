@@ -26,8 +26,6 @@ class IndexController extends BaseController
             $check['state'] = 0;
             $result = $hot[$v]['hot_vo'] = $commodity_sql->where($check)->limit(8)->order('hintNum desc')->select();
             $a = i_array_column($result, 'commodity_id');
-
-
             //三表查询收藏表
             if (!empty($a)) {
                 foreach ($a as $key => $t) {
@@ -42,24 +40,18 @@ class IndexController extends BaseController
             }
         }
         $this->assign('hot', $hot);
-
         //热门搜索
         $this->search = $search_sql->order('time desc')->limit(8)->select();
-
         //轮播图右侧热门信息
         $this->hot_commodity = $commodity_sql->where("state = 0")->order('hintNum desc')->limit(3)->select();
-
-
         //轮播图查询
         $this->carousel = $carousel_id->where("state = 0")->order('hintNum desc')->limit(4)->select();
-
-        if (I('session.user_id') != null){
+        if (I('session.user_id') != null) {
             //查询购物车
             $this->getUserCart();
             //查询收藏数
             $this->get_collect_num();
         }
-
         //浏览量+1
 //        M('index')->where("id = 1")->setInc('pageview');
         $this->display();
@@ -76,12 +68,12 @@ class IndexController extends BaseController
             $this->error($user->getError());
         }
         //插入数据库
-        if (false != $user ->add($data)) {
+        if (false != $user->add($data)) {
             $user_id = M('users')->where($data)->getField('user_id');
             $telephone = $data['telephone'];
-            $username = M('userinfor') -> where("telephone = $telephone") -> getField('username');
+            $username = M('userinfor')->where("telephone = $telephone")->getField('username');
             session('user_id', $user_id);
-            session('username',$username);
+            session('username', $username);
             M('users')->where("user_id = $user_id")->setInc('loginNum');
             redirect('index');
         } else {
@@ -98,38 +90,38 @@ class IndexController extends BaseController
         $login['telephone'] = $_POST['telephone'];
         $login['password'] = md5($_POST['password']);
         $arr['flag'] = 0;
-        $user_id = $user_sql-> where($login) -> getField('user_id');
-        $telephone = $user_sql -> where($login) -> getField('telephone');
+        $user_id = $user_sql->where($login)->getField('user_id');
+        $telephone = $user_sql->where($login)->getField('telephone');
         if ($user_id == null) {
-            $company_user_id = $company_user_sql ->where($login)->getField('companyUser_id');
-            if ($company_user_id == null){
+            $company_user_id = $company_user_sql->where($login)->getField('companyUser_id');
+            if ($company_user_id == null) {
                 $this->ajaxReturn($arr, json);
-            }else{
-                $username = $company_user_sql -> where("companyUser_id = $company_user_id") -> getField('username');
+            } else {
+                $username = $company_user_sql->where("companyUser_id = $company_user_id")->getField('username');
                 session('company_user_id', $company_user_id);
                 session('user_id', $company_user_id);
                 session('username', $username);
                 $data['loginTime'] = date('Y-m-d H:i:s');
                 $data['loginIp'] = get_client_ip();
-                $company_user_sql-> where($login) ->setInc('loginNum');
-                $company_user_sql-> where($login) ->save($data);
+                $company_user_sql->where($login)->setInc('loginNum');
+                $company_user_sql->where($login)->save($data);
                 $arr['flag'] = 1;
                 $arr['username'] = $username;
                 $this->ajaxReturn($arr, json);
             }
         } else {
-            $state = $user_sql -> where($login) -> getField('state');
+            $state = $user_sql->where($login)->getField('state');
             if ($state == 1) {
                 $arr['flag'] = 2;
                 $this->ajaxReturn($arr, json);
             } else {
-                $username = $userinfor_sql -> where("telephone = $telephone") -> getField('username');
+                $username = $userinfor_sql->where("telephone = $telephone")->getField('username');
                 session('user_id', $user_id);
                 session('username', $username);
                 $data['loginTime'] = date('Y-m-d H:i:s');
                 $data['loginIp'] = get_client_ip();
-                $user_sql-> where($login) ->setInc('loginNum');
-                $user_sql-> where($login) ->save($data);
+                $user_sql->where($login)->setInc('loginNum');
+                $user_sql->where($login)->save($data);
                 $arr['flag'] = 1;
                 $arr['username'] = $username;
                 $this->ajaxReturn($arr, json);

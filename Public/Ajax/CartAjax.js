@@ -27,6 +27,7 @@ function addCart(commodity_id) {
                     addProductNotice('添加到购物车提醒', '<h3>成功添加到购物车</h3>', 'success');
                 }
                 if (msg.state == 1) {
+                    console.log(msg);
                     addProductNotice('添加到购物车提醒', '<h3>成功添加到购物车</h3>', 'success');
                     var trHTML = "<tr id=\"cart_" + commodity_id + "\">\n" +
                         "<td class=\"text-center\" style=\"width:70px\">\n" +
@@ -45,7 +46,7 @@ function addCart(commodity_id) {
                         "</td>\n" +
                         "</tr>";
                     $("#cart_table").append(trHTML);
-                    $("#commodity_num_" + commodity_id).html(parseInt(commodity_old_num) + parseInt(commodity_num));
+                    // $("#commodity_num_" + commodity_id).html(parseInt(commodity_old_num) + parseInt(commodity_num));
                     $("#cart_num").html(msg.cart_num);
                     $("#total_price").html(msg.total_price);
                     $("#cart_num_table").html(msg.cart_num);

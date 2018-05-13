@@ -3,18 +3,8 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
-    public static function json($code, $message = '', $data = array())
-    {
-        $result = array(
-            'code' => $code,//状态
-            'message' => urlencode($message),//提示信息
-            'data' => $data//数据
-        );
-        return urldecode(json_encode($result));
-    }
-
     //推荐-综合查询
     public function comp()
     {

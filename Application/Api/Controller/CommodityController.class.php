@@ -4,18 +4,8 @@ namespace Api\Controller;
 
 use Think\Controller;
 
-class CommodityController extends Controller
+class CommodityController extends BaseController
 {
-    public static function json($code, $message = '', $data = array())
-    {
-        $result = array(
-            'code' => $code,//状态
-            'message' => urlencode($message),//提示信息
-            'data' => $data//数据
-        );
-        return urldecode(json_encode($result));
-    }
-
     public function CommodityDetail()
     {
         $commodity_sql = M('commodity');

@@ -34,7 +34,7 @@ class CartController extends BaseController
                 $data['state'] = 0;
             }
         }
-        echo json_encode($data);
+        $this->ajaxReturn($data);
     }
 
     public function deleteCart()
