@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($user_detail["username"]); ?>- 订单</title>
+    <title><?php echo ($user_detail["username"]); ?>- 收藏</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -28,6 +28,7 @@
 
     <script>
         var AppUrl = "/ChildrenPlatform";
+        var check_user_id = "<?php echo (session('user_id')); ?>"
     </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
@@ -962,7 +963,7 @@
                         <fieldset id="account">
                             <legend>我的收藏</legend>
                             <div class="products-list row grid">
-                                <?php if(is_array($collect)): $i = 0; $__LIST__ = $collect;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$collect): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
+                                <?php if(is_array($collect)): $i = 0; $__LIST__ = $collect;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$collect): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 " id="my_collect_<?php echo ($collect["commodity_id"]); ?>">
                                         <div class="product-item-container">
                                             <div class="left-block">
                                                 <div class="product-image-container">
@@ -1029,7 +1030,7 @@
                                                     <button class="wishlist" type="button"
                                                             data-toggle="tooltip"
                                                             id="collect_btn_<?php echo ($collect["commodity_id"]); ?>"
-                                                            onclick="collect('<?php echo ($collect["state"]); ?>','<?php echo ($collect["commodity_id"]); ?>')">
+                                                            onclick="collect('1','<?php echo ($collect["commodity_id"]); ?>')">
                                                         <i class="fa fa-heart"></i>
                                                         <span id="collect_font_<?php echo ($collect["commodity_id"]); ?>"> 取消收藏</span>
                                                     </button>

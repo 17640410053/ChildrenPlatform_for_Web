@@ -62,25 +62,26 @@ function collect(state, commodity_id) {
     } else {
         var collect_num = $("#collect_num").html();
         $.ajax({
-            url: AppUrl+"/Home/Collect/collect",
-            data: {"state": state,"commodity_id": commodity_id},
+            url: AppUrl + "/Home/Collect/collect",
+            data: {"state": state, "commodity_id": commodity_id},
             type: "POST",
             dataType: "JSON",
             success: function (msg) {
                 if (msg == 1) {
                     $("#collect_btn_" + commodity_id).attr("onclick", "collect('1','" + commodity_id + " ')");
                     $("#collect_font_" + commodity_id).html(" 取消收藏");
-                    $("#collect_num").html(parseInt(collect_num)+1);
+                    $("#collect_num").html(parseInt(collect_num) + 1);
                     addProductNotice('收藏物品提醒', '<h3>已添加到你的收藏列表</h3>', 'success');
                 }
                 if (msg == 2) {
+                    $("#my_collect_" + commodity_id).remove();
                     $("#collect_btn_" + commodity_id).attr("onclick", "collect('0','" + commodity_id + " ')");
                     $("#collect_font_" + commodity_id).html(" 添加到我的收藏");
-                    $("#collect_num").html(parseInt(collect_num)-1);
+                    $("#collect_num").html(parseInt(collect_num) - 1);
                     addProductNotice('收藏物品提醒', '<h3>已从你的收藏列表移除</h3>', 'success');
                 }
             },
-            error:function () {
+            error: function () {
                 alert("网络错误");
             }
         });
@@ -90,15 +91,15 @@ function collect(state, commodity_id) {
 //搜索功能
 function search_item() {
     var value = $("#search_value").val();
-    if(value == ""){
+    if (value == "") {
         PostbirdAlertBox.alert({
             'title': '提示',
             'content': "输入不能为空！",
             'okBtn': '确认',
         });
-    }else {
+    } else {
         var type_id = $("#category_id").val();
-        window.open(AppUrl+"/Home/Search/search?type_id="+type_id+"&value="+value);
+        window.open(AppUrl + "/Home/Search/search?type_id=" + type_id + "&value=" + value);
     }
 }
 

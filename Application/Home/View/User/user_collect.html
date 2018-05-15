@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title>{$user_detail.username}- 订单</title>
+    <title>{$user_detail.username}- 收藏</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -28,6 +28,7 @@
 
     <script>
         var AppUrl = "__APP__";
+        var check_user_id = "{$Think.session.user_id}"
     </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
@@ -186,7 +187,7 @@
                             <legend>我的收藏</legend>
                             <div class="products-list row grid">
                                 <volist name="collect" id="collect">
-                                    <div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
+                                    <div class="product-layout col-md-4 col-sm-6 col-xs-12 " id="my_collect_{$collect.commodity_id}">
                                         <div class="product-item-container">
                                             <div class="left-block">
                                                 <div class="product-image-container">
@@ -265,7 +266,7 @@
                                                     <button class="wishlist" type="button"
                                                             data-toggle="tooltip"
                                                             id="collect_btn_{$collect.commodity_id}"
-                                                            onclick="collect('{$collect.state}','{$collect.commodity_id}')">
+                                                            onclick="collect('1','{$collect.commodity_id}')">
                                                         <i class="fa fa-heart"></i>
                                                         <span id="collect_font_{$collect.commodity_id}"> 取消收藏</span>
                                                     </button>
