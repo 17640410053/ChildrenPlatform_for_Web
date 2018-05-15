@@ -98,7 +98,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="wishlist"><a href="#" id="wishlist-total"
+                            <li class="wishlist"><a href="<?php echo U('User/user_collect');?>" id="wishlist-total"
                                                     class="top-link-wishlist"><span> 收藏 (<span id="collect_num"><?php echo ($count_num); ?></span>)</span></a>
                             </li>
                             <li class="checkout"><a href="#" class="top-link-checkout"
@@ -833,7 +833,7 @@
                                         </tbody>
                                     </table>
                                     <p class="text-right"><a
-                                            class="btn btn-mega checkout-cart" href="#"><i
+                                            class="btn btn-mega checkout-cart" onclick="checkout_cart()"><i
                                             class="fa fa-share"></i>去结算</a>
                                     </p>
                                 </div>
@@ -934,10 +934,6 @@
                                 </li>
                                 <li>
                                     <a href="user_order" class="cutom-parent">我的订单</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_child" class="cutom-parent">我的儿童</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>

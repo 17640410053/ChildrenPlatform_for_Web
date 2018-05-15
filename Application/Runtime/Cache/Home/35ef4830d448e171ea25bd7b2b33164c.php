@@ -941,10 +941,6 @@
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="user_child" class="cutom-parent">我的儿童</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
                                     <a href="user_collect" class="cutom-parent">我的收藏</a><span
                                         class="dcjq-icon"></span>
                                 </li>
