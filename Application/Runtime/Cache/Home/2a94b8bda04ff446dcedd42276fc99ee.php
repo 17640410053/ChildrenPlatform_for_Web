@@ -82,11 +82,11 @@
                         <ul class="top-link list-inline" id="ur">
                             <li class="account" id="my_account">
                                 <a href="#" class="btn btn-xs dropdown-toggle"
-                                   data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
-                                    <?php if(($_SESSION['company_user_id']== null)): ?><li><a href=""><i class="fa fa-user"></i> 个人中心</a></li>
+                                    <?php if(($_SESSION['company_user_id']== null)): ?><li><a href="<?php echo U('User/user_center');?>"><i class="fa fa-user"></i> 个人中心</a></li>
                                         <?php else: ?>
                                         <li><a href="<?php echo U('Company/company_center');?>"><i class="fa fa-user"></i> 个人中心</a>
                                         </li><?php endif; ?>

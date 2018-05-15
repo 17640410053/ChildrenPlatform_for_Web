@@ -105,3 +105,65 @@ function user_add() {
         }
     });
 }
+
+function save_user_detail(user_id) {
+    var data = $('#user_detail_form').serialize() + "&user_id=" + user_id;
+    $.ajax({
+        url: AppUrl + "/Home/User/save_user_detail",
+        data: data,
+        type: "POST",
+        dataType: "JSON",
+        success: function (msg) {
+            PostbirdAlertBox.alert({
+                'title': '提示',
+                'content': msg,
+                'okBtn': '确认',
+                onConfirm: function () {
+                    location.reload();
+                }
+            })
+        },
+        error: function () {
+            PostbirdAlertBox.alert({
+                'title': '提示',
+                'content': "网络错误",
+                'okBtn': '确认',
+            })
+        }
+    })
+}
+
+function save_user_header(user_id) {
+    var image_base64 = $('#finalImg_small').attr('src');
+    if (image_base64 == ""){
+        PostbirdAlertBox.alert({
+            'title': '提示',
+            'content': "请先选择要修改的头像",
+            'okBtn': '确认',
+        });
+    }else {
+        $.ajax({
+            url: AppUrl + "/Home/User/save_user_header",
+            data: {"image": image_base64, "user_id": user_id},
+            type: "POST",
+            dataType: "JSON",
+            success: function (msg) {
+                PostbirdAlertBox.alert({
+                    'title': '提示',
+                    'content': msg,
+                    'okBtn': '确认',
+                    onConfirm: function () {
+                        location.reload();
+                    }
+                });
+            },
+            error: function () {
+                PostbirdAlertBox.alert({
+                    'title': '提示',
+                    'content': "网络错误",
+                    'okBtn': '确认',
+                });
+            }
+        });
+    }
+}

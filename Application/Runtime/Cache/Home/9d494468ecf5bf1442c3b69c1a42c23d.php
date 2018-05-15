@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($detail["name"]); ?></title>
+    <title><?php echo ($user_detail["username"]); ?>- 个人中心</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -26,8 +26,17 @@
     <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
 
 
+    <script>
+        var AppUrl = "/ChildrenPlatform";
+    </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
+
+    <script src="/ChildrenPlatform/Public/BeatPicker/js/BeatPicker.min.js"></script>
+    <script src="/ChildrenPlatform/Public/BeatPicker/js/prism.js"></script>
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/BeatPicker/css/BeatPicker.min.css"/>
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -78,7 +87,7 @@
                         <ul class="top-link list-inline" id="ur">
                             <li class="account" id="my_account">
                                 <a href="#" class="btn btn-xs dropdown-toggle"
-                                   data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
@@ -912,136 +921,133 @@
             <!--Left Part Start -->
             <aside class="col-sm-4 col-md-3" id="column-left">
                 <div class="module menu-category titleLine">
-                    <h3 class="modtitle"><?php echo ($detail["name"]); ?></h3>
+                    <h3 class="modtitle"><?php echo ($user_detail["username"]); ?></h3>
                     <div class="modcontent">
                         <div class="box-category">
                             <ul id="cat_accordion" class="list-group">
                                 <li>
-                                    <a href="" class="cutom-parent">查看企业详情</a><span
+                                    <a href="user_center" class="cutom-parent">完善个人信息</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
+                                    <a href="user_head_image" class="cutom-parent">我的头像</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="" class="cutom-parent">查看订单列表</a><span
+                                    <a href="user_cart" target="_blank" class="cutom-parent">我的购物车</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_order" target="_blank" class="cutom-parent">我的订单</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_child" target="_blank" class="cutom-parent">我的儿童</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_collect" target="_blank" class="cutom-parent">我的收藏</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_follow" target="_blank" class="cutom-parent">我的关注</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                             </ul>
                         </div>
-
-
                     </div>
                 </div>
             </aside>
             <!--Left Part End -->
             <!--Middle Part Start-->
             <div id="content" class="col-md-9 col-sm-8">
-                <div class="products-category">
-                    <!-- Filters -->
-                    <div class="product-filter filters-panel">
-                        <div class="row">
-                            <div class="col-md-2 visible-lg">
-                                <div class="view-mode">
-                                    <div class="list-view">
-                                        <button class="btn btn-default grid active" data-view="grid"
-                                                data-toggle="tooltip" data-original-title="九宫格"><i
-                                                class="fa fa-th"></i></button>
-                                        <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
-                                                data-original-title="列表"><i class="fa fa-th-list"></i></button>
-                                    </div>
+                <div id="content" class="col-sm-12">
+                    <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
+                          class="form-horizontal account-register clearfix">
+                        <fieldset id="account">
+                            <legend>完善个人信息</legend>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的id：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="user_id" value="<?php echo ($user_detail["user_id"]); ?>"
+                                           placeholder="你的id"
+                                           id="input-firstname" class="form-control" disabled>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- //end Filters -->
-                    <!--changed listings-->
-                    <div class="products-list row grid">
-                        <?php if(is_array($company_goods)): $i = 0; $__LIST__ = $company_goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goods): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
-                                <div class="product-item-container">
-                                    <div class="left-block">
-                                        <div class="product-image-container">
-                                            <img data-src="image/demo/shop/product/e11.jpg"
-                                                 src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($goods["small_pic"]); ?>"
-                                                 alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                        </div>
-                                        <!--end countdown box-->
-                                        <!--full quick view block-->
-                                        <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
-                                           href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"> 查看详情</a>
-                                        <!--end full quick view block-->
-                                    </div>
-                                    <div class="right-block">
-                                        <div class="caption">
-                                            <h4><a target="_blank"
-                                                   href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"><?php echo ($goods["name"]); ?></a>
-                                            </h4>
-                                            <div class="ratings">
-                                                <div class="rating-box">
-                                                    <?php if(($goods["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                        <?php else: ?>
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="price-new">￥<?php echo ($goods["price"]); ?></span>
-                                                <!--<span class="price-old">$122.00</span>-->
-                                                <!--<span class="label label-percent">-40%</span>-->
-                                            </div>
-                                            <div class="description item-desc hidden">
-                                                <p><?php echo ($goods["intro"]); ?></p>
-                                            </div>
-                                        </div>
-                                        <div class="button-group">
-                                            <button class="compare" type="button" data-toggle="tooltip" title="修改商品信息"
-                                                    onclick="cart.add('42', '1');"><i class="fa fa-exchange"></i> <span
-                                                    class="hidden-xs"> 修改</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="下架商品"
-                                                    onclick="wishlist.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 下架</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="删除商品"
-                                                    onclick="compare.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 删除</span></button>
-                                        </div>
-                                    </div><!-- right block -->
-
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的昵称：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="username" value="<?php echo ($user_detail["username"]); ?>"
+                                           placeholder="你的昵称"
+                                           id="input-firstname" class="form-control">
                                 </div>
-                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </div>                    <!--// End Changed listings-->
-                    <!-- Filters -->
-                    <!-- //end Filters -->
-
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的手机号：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="telephone" value="<?php echo ($user_detail["telephone"]); ?>"
+                                           placeholder="你的手机号"
+                                           id="input-firstname" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label">性别：</label>
+                                <div class="col-sm-10">
+                                    <?php if(($user_detail["gender"] == 1)): ?><input type="radio" name="gender" value="1"
+                                               class="layui-form-radio" checked> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio"> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio"> 保密<?php endif; ?>
+                                    <?php if(($user_detail["gender"] == 2)): ?><input type="radio" name="gender" value="1"
+                                               class="layui-form-radio"> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio" checked> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio"> 保密<?php endif; ?>
+                                    <?php if(($user_detail["gender"] == 3)): ?><input type="radio" name="gender" value="1"
+                                               class="layui-form-radio"> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio"> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio" checked> 保密<?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">电子邮箱：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="email" value="<?php echo ($user_detail["email"]); ?>" placeholder="你的电子邮箱" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">生日：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="birth" class="form-control" data-beatpicker="true" data-beatpicker-module="footer,clear" placeholder="选择你的生日" value="<?php echo ($user_detail["birthtime"]); ?>">
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">地址：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="address" value="<?php echo ($user_detail["address"]); ?>" placeholder="你的详细地址" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">个性签名：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="intro" value="<?php echo ($user_detail["intro"]); ?>" placeholder="请输入个性签名" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="buttons">
+                            <div class="pull-right">
+                                <input type="button" value="确认修改" class="btn btn-primary" onclick="save_user_detail('<?php echo ($user_detail["user_id"]); ?>')">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
             </div>
 
 
@@ -1135,7 +1141,6 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/countdown/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/moment.js"></script>
-<script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
 
 
@@ -1147,6 +1152,7 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
+<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>
 </html>

@@ -203,7 +203,7 @@
                                             </if>
                                         </div>
                                         <div class="price-tax" style="margin-bottom: 10px"><span>企业：</span>
-                                                {$detail.company_id}
+                                            {$detail.company_id}
                                         </div>
                                         <div class="reward" style="margin-bottom: 10px"><span>电话：</span>
                                             <if condition="($detail.telephone eq null)"> 此商品暂未填写联系电话，请谨慎购买！
@@ -211,7 +211,8 @@
                                                 {$detail.telephone}
                                             </if>
                                         </div>
-                                        <div class="brand" style="margin-bottom: 10px"><span>分类：</span> {$detail.subsettype_id}
+                                        <div class="brand" style="margin-bottom: 10px"><span>分类：</span>
+                                            {$detail.subsettype_id}
                                         </div>
                                         <div class="model" style="margin-bottom: 10px"><span>官网：</span><a
                                                 target="_blank" href="{$detail.url}"> 点击浏览</a></div>
@@ -220,37 +221,53 @@
 
                                 <div id="product">
                                     <div class="form-group box-info-product">
-                                        <div class="option quantity">
-                                            <div class="input-group quantity-control" unselectable="on"
-                                                 style="-webkit-user-select: none;">
-                                                <label>数量：</label>
-                                                <input id="commodity_num" class="form-control" type="text" name="quantity" style="width: 50px"
-                                                       value="1">
-                                                <input type="hidden" name="product_id" value="50">
-                                                <span class="input-group-addon product_quantity_down">−</span>
-                                                <span class="input-group-addon product_quantity_up">+</span>
+                                        <if condition="($detail.price eq 0)">
+                                            <div class="cart">
+                                                <input type="button" data-toggle="tooltip" title="" value="立即浏览"
+                                                       data-loading-text="Loading..." id="button-cart"
+                                                       class="btn btn-mega btn-lg" onclick="window.location.href='{$detail.url}'"
+                                                       data-original-title="立即浏览">
                                             </div>
-                                        </div>
-                                        <div class="cart">
-                                            <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
-                                                   data-loading-text="Loading..." id="button-cart"
-                                                   class="btn btn-mega btn-lg"  onclick="addCart('{$detail.commodity_id}')"
-                                                   data-original-title="添加到购物车">
-                                        </div>
+                                            <else/>
+                                            <div class="option quantity">
+                                                <div class="input-group quantity-control" unselectable="on"
+                                                     style="-webkit-user-select: none;">
+                                                    <label>数量：</label>
+                                                    <input id="commodity_num" class="form-control" type="text"
+                                                           name="quantity" style="width: 50px"
+                                                           value="1">
+                                                    <input type="hidden" name="product_id" value="50">
+                                                    <span class="input-group-addon product_quantity_down">−</span>
+                                                    <span class="input-group-addon product_quantity_up">+</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart">
+                                                <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
+                                                       data-loading-text="Loading..." id="button-cart"
+                                                       class="btn btn-mega btn-lg"
+                                                       onclick="addCart('{$detail.commodity_id}')"
+                                                       data-original-title="添加到购物车">
+                                            </div>
+                                        </if>
+
                                         <div class="add-to-links wish_comp">
                                             <ul class="blank list-inline">
                                                 <li class="wishlist">
                                                     <if condition="($detail.collect_state eq 1)">
-                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon" data-toggle="tooltip" title=""
+                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon"
+                                                           data-toggle="tooltip" title=""
                                                            onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"
                                                            data-original-title="取消收藏"><i
-                                                                class="fa fa-heart"></i><span id="collect_font_{$detail.commodity_id}"> 取消收藏</span>
+                                                                class="fa fa-heart"></i><span
+                                                                id="collect_font_{$detail.commodity_id}"> 取消收藏</span>
                                                         </a>
                                                         <else/>
-                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon" data-toggle="tooltip" title=""
+                                                        <a id="collect_btn_{$detail.commodity_id}" class="icon"
+                                                           data-toggle="tooltip" title=""
                                                            onclick="collect('{$detail.collect_state}','{$detail.commodity_id}')"
                                                            data-original-title="添加到我的收藏"><i
-                                                                class="fa fa-heart"></i><span id="collect_font_{$detail.commodity_id}"> 添加到我的收藏</span>
+                                                                class="fa fa-heart"></i><span
+                                                                id="collect_font_{$detail.commodity_id}"> 添加到我的收藏</span>
                                                         </a>
                                                     </if>
                                                 </li>

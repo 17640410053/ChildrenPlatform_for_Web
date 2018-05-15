@@ -144,7 +144,7 @@
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
-                                    <?php if(($_SESSION['company_user_id']== null)): ?><li><a href=""><i class="fa fa-user"></i> 个人中心</a></li>
+                                    <?php if(($_SESSION['company_user_id']== null)): ?><li><a href="<?php echo U('User/user_center');?>"><i class="fa fa-user"></i> 个人中心</a></li>
                                         <?php else: ?>
                                         <li><a href="<?php echo U('Company/company_center');?>"><i class="fa fa-user"></i> 个人中心</a>
                                         </li><?php endif; ?>
@@ -984,14 +984,15 @@
                                                 <?php echo ($detail["address"]); endif; ?>
                                         </div>
                                         <div class="price-tax" style="margin-bottom: 10px"><span>企业：</span>
-                                                <?php echo ($detail["company_id"]); ?>
+                                            <?php echo ($detail["company_id"]); ?>
                                         </div>
                                         <div class="reward" style="margin-bottom: 10px"><span>电话：</span>
                                             <?php if(($detail["telephone"] == null)): ?>此商品暂未填写联系电话，请谨慎购买！
                                                 <?php else: ?>
                                                 <?php echo ($detail["telephone"]); endif; ?>
                                         </div>
-                                        <div class="brand" style="margin-bottom: 10px"><span>分类：</span> <?php echo ($detail["subsettype_id"]); ?>
+                                        <div class="brand" style="margin-bottom: 10px"><span>分类：</span>
+                                            <?php echo ($detail["subsettype_id"]); ?>
                                         </div>
                                         <div class="model" style="margin-bottom: 10px"><span>官网：</span><a
                                                 target="_blank" href="<?php echo ($detail["url"]); ?>"> 点击浏览</a></div>
@@ -1000,36 +1001,50 @@
 
                                 <div id="product">
                                     <div class="form-group box-info-product">
-                                        <div class="option quantity">
-                                            <div class="input-group quantity-control" unselectable="on"
-                                                 style="-webkit-user-select: none;">
-                                                <label>数量：</label>
-                                                <input id="commodity_num" class="form-control" type="text" name="quantity" style="width: 50px"
-                                                       value="1">
-                                                <input type="hidden" name="product_id" value="50">
-                                                <span class="input-group-addon product_quantity_down">−</span>
-                                                <span class="input-group-addon product_quantity_up">+</span>
+                                        <?php if(($detail["price"] == 0)): ?><div class="cart">
+                                                <input type="button" data-toggle="tooltip" title="" value="立即浏览"
+                                                       data-loading-text="Loading..." id="button-cart"
+                                                       class="btn btn-mega btn-lg" onclick="window.location.href='<?php echo ($detail["url"]); ?>'"
+                                                       data-original-title="立即浏览">
                                             </div>
-                                        </div>
-                                        <div class="cart">
-                                            <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
-                                                   data-loading-text="Loading..." id="button-cart"
-                                                   class="btn btn-mega btn-lg"  onclick="addCart('<?php echo ($detail["commodity_id"]); ?>')"
-                                                   data-original-title="添加到购物车">
-                                        </div>
+                                            <?php else: ?>
+                                            <div class="option quantity">
+                                                <div class="input-group quantity-control" unselectable="on"
+                                                     style="-webkit-user-select: none;">
+                                                    <label>数量：</label>
+                                                    <input id="commodity_num" class="form-control" type="text"
+                                                           name="quantity" style="width: 50px"
+                                                           value="1">
+                                                    <input type="hidden" name="product_id" value="50">
+                                                    <span class="input-group-addon product_quantity_down">−</span>
+                                                    <span class="input-group-addon product_quantity_up">+</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart">
+                                                <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
+                                                       data-loading-text="Loading..." id="button-cart"
+                                                       class="btn btn-mega btn-lg"
+                                                       onclick="addCart('<?php echo ($detail["commodity_id"]); ?>')"
+                                                       data-original-title="添加到购物车">
+                                            </div><?php endif; ?>
+
                                         <div class="add-to-links wish_comp">
                                             <ul class="blank list-inline">
                                                 <li class="wishlist">
-                                                    <?php if(($detail["collect_state"] == 1)): ?><a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon" data-toggle="tooltip" title=""
+                                                    <?php if(($detail["collect_state"] == 1)): ?><a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon"
+                                                           data-toggle="tooltip" title=""
                                                            onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
                                                            data-original-title="取消收藏"><i
-                                                                class="fa fa-heart"></i><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 取消收藏</span>
+                                                                class="fa fa-heart"></i><span
+                                                                id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 取消收藏</span>
                                                         </a>
                                                         <?php else: ?>
-                                                        <a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon" data-toggle="tooltip" title=""
+                                                        <a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon"
+                                                           data-toggle="tooltip" title=""
                                                            onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
                                                            data-original-title="添加到我的收藏"><i
-                                                                class="fa fa-heart"></i><span id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 添加到我的收藏</span>
+                                                                class="fa fa-heart"></i><span
+                                                                id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 添加到我的收藏</span>
                                                         </a><?php endif; ?>
                                                 </li>
                                                 <li class="compare">

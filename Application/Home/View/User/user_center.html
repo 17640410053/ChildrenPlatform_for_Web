@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic page needs
+	============================================ -->
+    <title>{$user_detail.username}- 个人中心</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="__PUBLIC__/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
+
+
+    <script>
+        var AppUrl = "__APP__";
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="__PUBLIC__/Ajax/userAjax.js"></script>
+
+    <script src="__PUBLIC__/BeatPicker/js/BeatPicker.min.js"></script>
+    <script src="__PUBLIC__/BeatPicker/js/prism.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/BeatPicker/css/BeatPicker.min.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
+    <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/lib.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="__PUBLIC__/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+
+    <link id="color_scheme" href="__PUBLIC__/frontdesk/css/theme.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/frontdesk/css/responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body class="res layout-subpage banners-effect-6">
+
+
+<div id="wrapper" class="wrapper-full ">
+    <!-- Header Container  -->
+    <header id="header" class=" variantleft type_1">
+        <include file="public/header"/>
+        <!-- //Header center -->
+        <!-- Header Bottom -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <!-- Main menu -->
+                    <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        分类
+                                    </div>
+
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container">
+                                                <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="{:U('Index/index')}">主 页</a>
+                                                    </li>
+                                                    <volist name="list" id="type">
+                                                        <li class="with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}"
+                                                               class="clearfix">
+                                                                <strong>{$type.name}</strong>
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 15%; ">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <ul class="row-list">
+                                                                                <volist name="type[voo]"
+                                                                                        id="subsetType">
+                                                                                    <li><a class="subcategory_item"
+                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}">{$subsetType.name}</a>
+                                                                                    </li>
+                                                                                </volist>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </volist>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- //end Main menu -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navbar switcher -->
+        <!-- //end Navbar switcher -->
+    </header>
+    <!-- //Header Container  -->
+    <!-- Main Container  -->
+    <div class="main-container container">
+        <div class="row">
+            <!--Left Part Start -->
+            <aside class="col-sm-4 col-md-3" id="column-left">
+                <div class="module menu-category titleLine">
+                    <h3 class="modtitle">{$user_detail.username}</h3>
+                    <div class="modcontent">
+                        <div class="box-category">
+                            <ul id="cat_accordion" class="list-group">
+                                <li>
+                                    <a href="user_center" class="cutom-parent">完善个人信息</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_head_image" class="cutom-parent">我的头像</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_cart" target="_blank" class="cutom-parent">我的购物车</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_order" target="_blank" class="cutom-parent">我的订单</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_child" target="_blank" class="cutom-parent">我的儿童</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_collect" target="_blank" class="cutom-parent">我的收藏</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_follow" target="_blank" class="cutom-parent">我的关注</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--Left Part End -->
+            <!--Middle Part Start-->
+            <div id="content" class="col-md-9 col-sm-8">
+                <div id="content" class="col-sm-12">
+                    <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
+                          class="form-horizontal account-register clearfix">
+                        <fieldset id="account">
+                            <legend>完善个人信息</legend>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的id：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="user_id" value="{$user_detail.user_id}"
+                                           placeholder="你的id"
+                                           id="input-firstname" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的昵称：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="username" value="{$user_detail.username}"
+                                           placeholder="你的昵称"
+                                           id="input-firstname" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-firstname">我的手机号：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="telephone" value="{$user_detail.telephone}"
+                                           placeholder="你的手机号"
+                                           id="input-firstname" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label">性别：</label>
+                                <div class="col-sm-10">
+                                    <if condition="($user_detail.gender eq 1)">
+                                        <input type="radio" name="gender" value="1"
+                                               class="layui-form-radio" checked> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio"> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio"> 保密
+                                    </if>
+                                    <if condition="($user_detail.gender eq 2)">
+                                        <input type="radio" name="gender" value="1"
+                                               class="layui-form-radio"> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio" checked> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio"> 保密
+                                    </if>
+                                    <if condition="($user_detail.gender eq 3)">
+                                        <input type="radio" name="gender" value="1"
+                                               class="layui-form-radio"> 男
+                                        <input type="radio" name="gender" value="2"
+                                               class="layui-form-radio"> 女
+                                        <input type="radio" name="gender" value="3"
+                                               class="layui-form-radio" checked> 保密
+                                    </if>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">电子邮箱：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="email" value="{$user_detail.email}" placeholder="你的电子邮箱" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">生日：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="birth" class="form-control" data-beatpicker="true" data-beatpicker-module="footer,clear" placeholder="选择你的生日" value="{$user_detail.birthtime}">
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">地址：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="address" value="{$user_detail.address}" placeholder="你的详细地址" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label class="col-sm-2 control-label" for="input-fax">个性签名：</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="intro" value="{$user_detail.intro}" placeholder="请输入个性签名" id="input-fax"
+                                           class="form-control" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="buttons">
+                            <div class="pull-right">
+                                <input type="button" value="确认修改" class="btn btn-primary" onclick="save_user_detail('{$user_detail.user_id}')">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <!--Middle Part End-->
+    </div>
+    <!-- Footer Container -->
+    <include file="public/foot"/>
+    <!-- //end Footer Container -->
+
+</div>
+
+<!-- Include Libs & Plugins
+	============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/libs.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
+
+
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/so_megamenu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/addtocart.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/application.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/cpanel.js"></script>
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+
+</body>
+</html>
+

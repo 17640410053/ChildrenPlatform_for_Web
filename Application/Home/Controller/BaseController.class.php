@@ -6,6 +6,11 @@ use Think\Controller;
 
 class BaseController extends Controller
 {
+    public function url_image($name){
+        $url_image = realpath('./')."\\Public\\Uploads\\$name\\";
+        return $url_image;
+    }
+
     //查询收藏数
     public function get_collect_num()
     {

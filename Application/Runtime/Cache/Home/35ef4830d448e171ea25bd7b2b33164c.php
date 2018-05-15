@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($detail["name"]); ?></title>
+    <title><?php echo ($user_detail["username"]); ?>- 个人中心</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -26,8 +26,16 @@
     <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
 
 
+    <script>
+        var AppUrl = "/ChildrenPlatform";
+    </script>
+
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
+
+
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
 	============================================ -->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
@@ -37,6 +45,9 @@
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/lib.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/ImgCropping/css/cropper.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/ImgCropping/css/ImgCropping.css">
     <!-- Theme CSS
     ============================================ -->
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
@@ -78,7 +89,7 @@
                         <ul class="top-link list-inline" id="ur">
                             <li class="account" id="my_account">
                                 <a href="#" class="btn btn-xs dropdown-toggle"
-                                   data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
@@ -912,136 +923,104 @@
             <!--Left Part Start -->
             <aside class="col-sm-4 col-md-3" id="column-left">
                 <div class="module menu-category titleLine">
-                    <h3 class="modtitle"><?php echo ($detail["name"]); ?></h3>
+                    <h3 class="modtitle"><?php echo ($user_detail["username"]); ?></h3>
                     <div class="modcontent">
                         <div class="box-category">
                             <ul id="cat_accordion" class="list-group">
                                 <li>
-                                    <a href="" class="cutom-parent">查看企业详情</a><span
+                                    <a href="user_center" class="cutom-parent">完善个人信息</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
+                                    <a href="user_head_image" class="cutom-parent">我的头像</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="" class="cutom-parent">查看订单列表</a><span
+                                    <a href="user_cart" target="_blank" class="cutom-parent">我的购物车</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_order" target="_blank" class="cutom-parent">我的订单</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_child" target="_blank" class="cutom-parent">我的儿童</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_collect" target="_blank" class="cutom-parent">我的收藏</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_follow" target="_blank" class="cutom-parent">我的关注</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                             </ul>
                         </div>
-
-
                     </div>
                 </div>
             </aside>
             <!--Left Part End -->
             <!--Middle Part Start-->
             <div id="content" class="col-md-9 col-sm-8">
-                <div class="products-category">
-                    <!-- Filters -->
-                    <div class="product-filter filters-panel">
-                        <div class="row">
-                            <div class="col-md-2 visible-lg">
-                                <div class="view-mode">
-                                    <div class="list-view">
-                                        <button class="btn btn-default grid active" data-view="grid"
-                                                data-toggle="tooltip" data-original-title="九宫格"><i
-                                                class="fa fa-th"></i></button>
-                                        <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
-                                                data-original-title="列表"><i class="fa fa-th-list"></i></button>
+                <div id="content" class="col-sm-12">
+                    <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
+                          class="form-horizontal account-register clearfix">
+                        <fieldset id="account">
+                            <legend>我的头像</legend>
+                            <div class="form-group">
+                                <div style="float: left;margin-left: 15%">
+                                    <label class="l-btn" >当前头像</label>
+                                    <div style="width: 200px;height: 200px;border: solid 1px #555;margin-top: 10px;overflow: hidden;">
+                                        <img src="/ChildrenPlatform/Public/Uploads/user_image/<?php echo ($user_detail["image"]); ?>" width="100%">
+                                    </div>
+                                </div>
+                                <div style="float: left;margin-left: 10%">
+                                    <label id="replaceImg_small" class="l-btn">修改头像</label>
+                                    <div style="width: 200px;height: 200px;border: solid 1px #555;margin-top: 10px;overflow: hidden;">
+                                        <img id="finalImg_small" src="" width="100%">
+                                    </div>
+                                </div>
+                                <!--图片裁剪框 start-->
+                                <div style="display: none" class="tailoring-container">
+                                    <div class="black-cloth" onclick="closeTailor(this)"></div>
+                                    <div class="tailoring-content">
+                                        <div class="tailoring-content-one">
+                                            <label title="上传图片" for="chooseImg" class="l-btn choose-btn">
+                                                <input type="file" accept="image/jpg,image/jpeg,image/png" name="file"
+                                                       id="chooseImg" class="hidden"
+                                                       onchange="selectImg(this)">
+                                                选择图片
+                                            </label>
+                                            <div class="close-tailoring" onclick="closeTailor(this)">×</div>
+                                        </div>
+                                        <div class="tailoring-content-two">
+                                            <div class="tailoring-box-parcel">
+                                                <img id="tailoringImg">
+                                            </div>
+                                            <div class="preview-box-parcel">
+                                                <p>图片预览：</p>
+                                                <div class="square previewImg"></div>
+                                                <div class="circular previewImg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tailoring-content-three">
+                                            <label class="l-btn cropper-reset-btn">复位</label>
+                                            <label class="l-btn cropper-rotate-btn">旋转</label>
+                                            <label class="l-btn cropper-scaleX-btn">换向</label>
+                                            <label class="l-btn sureCut" id="sureCut">确定</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </fieldset>
+                        <div class="buttons">
+                            <div class="pull-right">
+                                <input type="button" value="更新" class="btn btn-primary" onclick="save_user_header('<?php echo ($user_detail["user_id"]); ?>')">
+                            </div>
                         </div>
-                    </div>
-                    <!-- //end Filters -->
-                    <!--changed listings-->
-                    <div class="products-list row grid">
-                        <?php if(is_array($company_goods)): $i = 0; $__LIST__ = $company_goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goods): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
-                                <div class="product-item-container">
-                                    <div class="left-block">
-                                        <div class="product-image-container">
-                                            <img data-src="image/demo/shop/product/e11.jpg"
-                                                 src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($goods["small_pic"]); ?>"
-                                                 alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                        </div>
-                                        <!--end countdown box-->
-                                        <!--full quick view block-->
-                                        <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
-                                           href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"> 查看详情</a>
-                                        <!--end full quick view block-->
-                                    </div>
-                                    <div class="right-block">
-                                        <div class="caption">
-                                            <h4><a target="_blank"
-                                                   href="<?php echo U('Project/project_detail?id='.$goods['commodity_id']);?>"><?php echo ($goods["name"]); ?></a>
-                                            </h4>
-                                            <div class="ratings">
-                                                <div class="rating-box">
-                                                    <?php if(($goods["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                        <?php else: ?>
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <?php if(($goods["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="price-new">￥<?php echo ($goods["price"]); ?></span>
-                                                <!--<span class="price-old">$122.00</span>-->
-                                                <!--<span class="label label-percent">-40%</span>-->
-                                            </div>
-                                            <div class="description item-desc hidden">
-                                                <p><?php echo ($goods["intro"]); ?></p>
-                                            </div>
-                                        </div>
-                                        <div class="button-group">
-                                            <button class="compare" type="button" data-toggle="tooltip" title="修改商品信息"
-                                                    onclick="cart.add('42', '1');"><i class="fa fa-exchange"></i> <span
-                                                    class="hidden-xs"> 修改</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="下架商品"
-                                                    onclick="wishlist.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 下架</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="删除商品"
-                                                    onclick="compare.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 删除</span></button>
-                                        </div>
-                                    </div><!-- right block -->
-
-                                </div>
-                            </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </div>                    <!--// End Changed listings-->
-                    <!-- Filters -->
-                    <!-- //end Filters -->
-
+                    </form>
                 </div>
-
             </div>
 
 
@@ -1135,18 +1114,20 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/countdown/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/moment.js"></script>
-<script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
 
-
+<script src="/ChildrenPlatform/Public/ImgCropping/js/cropper.min.js"></script>
+<script src="/ChildrenPlatform/Public/Ajax/ImgCroppingAjax.js"></script>
 <!-- Theme files
 ============================================ -->
+
 
 
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/so_megamenu.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
+<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>
 </html>
