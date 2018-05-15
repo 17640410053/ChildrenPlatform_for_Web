@@ -90,7 +90,7 @@ class UserController extends BaseController
         $this->user_detail();
         $order_sql = M('order');
         $commodity_sql = M('commodity');
-        $order = $order_sql->where("user_id = " . I('session.user_id'))->select();
+        $order = $order_sql->where("user_id = " . I('session.user_id'))->order('order_id desc')->select();
         foreach ($order as $n => $val) {
             $order[$n]['commodity_name'] = $commodity_sql->where('commodity_id=' . $val['commodity_id'])->getField('name');
             $order[$n]['commodity_image'] = $commodity_sql->where('commodity_id=' . $val['commodity_id'])->getField('small_pic');

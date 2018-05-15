@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($user_detail["username"]); ?>- 个人中心</title>
+    <title>结算</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -32,6 +32,7 @@
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/OrderAjax.js"></script>
 
     <script src="/ChildrenPlatform/Public/BeatPicker/js/BeatPicker.min.js"></script>
     <script src="/ChildrenPlatform/Public/BeatPicker/js/prism.js"></script>
@@ -919,131 +920,70 @@
     <!-- Main Container  -->
     <div class="main-container container">
         <div class="row">
-            <!--Left Part Start -->
-            <aside class="col-sm-4 col-md-3" id="column-left">
-                <div class="module menu-category titleLine">
-                    <h3 class="modtitle"><?php echo ($user_detail["username"]); ?></h3>
-                    <div class="modcontent">
-                        <div class="box-category">
-                            <ul id="cat_accordion" class="list-group">
-                                <li>
-                                    <a href="user_center" class="cutom-parent">我的个人信息</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_head_image" class="cutom-parent">我的头像</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_order" class="cutom-parent">我的订单</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_collect" class="cutom-parent">我的收藏</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_follow" class="cutom-parent">我的关注</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                            </ul>
+
+            <div id="content" class="col-sm-12">
+                <table class="table table-striped" style="text-align: center">
+                    <tr>
+                        <td>商品图片</td>
+                        <td>商品名称</td>
+                        <td>商品数量</td>
+                        <td>商品单价</td>
+                        <td>商品总价</td>
+                    </tr>
+                    <?php if(is_array($checkout)): $i = 0; $__LIST__ = $checkout;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$checkout): $mod = ($i % 2 );++$i;?><tr>
+                            <td style="vertical-align: middle"><img
+                                    src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($checkout["commodity_image"]); ?>"
+                                    style="width: 60px"/></td>
+                            <td style="vertical-align: middle"><?php echo ($checkout["commodity_name"]); ?></td>
+                            <td style="vertical-align: middle"><?php echo ($checkout["commodity_num"]); ?></td>
+                            <td style="vertical-align: middle">￥<?php echo ($checkout["commodity_price"]); ?></td>
+                            <td style="vertical-align: middle">￥<?php echo ($checkout["commodity_total_price"]); ?></td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                </table>
+                <table class="table table-striped">
+                    <tbody>
+                    <tr>
+                        <td class="text-left"><strong>商品数量</strong>
+                        </td>
+                        <td class="text-right"><span
+                                id="cart_num_table"><?php echo ($cart_data["cart_num"]); ?></span> 件
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><strong>总价</strong>
+                        </td>
+                        <td class="text-right">￥<span id="total_price_table"><?php echo ($cart_data["total_price"]); ?></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <form id="checkout_form" action="" method="post" enctype="multipart/form-data"
+                      class="form-horizontal account-register clearfix">
+                    <fieldset id="account">
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-fax">确认收货地址：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="address" value="<?php echo ($user_detail["address"]); ?>" placeholder="请输入你的收货地址"
+                                       id="input-fax"
+                                       class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-fax">确认联系手机号：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="telephone" value="<?php echo ($user_detail["telephone"]); ?>" placeholder="请输入你的联系电话"
+                                       id="input-fax"
+                                       class="form-control" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <input type="button" value="确认信息，立即结算" class="btn btn-primary" onclick="create_order()">
                         </div>
                     </div>
-                </div>
-            </aside>
-            <!--Left Part End -->
-            <!--Middle Part Start-->
-            <div id="content" class="col-md-9 col-sm-8">
-                <div id="content" class="col-sm-12">
-                    <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
-                          class="form-horizontal account-register clearfix">
-                        <fieldset id="account">
-                            <legend>我的个人信息</legend>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的id：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="user_id" value="<?php echo ($user_detail["user_id"]); ?>"
-                                           placeholder="你的id"
-                                           id="input-firstname" class="form-control" disabled>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的昵称：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="username" value="<?php echo ($user_detail["username"]); ?>"
-                                           placeholder="你的昵称"
-                                           id="input-firstname" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的手机号：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="telephone" value="<?php echo ($user_detail["telephone"]); ?>"
-                                           placeholder="你的手机号"
-                                           id="input-firstname" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label">性别：</label>
-                                <div class="col-sm-10">
-                                    <?php if(($user_detail["gender"] == 1)): ?><input type="radio" name="gender" value="1"
-                                               class="layui-form-radio" checked> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio"> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio"> 保密<?php endif; ?>
-                                    <?php if(($user_detail["gender"] == 2)): ?><input type="radio" name="gender" value="1"
-                                               class="layui-form-radio"> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio" checked> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio"> 保密<?php endif; ?>
-                                    <?php if(($user_detail["gender"] == 3)): ?><input type="radio" name="gender" value="1"
-                                               class="layui-form-radio"> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio"> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio" checked> 保密<?php endif; ?>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">电子邮箱：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="email" value="<?php echo ($user_detail["email"]); ?>" placeholder="你的电子邮箱" id="input-fax"
-                                           class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">生日：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="birth" class="form-control" data-beatpicker="true" data-beatpicker-module="footer,clear" placeholder="选择你的生日" value="<?php echo ($user_detail["birthtime"]); ?>">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">地址：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="address" value="<?php echo ($user_detail["address"]); ?>" placeholder="你的详细地址" id="input-fax"
-                                           class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">个性签名：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="intro" value="<?php echo ($user_detail["intro"]); ?>" placeholder="请输入个性签名" id="input-fax"
-                                           class="form-control" required>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="buttons">
-                            <div class="pull-right">
-                                <input type="button" value="确认修改" class="btn btn-primary" onclick="save_user_detail('<?php echo ($user_detail["user_id"]); ?>')">
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                </form>
             </div>
-
-
         </div>
         <!--Middle Part End-->
     </div>

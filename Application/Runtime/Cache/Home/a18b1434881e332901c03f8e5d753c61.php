@@ -833,7 +833,7 @@
                                         </tbody>
                                     </table>
                                     <p class="text-right"><a
-                                            class="btn btn-mega checkout-cart" onclick="checkout_cart()"><i
+                                            class="btn btn-mega checkout-cart" href="<?php echo U('Order/checkout_order');?>"><i
                                             class="fa fa-share"></i>去结算</a>
                                     </p>
                                 </div>

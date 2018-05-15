@@ -40,3 +40,31 @@ function application_for_refund(user_id, order_id,state) {
         }
     })
 }
+
+function create_order() {
+    var data = $('#checkout_form').serialize();
+    $.ajax({
+        url: AppUrl + "/Home/Order/create_order",
+        data: data,
+        type: "POST",
+        dataType: "JSON",
+        success:function (msg) {
+            PostbirdAlertBox.alert({
+                'title': '提示',
+                'content': msg,
+                'okBtn': '确认',
+                onConfirm: function () {
+                }
+            });
+        },
+        error: function () {
+            PostbirdAlertBox.alert({
+                'title': '提示',
+                'content': "网络错误",
+                'okBtn': '确认',
+                onConfirm: function () {
+                }
+            });
+        }
+    });
+}
