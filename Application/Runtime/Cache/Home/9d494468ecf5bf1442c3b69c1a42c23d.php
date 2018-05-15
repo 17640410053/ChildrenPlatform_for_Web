@@ -31,6 +31,7 @@
     </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
 
     <script src="/ChildrenPlatform/Public/BeatPicker/js/BeatPicker.min.js"></script>
     <script src="/ChildrenPlatform/Public/BeatPicker/js/prism.js"></script>
@@ -926,7 +927,7 @@
                         <div class="box-category">
                             <ul id="cat_accordion" class="list-group">
                                 <li>
-                                    <a href="user_center" class="cutom-parent">完善个人信息</a><span
+                                    <a href="user_center" class="cutom-parent">我的个人信息</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
@@ -934,23 +935,19 @@
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="user_cart" target="_blank" class="cutom-parent">我的购物车</a><span
+                                    <a href="user_order" class="cutom-parent">我的订单</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="user_order" target="_blank" class="cutom-parent">我的订单</a><span
+                                    <a href="user_child" class="cutom-parent">我的儿童</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="user_child" target="_blank" class="cutom-parent">我的儿童</a><span
+                                    <a href="user_collect" class="cutom-parent">我的收藏</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
-                                    <a href="user_collect" target="_blank" class="cutom-parent">我的收藏</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="user_follow" target="_blank" class="cutom-parent">我的关注</a><span
+                                    <a href="user_follow" class="cutom-parent">我的关注</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                             </ul>
@@ -965,7 +962,7 @@
                     <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
                           class="form-horizontal account-register clearfix">
                         <fieldset id="account">
-                            <legend>完善个人信息</legend>
+                            <legend>我的个人信息</legend>
                             <div class="form-group required">
                                 <label class="col-sm-2 control-label" for="input-firstname">我的id：</label>
                                 <div class="col-sm-10">

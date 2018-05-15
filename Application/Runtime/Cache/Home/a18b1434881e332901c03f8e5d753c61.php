@@ -4,19 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title>物品详情-<?php echo ($detail["name"]); ?></title>
-    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-        var AppUrl = "/ChildrenPlatform";
-        var com_user_id = "<?php echo (session('user_id')); ?>";
-        var check_user_id = "<?php echo (session('user_id')); ?>"
-        var com_commodity_id = "<?php echo ($detail["commodity_id"]); ?>";
-        var star_num = "<?php echo ($detail["starnum"]); ?>";
-        var check_star = "<?php echo ($detail["check_star"]); ?>"
-    </script>
-    <script src="/ChildrenPlatform/Public/Ajax/indexAjax.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/project_frontAjax.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
+    <title><?php echo ($user_detail["username"]); ?>- 订单</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -28,6 +16,24 @@
 
     <!-- Favicon
     ============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
+
+
+    <script>
+        var AppUrl = "/ChildrenPlatform";
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/OrderAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/indexAjax.js"></script>
+
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
@@ -44,80 +50,20 @@
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+
     <link id="color_scheme" href="/ChildrenPlatform/Public/frontdesk/css/theme.css" rel="stylesheet">
+
     <link href="/ChildrenPlatform/Public/frontdesk/css/responsive.css" rel="stylesheet">
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
 
-        body {
-            color: #666;
-            font: 12px/1.5 Arial;
-        }
-
-        #star {
-            position: relative;
-            width: 600px;
-            margin: 20px auto;
-        }
-
-        #star ul, #star span {
-            float: left;
-            display: inline;
-            height: 19px;
-            line-height: 19px;
-        }
-
-        #star ul {
-            margin: 0 10px;
-        }
-
-        #star li {
-            float: left;
-            width: 24px;
-            cursor: pointer;
-            text-indent: -9999px;
-            background: url(/ChildrenPlatform/Public/starsystem/images/star.png) no-repeat;
-        }
-
-        #star strong {
-            color: #f60;
-            padding-left: 10px;
-        }
-
-        #star li.on {
-            background-position: 0 -28px;
-        }
-
-        #star p {
-            position: absolute;
-            top: 20px;
-            width: 159px;
-            height: 60px;
-            display: none;
-            background: url(/ChildrenPlatform/Public/starsystem/images/icon.gif) no-repeat;
-            padding: 7px 10px 0;
-        }
-
-        #star p em {
-            color: #f60;
-            display: block;
-            font-style: normal;
-        }
-    </style>
 
 </head>
 
-<body class="res layout-subpage">
+<body class="res layout-subpage banners-effect-6">
 
 
 <div id="wrapper" class="wrapper-full ">
     <!-- Header Container  -->
     <header id="header" class=" variantleft type_1">
-        <!-- Header Top -->
         <div class="header-top compact-hidden">
     <div class="container">
         <div class="row">
@@ -901,13 +847,26 @@
 
     </div>
 </div>
+        <!-- //Header center -->
+        <!-- Header Bottom -->
         <div class="header-bottom">
             <div class="container">
                 <div class="row">
+                    <!-- Main menu -->
                     <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
                         <div class="responsive so-megamenu ">
                             <nav class="navbar-default">
                                 <div class=" container-megamenu  horizontal">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        分类
+                                    </div>
+
                                     <div class="megamenu-wrapper">
                                         <span id="remove-megamenu" class="fa fa-times"></span>
                                         <div class="megamenu-pattern">
@@ -916,6 +875,27 @@
                                                     <li class="home hover">
                                                         <a href="<?php echo U('Index/index');?>">主 页</a>
                                                     </li>
+                                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><li class="with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="<?php echo U('Project/project_type?id='.$type['type_id']);?>"
+                                                               class="clearfix">
+                                                                <strong><?php echo ($type["name"]); ?></strong>
+                                                                <b class="caret"></b>
+                                                            </a>
+                                                            <div class="sub-menu" style="width: 15%; ">
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <ul class="row-list">
+                                                                                <?php if(is_array($type[voo])): $i = 0; $__LIST__ = $type[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$subsetType): $mod = ($i % 2 );++$i;?><li><a class="subcategory_item"
+                                                                                           href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>"><?php echo ($subsetType["name"]); ?></a>
+                                                                                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                                 </ul>
                                             </div>
                                         </div>
@@ -924,326 +904,120 @@
                             </nav>
                         </div>
                     </div>
+                    <!-- //end Main menu -->
                 </div>
             </div>
+
         </div>
+
+        <!-- Navbar switcher -->
+        <!-- //end Navbar switcher -->
     </header>
+    <!-- //Header Container  -->
+    <!-- Main Container  -->
     <div class="main-container container">
-        <ul class="breadcrumb">
-            <li><a href="#"><?php echo ($detail["name"]); ?>-物品详情</a></li>
-        </ul>
         <div class="row">
-            <div id="content" class="col-md-12 col-sm-12">
-                <div class="product-view row">
-                    <div class="left-content-product col-lg-10 col-xs-12">
-                        <div class="row">
-                            <div class="content-product-left class-honizol col-sm-6-1 col-xs-12 ">
-                                <div>
-                                    <img itemprop="image" class="product-image-zoom"
-                                         src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($detail["small_pic"]); ?>"
-                                         alt="Bint Beef">
-                                </div>
-                            </div>
-                            <div class="content-product-right col-sm-6-2-1 col-xs-12">
-                                <div class="title-product">
-                                    <h1><?php echo ($detail["name"]); ?></h1>
-                                </div>
-                                <!-- Review ---->
-                                <div class="box-review form-group">
-                                    <div id="star">
-                                        <ul>
-                                            <li><a href="javascript:;">1</a></li>
-                                            <li><a href="javascript:;">2</a></li>
-                                            <li><a href="javascript:;">3</a></li>
-                                            <li><a href="javascript:;">4</a></li>
-                                            <li><a href="javascript:;">5</a></li>
-                                        </ul>
-                                    </div>
-                                    <a class="reviews_button" href=""
-                                       onclick="$('a[href=\'#tab-1\']').trigger('click'); return false;"><span
-                                            id="count-1"><?php echo ($detail["count"]); ?></span>条评论</a> |
-                                    <a class="write_review_button" href=""
-                                       onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">添加评论</a>
-                                </div>
-
-                                <div class="product-label form-group">
-                                    <div class="product_page_price price" itemprop="offerDetails" itemscope=""
-                                         itemtype="http://data-vocabulary.org/Offer">
-                                        <span class="price-new" itemprop="price"> ￥<?php echo ($detail["price"]); ?></span>
-                                        <!--<span class="price-old">$122.00</span>-->
-                                    </div>
-                                    <!--<div class="stock"><span>库存:</span> <span-->
-                                    <!--class="status-stock">有货</span></div>-->
-                                </div>
-
-                                <div class="product-box-desc">
-                                    <div class="inner-box-desc">
-                                        <div class="price-tax" style="margin-bottom: 10px"><span>地址：</span>
-                                            <?php if(($detail["address"] == null)): ?>此项目未填写地址！
-                                                <?php else: ?>
-                                                <?php echo ($detail["address"]); endif; ?>
-                                        </div>
-                                        <div class="price-tax" style="margin-bottom: 10px"><span>企业：</span>
-                                            <?php echo ($detail["company_id"]); ?>
-                                        </div>
-                                        <div class="reward" style="margin-bottom: 10px"><span>电话：</span>
-                                            <?php if(($detail["telephone"] == null)): ?>此商品暂未填写联系电话，请谨慎购买！
-                                                <?php else: ?>
-                                                <?php echo ($detail["telephone"]); endif; ?>
-                                        </div>
-                                        <div class="brand" style="margin-bottom: 10px"><span>分类：</span>
-                                            <?php echo ($detail["subsettype_id"]); ?>
-                                        </div>
-                                        <div class="model" style="margin-bottom: 10px"><span>官网：</span><a
-                                                target="_blank" href="<?php echo ($detail["url"]); ?>"> 点击浏览</a></div>
-                                    </div>
-                                </div>
-
-                                <div id="product">
-                                    <div class="form-group box-info-product">
-                                        <?php if(($detail["price"] == 0)): ?><div class="cart">
-                                                <input type="button" data-toggle="tooltip" title="" value="立即浏览"
-                                                       data-loading-text="Loading..." id="button-cart"
-                                                       class="btn btn-mega btn-lg" onclick="window.location.href='<?php echo ($detail["url"]); ?>'"
-                                                       data-original-title="立即浏览">
-                                            </div>
-                                            <?php else: ?>
-                                            <div class="option quantity">
-                                                <div class="input-group quantity-control" unselectable="on"
-                                                     style="-webkit-user-select: none;">
-                                                    <label>数量：</label>
-                                                    <input id="commodity_num" class="form-control" type="text"
-                                                           name="quantity" style="width: 50px"
-                                                           value="1">
-                                                    <input type="hidden" name="product_id" value="50">
-                                                    <span class="input-group-addon product_quantity_down">−</span>
-                                                    <span class="input-group-addon product_quantity_up">+</span>
-                                                </div>
-                                            </div>
-                                            <div class="cart">
-                                                <input type="button" data-toggle="tooltip" title="" value="添加到购物车"
-                                                       data-loading-text="Loading..." id="button-cart"
-                                                       class="btn btn-mega btn-lg"
-                                                       onclick="addCart('<?php echo ($detail["commodity_id"]); ?>')"
-                                                       data-original-title="添加到购物车">
-                                            </div><?php endif; ?>
-
-                                        <div class="add-to-links wish_comp">
-                                            <ul class="blank list-inline">
-                                                <li class="wishlist">
-                                                    <?php if(($detail["collect_state"] == 1)): ?><a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon"
-                                                           data-toggle="tooltip" title=""
-                                                           onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
-                                                           data-original-title="取消收藏"><i
-                                                                class="fa fa-heart"></i><span
-                                                                id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 取消收藏</span>
-                                                        </a>
-                                                        <?php else: ?>
-                                                        <a id="collect_btn_<?php echo ($detail["commodity_id"]); ?>" class="icon"
-                                                           data-toggle="tooltip" title=""
-                                                           onclick="collect('<?php echo ($detail["collect_state"]); ?>','<?php echo ($detail["commodity_id"]); ?>')"
-                                                           data-original-title="添加到我的收藏"><i
-                                                                class="fa fa-heart"></i><span
-                                                                id="collect_font_<?php echo ($detail["commodity_id"]); ?>"> 添加到我的收藏</span>
-                                                        </a><?php endif; ?>
-                                                </li>
-                                                <li class="compare">
-                                                    <a class="icon" data-toggle="tooltip" title=""
-                                                       onclick="compare.add('50');"
-                                                       data-original-title="举报此商品"><i
-                                                            class="fa fa-exchange"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- end box info product -->
-
-                            </div>
+            <!--Left Part Start -->
+            <aside class="col-sm-4 col-md-3" id="column-left">
+                <div class="module menu-category titleLine">
+                    <h3 class="modtitle"><?php echo ($user_detail["username"]); ?></h3>
+                    <div class="modcontent">
+                        <div class="box-category">
+                            <ul id="cat_accordion" class="list-group">
+                                <li>
+                                    <a href="user_center" class="cutom-parent">我的个人信息</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_head_image" class="cutom-parent">我的头像</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_order" class="cutom-parent">我的订单</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_child" class="cutom-parent">我的儿童</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_collect" class="cutom-parent">我的收藏</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
+                                    <a href="user_follow" class="cutom-parent">我的关注</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product Tabs -->
-                <div class="producttab ">
-                    <div class="tabsslider  vertical-tabs col-xs-12">
-                        <ul class="nav nav-tabs col-lg-2 col-sm-3">
-                            <li class="active"><a data-toggle="tab" href="#tab-1">评论（<span
-                                    id="count-2"><?php echo ($detail["count"]); ?></span>）</a></li>
-                            <li class="item_nonactive"><a data-toggle="tab" href="#tab-review">发表评论</a></li>
-                        </ul>
-                        <div class="tab-content col-lg-10 col-sm-9 col-xs-12">
-                            <div id="tab-1" class="tab-pane fade active in">
-                                <div id="review">
-                                    <?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$com): $mod = ($i % 2 );++$i;?><table class="table table-striped table-bordered">
-                                            <tbody>
-                                            <?php if(is_array($com[voo])): $i = 0; $__LIST__ = $com[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr>
-                                                    <td rowspan="2" style="width: 100px"><img
-                                                            src="/ChildrenPlatform/Public/Uploads/user_image/<?php echo ($user["image"]); ?>"
-                                                            style="width: 100px">
-                                                    </td>
-                                                    <td><strong><?php echo ($user["username"]); ?>：</strong></td>
-                                                    <td class="text-right"><?php echo ($com["datetime"]); ?></td>
-                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <p><?php echo ($com["details"]); ?></p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-
-                                        </table><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    <div class="text-right"></div>
-                                </div>
-                            </div>
-                            <div id="tab-review" class="tab-pane fade">
-                                <form>
-                                    <h2 id="review-title">填写评论</h2>
-                                    <div class="contacts-form">
-                                        <div class="form-group"><span class="icon icon-bubbles-2"></span>
-                                            <textarea class="form-control" name="text" id="details"
-                                                      onblur="if (this.value == '') {this.value = '输入你的评论';}"
-                                                      onfocus="if(this.value == '输入你的评论') {this.value = '';}">输入你的评论</textarea>
-                                        </div>
-                                        <div class="buttons clearfix"><a id="button-review"
-                                                                         onclick="add_comment()"
-                                                                         class="btn buttonGray">发表</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- //Product Tabs -->
-                <div class="row">
-                    <div id="content" class="col-sm-12">
-                        <div class="module tab-slider titleLine">
-                            <h3 class="modtitle">&nbsp; 热门推荐</h3>
-                            <div id="so_listing_tabs_1" class="so-listing-tabs first-load module">
-                                <div class="loadeding"></div>
-                                <div class="ltabs-wrap">
-                                    <div class="ltabs-tabs-container" data-delay="300" data-duration="600"
-                                         data-effect="starwars" data-ajaxurl="#" data-type_source="0">
-                                        <!--Begin Tabs-->
-                                        <div class="ltabs-tabs-wrap">
-                                            <!--<div class="item-sub-cat">-->
-                                            <!--<ul class="ltabs-tabs cf">-->
-                                            <!--<?php if(is_array($hot)): $i = 0; $__LIST__ = array_slice($hot,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ho_1): $mod = ($i % 2 );++$i;?>-->
-                                            <!--<li class="ltabs-tab tab-sel" data-category-id="20"-->
-                                            <!--data-active-content=".items-category-20"><span class="ltabs-tab-label"><?php echo ($ho_1["type"]); ?> </span>-->
-                                            <!--</li>-->
-                                            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                            <!--<?php if(is_array($hot)): $i = 0; $__LIST__ = array_slice($hot,1,4,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ho_2): $mod = ($i % 2 );++$i;?>-->
-                                            <!--<li class="ltabs-tab " data-category-id="20"-->
-                                            <!--data-active-content=".items-category-20"><span class="ltabs-tab-label"><?php echo ($ho_2["type"]); ?> </span>-->
-                                            <!--</li>-->
-                                            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                            <!--</ul>-->
-                                            <!--</div>-->
-                                        </div>
-                                        <!-- End Tabs-->
-                                    </div>
-                                    <div class="ltabs-items-container">
-                                        <!--Begin Items-->
-                                        <div class="ltabs-items ltabs-items-selected items-category-20 grid"
-                                             data-total="10">
-                                            <div class="ltabs-items-inner ltabs-slider">
-                                                <?php if(is_array($hot)): $i = 0; $__LIST__ = $hot;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hot): $mod = ($i % 2 );++$i;?><div class="ltabs-item product-layout">
-                                                        <div class="product-item-container">
-                                                            <div class="left-block">
-                                                                <div class="product-image-container">
-                                                                    <img src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($hot["small_pic"]); ?>"
-                                                                         alt="Apple Cinema 30&quot;"
-                                                                         class="img-responsive"/>
-                                                                </div>
-                                                                <!--Sale Label-->
-                                                                <!--<span class="label label-sale">Sale</span>-->
-                                                                <!--full quick view block-->
-                                                                <a class="quickview visible-lg" target="_blank"
-                                                                   href="<?php echo U('Project/project_detail?id='.$hot['commodity_id']);?>">
-                                                                    马上浏览</a>
-                                                                <!--end full quick view block-->
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <div class="caption">
-                                                                    <h4><a target="_blank"
-                                                                           href="<?php echo U('Project/project_detail?id='.$hot['commodity_id']);?>"><?php echo ($hot["name"]); ?></a>
-                                                                    </h4>
-                                                                    <div class="ratings">
-                                                                        <div class="rating-box">
-                                                                            <?php if(($hot["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                                                <?php else: ?>
-                                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($hot["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($hot["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($hot["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($hot["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($hot["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="price">
-                                                                        <span class="price-new">￥<?php echo ($hot["price"]); ?></span>
-                                                                        <!--<span class="price-old">$62.00</span>-->
-                                                                    </div>
-                                                                </div>
-                                                                <div class="button-group">
-                                                                    <?php if(is_array($hot[voo])): $i = 0; $__LIST__ = $hot[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$col): $mod = ($i % 2 );++$i; if(($col["state"] == 1)): ?><button class="wishlist" type="button"
-                                                                                    data-toggle="tooltip"
-                                                                                    id="collect_btn_<?php echo ($hot["commodity_id"]); ?>"
-                                                                                    onclick="collect('<?php echo ($col["state"]); ?>','<?php echo ($hot["commodity_id"]); ?>')">
-                                                                                <i class="fa fa-heart"></i>
-                                                                                <span id="collect_font_<?php echo ($hot["commodity_id"]); ?>"> 取消收藏</span>
-                                                                            </button>
-                                                                            <?php else: ?>
-                                                                            <button class="wishlist" type="button"
-                                                                                    id="collect_btn_<?php echo ($hot["commodity_id"]); ?>"
-                                                                                    onclick="collect('<?php echo ($col["state"]); ?>','<?php echo ($hot["commodity_id"]); ?>')">
-                                                                                <i class="fa fa-heart"></i>
-                                                                                <span id="collect_font_<?php echo ($hot["commodity_id"]); ?>"> 添加到我的收藏</span>
-                                                                            </button><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </volist>
-                    </div>
+            </aside>
+            <!--Left Part End -->
+            <!--Middle Part Start-->
+            <div id="content" class="col-md-9 col-sm-8">
+                <div id="content" class="col-sm-12">
+                    <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
+                          class="form-horizontal account-register clearfix">
+                        <fieldset id="account">
+                            <legend>我的订单</legend>
+                            <label>提示：如果需要更换手机号或收货地址请联系客服！</label>
+                            <table class="table" style="text-align: center">
+                                <tr>
+                                    <td>订单编号</td>
+                                    <td>商品图片</td>
+                                    <td>商品名称</td>
+                                    <td>订单数量</td>
+                                    <td>订单价格</td>
+                                    <td>预留手机号</td>
+                                    <td>订单状态</td>
+                                    <td>操作</td>
+                                </tr>
+                                <?php if(is_array($order)): $i = 0; $__LIST__ = $order;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$order): $mod = ($i % 2 );++$i;?><tr>
+                                        <td style="vertical-align: middle"><?php echo ($order["ordernum"]); ?></td>
+                                        <td style="vertical-align: middle"><img
+                                                src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($order["commodity_image"]); ?>"
+                                                style="width: 60px"/></td>
+                                        <td style="vertical-align: middle"><?php echo ($order["commodity_name"]); ?></td>
+                                        <td style="vertical-align: middle"><?php echo ($order["number"]); ?></td>
+                                        <td style="vertical-align: middle"><?php echo ($order["price"]); ?></td>
+                                        <td style="vertical-align: middle"><?php echo ($order["telephone"]); ?></td>
+                                        <td id="state_<?php echo ($order["order_id"]); ?>" style="vertical-align: middle">
+                                            <?php if(($order["state"] == 0)): ?><lable>未支付</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 1)): ?><lable>等待发货</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 2)): ?><lable>等待收货</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 3)): ?><lable>等待验货</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 4)): ?><lable>交易成功</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 5)): ?><lable>退货中</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 6)): ?><lable>退货成功</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 7)): ?><lable>退款中</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 8)): ?><lable>交易成功</lable><?php endif; ?>
+                                        </td>
+                                        <td id="operation_<?php echo ($order["order_id"]); ?>" style="vertical-align: middle">
+                                            <?php if(($order["state"] == 0)): ?><lable><a>取消订单</a></lable><?php endif; ?>
+                                            <?php if(($order["state"] == 1)): ?><lable><a onclick="application_for_refund('<?php echo ($order["user_id"]); ?>','<?php echo ($order["order_id"]); ?>',7)">申请退款</a></lable><?php endif; ?>
+                                            <?php if(($order["state"] == 2)): ?><lable><a target="_blank" href="http://www.kuaidi100.com">查询物流</a>
+                                                </lable><?php endif; ?>
+                                            <?php if(($order["state"] == 3)): ?><lable><a onclick="application_for_refund('<?php echo ($order["user_id"]); ?>','<?php echo ($order["order_id"]); ?>',5)">申请退货 </a></lable>
+                                                <lable><a onclick="application_for_refund('<?php echo ($order["user_id"]); ?>','<?php echo ($order["order_id"]); ?>',4)"> 确认收货</a></lable><?php endif; ?>
+                                            <?php if(($order["state"] == 4)): ?><lable>已收货</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 5)): ?><lable>退货中</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 6)): ?><lable>已退货</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 7)): ?><lable>大概需要3个工作日</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 8)): ?><lable>退款成功</lable><?php endif; ?>
+                                        </td>
+                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </table>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
+
+
         </div>
+        <!--Middle Part End-->
     </div>
+    <!-- Footer Container -->
     <footer class="footer-container">
     <section class="footer-top">
         <div class="container content">
@@ -1315,8 +1089,13 @@
         </div>
     </div>
 </footer>
+    <!-- //end Footer Container -->
+
 </div>
 
+<!-- Include Libs & Plugins
+	============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/owl-carousel/owl.carousel.js"></script>
@@ -1325,14 +1104,18 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/countdown/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/moment.js"></script>
-<script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<!-- Theme files
+============================================ -->
 
 
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/so_megamenu.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
-
+<script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
 <script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+
 </body>
 </html>

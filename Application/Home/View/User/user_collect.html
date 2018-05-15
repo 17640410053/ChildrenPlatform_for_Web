@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title>{$user_detail.username}- 个人中心</title>
+    <title>{$user_detail.username}- 订单</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -30,12 +30,10 @@
         var AppUrl = "__APP__";
     </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="__PUBLIC__/Ajax/userAjax.js"></script>
     <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/OrderAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
 
-    <script src="__PUBLIC__/BeatPicker/js/BeatPicker.min.js"></script>
-    <script src="__PUBLIC__/BeatPicker/js/prism.js"></script>
-    <link rel="stylesheet" href="__PUBLIC__/BeatPicker/css/BeatPicker.min.css"/>
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
@@ -185,93 +183,100 @@
                     <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
                           class="form-horizontal account-register clearfix">
                         <fieldset id="account">
-                            <legend>我的个人信息</legend>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的id：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="user_id" value="{$user_detail.user_id}"
-                                           placeholder="你的id"
-                                           id="input-firstname" class="form-control" disabled>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的昵称：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="username" value="{$user_detail.username}"
-                                           placeholder="你的昵称"
-                                           id="input-firstname" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-firstname">我的手机号：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="telephone" value="{$user_detail.telephone}"
-                                           placeholder="你的手机号"
-                                           id="input-firstname" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label">性别：</label>
-                                <div class="col-sm-10">
-                                    <if condition="($user_detail.gender eq 1)">
-                                        <input type="radio" name="gender" value="1"
-                                               class="layui-form-radio" checked> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio"> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio"> 保密
-                                    </if>
-                                    <if condition="($user_detail.gender eq 2)">
-                                        <input type="radio" name="gender" value="1"
-                                               class="layui-form-radio"> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio" checked> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio"> 保密
-                                    </if>
-                                    <if condition="($user_detail.gender eq 3)">
-                                        <input type="radio" name="gender" value="1"
-                                               class="layui-form-radio"> 男
-                                        <input type="radio" name="gender" value="2"
-                                               class="layui-form-radio"> 女
-                                        <input type="radio" name="gender" value="3"
-                                               class="layui-form-radio" checked> 保密
-                                    </if>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">电子邮箱：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="email" value="{$user_detail.email}" placeholder="你的电子邮箱" id="input-fax"
-                                           class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">生日：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="birth" class="form-control" data-beatpicker="true" data-beatpicker-module="footer,clear" placeholder="选择你的生日" value="{$user_detail.birthtime}">
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">地址：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="address" value="{$user_detail.address}" placeholder="你的详细地址" id="input-fax"
-                                           class="form-control" required>
-                                </div>
-                            </div>
-                            <div class="form-group required">
-                                <label class="col-sm-2 control-label" for="input-fax">个性签名：</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="intro" value="{$user_detail.intro}" placeholder="请输入个性签名" id="input-fax"
-                                           class="form-control" required>
-                                </div>
+                            <legend>我的收藏</legend>
+                            <div class="products-list row grid">
+                                <volist name="collect" id="collect">
+                                    <div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
+                                        <div class="product-item-container">
+                                            <div class="left-block">
+                                                <div class="product-image-container">
+                                                    <img data-src="image/demo/shop/product/e11.jpg"
+                                                         src="__PUBLIC__/Uploads/commodity_image/{$collect.small_pic}"
+                                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
+                                                </div>
+                                                <!--end countdown box-->
+                                                <!--full quick view block-->
+                                                <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
+                                                   href="{:U('Project/project_detail?id='.$collect['commodity_id'])}"> 查看详情</a>
+                                                <!--end full quick view block-->
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="caption">
+                                                    <h4><a target="_blank"
+                                                           href="{:U('Project/project_detail?id='.$collect['commodity_id'])}">{$collect.name}</a>
+                                                    </h4>
+                                                    <div class="ratings">
+                                                        <div class="rating-box">
+                                                            <if condition="($collect.starnum eq 0)">
+                                                                <span style="color: #ebdb2c"> 暂无评价</span>
+                                                                <else/>
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($collect.starnum gt 0)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($collect.starnum gt 1)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($collect.starnum gt 2)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($collect.starnum gt 3)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                                <span class="fa fa-stack">
+                                                                                    <if condition="($collect.starnum gt 4)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+                                                            </if>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="price-new">￥{$collect.price}</span>
+                                                        <!--<span class="price-old">$122.00</span>-->
+                                                        <!--<span class="label label-percent">-40%</span>-->
+                                                    </div>
+                                                    <div class="description item-desc hidden">
+                                                        <p>{$collect.intro}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="button-group">
+                                                    <button class="wishlist" type="button"
+                                                            data-toggle="tooltip"
+                                                            id="collect_btn_{$collect.commodity_id}"
+                                                            onclick="collect('{$collect.state}','{$collect.commodity_id}')">
+                                                        <i class="fa fa-heart"></i>
+                                                        <span id="collect_font_{$collect.commodity_id}"> 取消收藏</span>
+                                                    </button>
+                                                </div>
+                                            </div><!-- right block -->
+
+                                        </div>
+                                    </div>
+                                </volist>
                             </div>
                         </fieldset>
-                        <div class="buttons">
-                            <div class="pull-right">
-                                <input type="button" value="确认修改" class="btn btn-primary" onclick="save_user_detail('{$user_detail.user_id}')">
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>

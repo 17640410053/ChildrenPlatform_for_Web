@@ -6,7 +6,10 @@ use Think\Controller;
 
 class UserController extends BaseController
 {
-    public function user_detail(){
+    public function user_detail()
+    {
+        $this->get_collect_num();
+        $this->getUserCart();
         $this->type_query();
         $user_info_sql = M('userinfor');
         $user_detail = $user_info_sql->where("user_id=" . I('session.user_id'))->find();
@@ -56,53 +59,58 @@ class UserController extends BaseController
         $this->display();
     }
 
-    public function save_user_header(){
+    public function save_user_header()
+    {
         $user_info_sql = M('userinfor');
-        $user_img = $user_info_sql ->where("user_id = ".I('session.user_id'))->getField("image");
-        if ($_POST['image'] == ""){
+        $user_img = $user_info_sql->where("user_id = " . I('session.user_id'))->getField("image");
+        if ($_POST['image'] == "") {
             $temp['message'] = "请先选择图片！";
             echo json_encode($temp);
-        }else if (I('post.user_id') != I('session.user_id')){
+        } else if (I('post.user_id') != I('session.user_id')) {
             $temp = "请重新登录后再试！";
             echo json_encode($temp);
-        }else{
+        } else {
             $user['image'] = $this->base64_upload($_POST['image']);
-            if (false !== $user_info_sql->where("user_id = " . I('session.user_id'))->save($user)){
-                if ($user_img != "default.jpg"){
-                    $user_img_url = $this->url_image("user_image").$user_img;
+            if (false !== $user_info_sql->where("user_id = " . I('session.user_id'))->save($user)) {
+                if ($user_img != "default.jpg") {
+                    $user_img_url = $this->url_image("user_image") . $user_img;
                     unlink($user_img_url);
                 }
                 $temp = "修改成功";
                 echo json_encode($temp);
-            }else{
+            } else {
                 $temp = "提交失败，请稍后再试！！";
                 echo json_encode($temp);
             }
         }
     }
 
-    //base64编码图片上传
-    public function base64_upload($base64)
+    public function user_order()
     {
-        $base64_image = str_replace(' ', '+', $base64);
-        //post的数据里面，加号会被替换为空格，需要重新替换回来，如果不是post的数据，则注释掉这一行
-        if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $base64_image, $result)) {
-            //匹配成功
-            if ($result[2] == 'jpeg') {
-                $image_name = uniqid() . '.jpg';
-                //纯粹是看jpeg不爽才替换的
-            } else {
-                $image_name = uniqid() . '.' . $result[2];
-            }
-            $image_file = "./Public/Uploads/user_image/{$image_name}";
-            //服务器文件存储路径
-            if (file_put_contents($image_file, base64_decode(str_replace($result[1], '', $base64_image)))) {
-                return $image_name;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
+        $this->user_detail();
+        $order_sql = M('order');
+        $commodity_sql = M('commodity');
+        $order = $order_sql->where("user_id = " . I('session.user_id'))->select();
+        foreach ($order as $n => $val) {
+            $order[$n]['commodity_name'] = $commodity_sql->where('commodity_id=' . $val['commodity_id'])->getField('name');
+            $order[$n]['commodity_image'] = $commodity_sql->where('commodity_id=' . $val['commodity_id'])->getField('small_pic');
         }
+        $this->assign('order', $order);
+        $this->display();
+    }
+
+    public function user_collect()
+    {
+        $this->user_detail();
+        $collect_sql = M('collect');
+        $commodity_sql= M('commodity');
+        $check['user_id'] = I('session.user_id');
+        $check['state'] = 1;
+        $collect = $collect_sql->where($check)->select();
+        foreach ($collect as $n => $val) {
+            $collect[$n] = $commodity_sql->where('commodity_id = ' . $val['commodity_id'])->find();
+        }
+        $this->assign('collect', $collect);
+        $this->display();
     }
 }

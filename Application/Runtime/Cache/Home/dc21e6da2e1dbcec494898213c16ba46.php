@@ -62,51 +62,54 @@
 <div id="wrapper" class="wrapper-full banners-effect-7">
     <header id="header" class=" variantleft type_1">
         <div class="header-top compact-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
-                        <h5 class="tabBlockTitle visible-xs">More<a class="expander " href="#TabBlock-1"><i
-                                class="fa fa-angle-down"></i></a></h5>
-                        <div class="tabBlock">
-                            <?php if(($_SESSION['user_id']== null)): ?><ul class="top-link list-inline" id="lo">
-                                    <li class="account" id="my_account">
-                                        <a href="#" class="btn btn-xs dropdown-toggle"
-                                           data-toggle="dropdown"> <span>请先登录</span> <span
-                                                class="fa fa-angle-down"></span></a>
-                                        <ul class="dropdown-menu ">
-                                            <li class="registration"><a href="#"><i class="fa fa-user"></i> 注 册</a></li>
-                                            <li class="login"><a href="#"><i class="fa fa-pencil-square-o"></i> 登 录</a>
-                                            </li>
-                                        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-12 compact-hidden">
+                <h5 class="tabBlockTitle visible-xs">More<a class="expander " href="#TabBlock-1"><i
+                        class="fa fa-angle-down"></i></a></h5>
+                <div class="tabBlock">
+                    <?php if(($_SESSION['user_id']== null)): ?><ul class="top-link list-inline" id="lo">
+                            <li class="account" id="my_account">
+                                <a href="#" class="btn btn-xs dropdown-toggle"
+                                   data-toggle="dropdown"> <span>请先登录</span> <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu ">
+                                    <li class="registration"><a href="#"><i class="fa fa-user"></i> 注 册</a></li>
+                                    <li class="login"><a href="#"><i class="fa fa-pencil-square-o"></i> 登 录</a>
+                                    </li>
                                 </ul>
-                                <?php else: ?>
-                                <ul class="top-link list-inline" id="ur">
-                                    <li class="account" id="my_account">
-                                        <a href="#" class="btn btn-xs dropdown-toggle"
-                                           data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
-                                            <span
-                                                    class="fa fa-angle-down"></span></a>
-                                        <ul class="dropdown-menu ">
-                                            <li><a href="#"><i class="fa fa-user"></i> 个人中心</a></li>
-                                            <li><a href="<?php echo U('logout');?>"><i class="fa fa-pencil-square-o"></i> 退出登录</a>
-                                            </li>
-                                        </ul>
+                        </ul>
+                        <?php else: ?>
+                        <ul class="top-link list-inline" id="ur">
+                            <li class="account" id="my_account">
+                                <a href="#" class="btn btn-xs dropdown-toggle"
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
+                                    <span
+                                            class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu ">
+                                    <?php if(($_SESSION['company_user_id']== null)): ?><li><a href="<?php echo U('User/user_center');?>"><i class="fa fa-user"></i> 个人中心</a></li>
+                                        <?php else: ?>
+                                        <li><a href="<?php echo U('Company/company_center');?>"><i class="fa fa-user"></i> 个人中心</a>
+                                        </li><?php endif; ?>
+                                    <li><a href="<?php echo U('Index/logout');?>"><i class="fa fa-pencil-square-o"></i> 退出登录</a>
                                     </li>
-                                    <li class="wishlist"><a href="#" id="wishlist-total"
-                                                            class="top-link-wishlist"><span> 收藏 (<span id="collect_num"><?php echo ($count_num); ?></span>)</span></a>
-                                    </li>
-                                    <li class="checkout"><a href="#" class="top-link-checkout"
-                                                            title="Checkout"><span>结算</span></a>
-                                    </li>
-                                    <li class="login"><a href="#" title="Shopping Cart"><span>购物车</span></a></li>
-                                </ul><?php endif; ?>
-                        </div>
-                    </div>
+                                </ul>
+                            </li>
+                            <li class="wishlist"><a href="#" id="wishlist-total"
+                                                    class="top-link-wishlist"><span> 收藏 (<span id="collect_num"><?php echo ($count_num); ?></span>)</span></a>
+                            </li>
+                            <li class="checkout"><a href="#" class="top-link-checkout"
+                                                    title="Checkout"><span>结算</span></a>
+                            </li>
+                            <li class="login"><a href="#" title="Shopping Cart"><span>购物车</span></a></li>
+                        </ul><?php endif; ?>
                 </div>
             </div>
         </div>
-        <!-- //Header Top -->
-        ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    </div>
+</div>
+<!-- //Header Top -->
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -417,7 +420,7 @@
 </body>
 </html>
 
-        ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -724,43 +727,123 @@
 </body>
 </html>
 
-        <!-- Header center -->
-        <div class="header-center left">
-            <div class="container">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
-                        <a href="<?php echo U('Index/index');?>"><img src="/ChildrenPlatform/Public/Uploads/logo/logo.png" width="55%"
-                                                           title="Your Store" alt="Your Store"/></a>
-                    </div>
-                    <!-- //end Logo -->
+<!-- Header center -->
+<div class="header-center left">
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="navbar-logo col-md-3 col-sm-12 col-xs-12">
+                <a href="<?php echo U('Index/index');?>"><img src="/ChildrenPlatform/Public/Uploads/logo/logo.png" width="55%"
+                                                   title="Your Store" alt="Your Store"/></a>
+            </div>
+            <!-- //end Logo -->
 
-                    <!-- Search -->
-                    <div id="sosearchpro" class="col-sm-7 search-pro">
-                        <div id="search0" class="search input-group">
-                            <div class="select_category filter_type icon-select">
-                                <select class="no-border" name="category_id" id="category_id">
-                                    <option value="0">全 部</option>
-                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><option value="<?php echo ($type["type_id"]); ?>"><?php echo ($type["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <input class="autosearch-input form-control" id="search_value" type="text" value=""
-                                   size="50"
-                                   autocomplete="off" placeholder="搜 索" name="search">
-                            <span class="input-group-btn">
+            <!-- Search -->
+            <div id="sosearchpro" class="col-sm-7 search-pro">
+                <div id="search0" class="search input-group">
+                    <div class="select_category filter_type icon-select">
+                        <select class="no-border" name="category_id" id="category_id">
+                            <option value="0">全 部</option>
+                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><option value="<?php echo ($type["type_id"]); ?>"><?php echo ($type["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                        </select>
+                    </div>
+                    <input class="autosearch-input form-control" id="search_value" type="text" value=""
+                           size="50"
+                           autocomplete="off" placeholder="搜 索" name="search">
+                    <span class="input-group-btn">
 						<button onclick="search_item()" class="button-search btn btn-primary"><i
                                 class="fa fa-search"></i></button>
 						</span>
-                        </div>
-                        <input type="hidden" name="route" value="product/search"/>
-                    </div>
-                    <!-- //end Search -->
-
-                    <!-- Secondary menu -->
                 </div>
-
+                <input type="hidden" name="route" value="product/search"/>
             </div>
+            <!-- //end Search -->
+            <div class="col-md-2 col-sm-5 col-xs-12 shopping_cart pull-right">
+                <!--cart-->
+                <div id="cart" class=" btn-group btn-shopping-cart">
+                    <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+                        <div class="shopcart">
+                            <span class="handle pull-left"></span>
+                            <span class="title">我的购物车</span>
+                            <?php if(($_SESSION['user_id']== null)): ?><p class="text-shopping-cart cart-total-full">请先登录 </p>
+                                <?php else: ?>
+                                <p class="text-shopping-cart cart-total-full"><span
+                                        id="cart_num"><?php echo ($cart_data["cart_num"]); ?></span>件物品 - 共 ￥<span id="total_price"><?php echo ($cart_data["total_price"]); ?></span>
+                                    元</p><?php endif; ?>
+                        </div>
+                    </a>
+
+                    <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+                        <?php if(($_SESSION['user_id']== null)): ?><p class="text-center"><span>你还未登录，请先登录</span></p>
+                            <p class="text-center">
+                                <a
+                                        class="btn btn-mega checkout-cart login" href="#"><i class="fa fa-share"></i>立即登录</a>
+                                <a
+                                        class="btn btn-mega checkout-cart registration" href="#"><i
+                                        class="fa fa-share"></i>立即注册</a>
+                            </p>
+                            <?php else: ?>
+                            <li>
+                                <table id="cart_table" class="table table-striped">
+                                    <tbody>
+                                    <?php if(is_array($cart_list)): $i = 0; $__LIST__ = $cart_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cart): $mod = ($i % 2 );++$i;?><tr id="cart_<?php echo ($cart["commodity_id"]); ?>">
+                                            <td class="text-center" style="width:70px">
+                                                <a href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"> <img
+                                                        src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($cart["voo"]["small_pic"]); ?>"
+                                                        style="width:70px" alt="<?php echo ($cart["voo"]["name"]); ?>"
+                                                        title="<?php echo ($cart["voo"]["name"]); ?>" class="preview"> </a>
+                                            </td>
+                                            <td class="text-left"><a class="cart_product_name"
+                                                                     href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"><?php echo ($cart["voo"]["name"]); ?></a>
+                                            </td>
+                                            <td class="text-center"> x<span id="commodity_num_<?php echo ($cart["commodity_id"]); ?>"> <?php echo ($cart["commodity_num"]); ?></span></td>
+                                            <td class="text-center"> ￥<?php echo ($cart["voo"]["price"]); ?></td>
+                                            <td class="text-right">
+                                                <a href="<?php echo U('Project/project_detail?id='.$cart['commodity_id']);?>"
+                                                   class="fa fa-edit"></a>
+                                            </td>
+                                            <td class="text-right">
+                                                <a onclick="deleteCart('<?php echo ($cart["commodity_id"]); ?>')"
+                                                   class="fa fa-times fa-delete"></a>
+                                            </td>
+                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-left"><strong>商品数量</strong>
+                                            </td>
+                                            <td class="text-right"><span
+                                                    id="cart_num_table"><?php echo ($cart_data["cart_num"]); ?></span> 件
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><strong>总价</strong>
+                                            </td>
+                                            <td class="text-right">￥<span id="total_price_table"><?php echo ($cart_data["total_price"]); ?></span>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="text-right"><a
+                                            class="btn btn-mega checkout-cart" href="#"><i
+                                            class="fa fa-share"></i>去结算</a>
+                                    </p>
+                                </div>
+                            </li><?php endif; ?>
+                    </ul>
+                </div>
+                <!--//cart-->
+            </div>
+            <!-- Secondary menu -->
         </div>
+
+    </div>
+</div>
         <!-- //Header center -->
         <!-- Header Bottom -->
         <div class="header-bottom">
