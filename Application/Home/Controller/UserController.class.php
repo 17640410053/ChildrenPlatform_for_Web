@@ -103,7 +103,7 @@ class UserController extends BaseController
     {
         $this->user_detail();
         $collect_sql = M('collect');
-        $commodity_sql= M('commodity');
+        $commodity_sql = M('commodity');
         $check['user_id'] = I('session.user_id');
         $check['state'] = 1;
         $collect = $collect_sql->where($check)->select();
@@ -111,6 +111,20 @@ class UserController extends BaseController
             $collect[$n] = $commodity_sql->where('commodity_id = ' . $val['commodity_id'])->find();
         }
         $this->assign('collect', $collect);
+        $this->display();
+    }
+
+    public function user_follow()
+    {
+        $this->user_detail();
+        $follow_sql = M('follow');
+        $company_sql = M('company');
+        $follow = $follow_sql->where('user_id=' . I('session.user_id'))->select();
+        foreach ($follow as $n => $val) {
+            $follow[$n]['company_name'] = $company_sql->where('company_id=' . $val['company_id'])->getField('name');
+            $follow[$n]['company_image'] = $company_sql->where('company_id=' . $val['company_id'])->getField('image');
+        }
+        $this->assign('follow', $follow);
         $this->display();
     }
 }

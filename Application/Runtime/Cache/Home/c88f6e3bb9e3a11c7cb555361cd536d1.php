@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($user_detail["username"]); ?>- 收藏</title>
+    <title><?php echo ($user_detail["username"]); ?>- 订单</title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -28,12 +28,11 @@
 
     <script>
         var AppUrl = "/ChildrenPlatform";
-        var check_user_id = "<?php echo (session('user_id')); ?>"
     </script>
+
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/OrderAjax.js"></script>
-    <script src="/ChildrenPlatform/Public/Ajax/indexAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/FollowAjax.js"></script>
 
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
@@ -938,6 +937,10 @@
                                         class="dcjq-icon"></span>
                                 </li>
                                 <li>
+                                    <a href="user_child" class="cutom-parent">我的儿童</a><span
+                                        class="dcjq-icon"></span>
+                                </li>
+                                <li>
                                     <a href="user_collect" class="cutom-parent">我的收藏</a><span
                                         class="dcjq-icon"></span>
                                 </li>
@@ -957,85 +960,16 @@
                     <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
                           class="form-horizontal account-register clearfix">
                         <fieldset id="account">
-                            <legend>我的收藏</legend>
-                            <div class="products-list row grid">
-                                <?php if(is_array($collect)): $i = 0; $__LIST__ = $collect;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$collect): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 " id="my_collect_<?php echo ($collect["commodity_id"]); ?>">
-                                        <div class="product-item-container">
-                                            <div class="left-block">
-                                                <div class="product-image-container">
-                                                    <img data-src="image/demo/shop/product/e11.jpg"
-                                                         src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($collect["small_pic"]); ?>"
-                                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                                </div>
-                                                <!--end countdown box-->
-                                                <!--full quick view block-->
-                                                <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
-                                                   href="<?php echo U('Project/project_detail?id='.$collect['commodity_id']);?>"> 查看详情</a>
-                                                <!--end full quick view block-->
-                                            </div>
-                                            <div class="right-block">
-                                                <div class="caption">
-                                                    <h4><a target="_blank"
-                                                           href="<?php echo U('Project/project_detail?id='.$collect['commodity_id']);?>"><?php echo ($collect["name"]); ?></a>
-                                                    </h4>
-                                                    <div class="ratings">
-                                                        <div class="rating-box">
-                                                            <?php if(($collect["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                                <?php else: ?>
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($collect["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($collect["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($collect["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($collect["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($collect["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                        </div>
-                                                    </div>
-                                                    <div class="price">
-                                                        <span class="price-new">￥<?php echo ($collect["price"]); ?></span>
-                                                        <!--<span class="price-old">$122.00</span>-->
-                                                        <!--<span class="label label-percent">-40%</span>-->
-                                                    </div>
-                                                    <div class="description item-desc hidden">
-                                                        <p><?php echo ($collect["intro"]); ?></p>
-                                                    </div>
-                                                </div>
-                                                <div class="button-group">
-                                                    <button class="wishlist" type="button"
-                                                            data-toggle="tooltip"
-                                                            id="collect_btn_<?php echo ($collect["commodity_id"]); ?>"
-                                                            onclick="collect('1','<?php echo ($collect["commodity_id"]); ?>')">
-                                                        <i class="fa fa-heart"></i>
-                                                        <span id="collect_font_<?php echo ($collect["commodity_id"]); ?>"> 取消收藏</span>
-                                                    </button>
-                                                </div>
-                                            </div><!-- right block -->
-
-                                        </div>
-                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </div>
+                            <legend>我的关注</legend>
+                            <table class="table" style="text-align: center">
+                                <?php if(is_array($follow)): $i = 0; $__LIST__ = $follow;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$follow): $mod = ($i % 2 );++$i;?><tr id="follow_<?php echo ($follow["company_id"]); ?>">
+                                        <td style="vertical-align: middle"><img
+                                                src="/ChildrenPlatform/Public/Uploads/company_image/<?php echo ($follow["company_image"]); ?>"
+                                                style="width: 60px"/></td>
+                                        <td style="vertical-align: middle"><?php echo ($follow["company_name"]); ?></td>
+                                        <td style="vertical-align: middle"><a onclick="del_follow('<?php echo ($follow["user_id"]); ?>','<?php echo ($follow["company_id"]); ?>','<?php echo ($follow["follow_id"]); ?>')">取消关注</a></td>
+                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </table>
                         </fieldset>
                     </form>
                 </div>

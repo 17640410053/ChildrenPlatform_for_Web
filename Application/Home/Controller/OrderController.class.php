@@ -4,7 +4,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class OrderController extends Controller
+class OrderController extends BaseController
 {
     //支付状态，0为未支付，1为已支付，2为已发货，3为已收货，4为交易成功，5为退货中，6为退货成功，7为退款中，8为退款成功
 

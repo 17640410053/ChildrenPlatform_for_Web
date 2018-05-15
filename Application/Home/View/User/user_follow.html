@@ -29,10 +29,10 @@
     <script>
         var AppUrl = "__APP__";
     </script>
+
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
-    <script src="__PUBLIC__/Ajax/OrderAjax.js"></script>
-    <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/FollowAjax.js"></script>
 
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
@@ -179,89 +179,15 @@
                     <form id="user_detail_form" action="" method="post" enctype="multipart/form-data"
                           class="form-horizontal account-register clearfix">
                         <fieldset id="account">
-                            <legend>我的订单</legend>
-                            <label>提示：如果需要更换手机号或收货地址请联系客服！</label>
+                            <legend>我的关注</legend>
                             <table class="table" style="text-align: center">
-                                <tr>
-                                    <td>订单编号</td>
-                                    <td>商品图片</td>
-                                    <td>商品名称</td>
-                                    <td>订单数量</td>
-                                    <td>订单价格</td>
-                                    <td>预留手机号</td>
-                                    <td>订单状态</td>
-                                    <td>操作</td>
-                                </tr>
-                                <volist name="order" id="order">
-                                    <tr>
-                                        <td style="vertical-align: middle">{$order.ordernum}</td>
+                                <volist name="follow" id="follow">
+                                    <tr id="follow_{$follow.company_id}">
                                         <td style="vertical-align: middle"><img
-                                                src="__PUBLIC__/Uploads/commodity_image/{$order.commodity_image}"
+                                                src="__PUBLIC__/Uploads/company_image/{$follow.company_image}"
                                                 style="width: 60px"/></td>
-                                        <td style="vertical-align: middle">{$order.commodity_name}</td>
-                                        <td style="vertical-align: middle">{$order.number}</td>
-                                        <td style="vertical-align: middle">{$order.price}</td>
-                                        <td style="vertical-align: middle">{$order.telephone}</td>
-                                        <td id="state_{$order.order_id}" style="vertical-align: middle">
-                                            <if condition="($order.state eq 0)">
-                                                <lable>未支付</lable>
-                                            </if>
-                                            <if condition="($order.state eq 1)">
-                                                <lable>等待发货</lable>
-                                            </if>
-                                            <if condition="($order.state eq 2)">
-                                                <lable>等待收货</lable>
-                                            </if>
-                                            <if condition="($order.state eq 3)">
-                                                <lable>等待验货</lable>
-                                            </if>
-                                            <if condition="($order.state eq 4)">
-                                                <lable>交易成功</lable>
-                                            </if>
-                                            <if condition="($order.state eq 5)">
-                                                <lable>退货中</lable>
-                                            </if>
-                                            <if condition="($order.state eq 6)">
-                                                <lable>退货成功</lable>
-                                            </if>
-                                            <if condition="($order.state eq 7)">
-                                                <lable>退款中</lable>
-                                            </if>
-                                            <if condition="($order.state eq 8)">
-                                                <lable>交易成功</lable>
-                                            </if>
-                                        </td>
-                                        <td id="operation_{$order.order_id}" style="vertical-align: middle">
-                                            <if condition="($order.state eq 0)">
-                                                <lable><a>取消订单</a></lable>
-                                            </if>
-                                            <if condition="($order.state eq 1)">
-                                                <lable><a onclick="application_for_refund('{$order.user_id}','{$order.order_id}',7)">申请退款</a></lable>
-                                            </if>
-                                            <if condition="($order.state eq 2)">
-                                                <lable><a target="_blank" href="http://www.kuaidi100.com">查询物流</a>
-                                                </lable>
-                                            </if>
-                                            <if condition="($order.state eq 3)">
-                                                <lable><a onclick="application_for_refund('{$order.user_id}','{$order.order_id}',5)">申请退货 </a></lable>
-                                                <lable><a onclick="application_for_refund('{$order.user_id}','{$order.order_id}',4)"> 确认收货</a></lable>
-                                            </if>
-                                            <if condition="($order.state eq 4)">
-                                                <lable>已收货</lable>
-                                            </if>
-                                            <if condition="($order.state eq 5)">
-                                                <lable>退货中</lable>
-                                            </if>
-                                            <if condition="($order.state eq 6)">
-                                                <lable>已退货</lable>
-                                            </if>
-                                            <if condition="($order.state eq 7)">
-                                                <lable>大概需要3个工作日</lable>
-                                            </if>
-                                            <if condition="($order.state eq 8)">
-                                                <lable>退款成功</lable>
-                                            </if>
-                                        </td>
+                                        <td style="vertical-align: middle">{$follow.company_name}</td>
+                                        <td style="vertical-align: middle"><a onclick="del_follow('{$follow.user_id}','{$follow.company_id}','{$follow.follow_id}')">取消关注</a></td>
                                     </tr>
                                 </volist>
                             </table>
