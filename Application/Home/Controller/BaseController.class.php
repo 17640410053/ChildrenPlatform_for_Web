@@ -52,7 +52,7 @@ class BaseController extends Controller
     }
 
     //base64编码图片上传
-    public function base64_upload($base64)
+    public function base64_upload($base64,$image_url)
     {
         $base64_image = str_replace(' ', '+', $base64);
         //post的数据里面，加号会被替换为空格，需要重新替换回来，如果不是post的数据，则注释掉这一行
@@ -64,7 +64,7 @@ class BaseController extends Controller
             } else {
                 $image_name = uniqid() . '.' . $result[2];
             }
-            $image_file = "./Public/Uploads/user_image/{$image_name}";
+            $image_file = "./Public/Uploads/$image_url/{$image_name}";
             //服务器文件存储路径
             if (file_put_contents($image_file, base64_decode(str_replace($result[1], '', $base64_image)))) {
                 return $image_name;

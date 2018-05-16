@@ -298,7 +298,7 @@
                 <li><a href="<?php echo U('Index/index');?>"> 主页</a></li>
                 <li class="active"> 分类管理</li>
                 <li><a href="<?php echo U('Project/subset_type_list');?>"> 次级分类</a></li>
-                <li><a href="<?php echo U('Project/add_type');?>"> 添加分类</a></li>
+                <li><a onclick="add_type()"  href="javascript:;"> 添加分类</a></li>
             </ol>
         </div>
         <div id="page-inner">
@@ -333,6 +333,8 @@
                                                             删除分类</a></li>
                                                         <li><a onclick="update_type('<?php echo ($list["type_id"]); ?>')" href="javascript:;">
                                                             修改分类</a></li>
+                                                        <li><a onclick="add_subset_type('<?php echo ($list["type_id"]); ?>')" href="javascript:;">
+                                                            添加子类</a></li>
                                                     </ul>
                                                 </div>
                                             </td>

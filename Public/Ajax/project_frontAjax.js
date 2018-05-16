@@ -20,7 +20,7 @@ function add_comment() {
         }else {
             var count = $("#count-1").html();
             $.ajax({
-                url: "../../add_cot",
+                url: AppUrl + "/Home/Project/add_cot",
                 data: {"commodity_id": com_commodity_id,"user_id":com_user_id,"details":details},
                 type: "POST",
                 dataType: "JSON",

@@ -438,6 +438,69 @@ function update_subset_type(type_id) {
     });
 }
 
+function add_subset_type(type_id) {
+    PostbirdAlertBox.prompt({
+        title: '请输入需要添加子类的名称',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data != ""){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/add_subset_type",
+                    data: {"type_id": type_id,"name":data},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误！")
+                    }
+                });
+            }else {
+                alert("名称不能为空！")
+            }
+        }
+    });
+}
+
+function add_type() {
+    PostbirdAlertBox.prompt({
+        title: '请输入分类的名称',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data != ""){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/add_type",
+                    data: {"name":data},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                                location.reload();
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误！")
+                    }
+                });
+            }else {
+                alert("名称不能为空！")
+            }
+        }
+    });
+}
+
 function esc_up_img() {
     $("#preview").load(location.href + " #preview", "");
     $("#m_preview").load(location.href + " #m_preview", "");

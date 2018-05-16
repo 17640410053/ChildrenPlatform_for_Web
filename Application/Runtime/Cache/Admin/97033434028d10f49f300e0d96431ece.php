@@ -298,7 +298,7 @@
                 <li><a href="<?php echo U('Index/index');?>"> 主页</a></li>
                 <li><a href="<?php echo U('Project/typelist');?>"> 分类管理</a></li>
                 <li class="active"> 次级分类</a></li>
-                <li><a href="<?php echo U('Project/add_type');?>"> 添加分类</a></li>
+                <li><a onclick="add_type()"  href="javascript:;"> 添加分类</a></li>
             </ol>
         </div>
         <div id="page-inner">

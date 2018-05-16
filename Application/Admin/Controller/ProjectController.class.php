@@ -340,6 +340,29 @@ class ProjectController extends BaseController
         echo json_encode($tempdata);
     }
 
+    public function add_subset_type(){
+        $type_sql = M('subsettype');
+        $type['type_id'] = I('type_id');
+        $type['name'] = I('name');
+        if (false !== $type_sql ->add($type)){
+            $tempdata = "添加成功！";
+        } else {
+            $tempdata = "添加失败！";
+        }
+        echo json_encode($tempdata);
+    }
+
+    public function add_type(){
+        $type_sql = M('type');
+        $type['name'] = I('name');
+        if (false !== $type_sql ->add($type)){
+            $tempdata = "添加成功！";
+        } else {
+            $tempdata = "添加失败！";
+        }
+        echo json_encode($tempdata);
+    }
+
     //权限验证
     public function _initialize()
     {

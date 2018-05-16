@@ -269,7 +269,7 @@
                     <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
                         <li>
                             <a href="<?php echo U('Project/prolist');?>"> 信息管理</a>

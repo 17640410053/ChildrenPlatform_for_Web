@@ -70,7 +70,7 @@ class UserController extends BaseController
             $temp = "请重新登录后再试！";
             echo json_encode($temp);
         } else {
-            $user['image'] = $this->base64_upload($_POST['image']);
+            $user['image'] = $this->base64_upload($_POST['image'],"user_image");
             if (false !== $user_info_sql->where("user_id = " . I('session.user_id'))->save($user)) {
                 if ($user_img != "default.jpg") {
                     $user_img_url = $this->url_image("user_image") . $user_img;

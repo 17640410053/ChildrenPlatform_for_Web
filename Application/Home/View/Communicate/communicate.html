@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic page needs
+	============================================ -->
+    <title>信息交流</title>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var AppUrl = "__APP__";
+        var com_user_id = "{$Think.session.user_id}";
+        var check_user_id = "{$Think.session.user_id}"
+        var com_commodity_id = "{$detail.commodity_id}";
+        var star_num = "{$detail.starnum}";
+        var check_star = "{$detail.check_star}"
+    </script>
+    <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/project_frontAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
+    <meta charset="utf-8">
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <!-- Libs CSS
+	============================================ -->
+    <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
+    <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/lib.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="__PUBLIC__/frontdesk/css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-categories.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/themecss/so-listing-tabs.css" rel="stylesheet">
+    <link id="color_scheme" href="__PUBLIC__/frontdesk/css/theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/frontdesk/css/responsive.css" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        body {
+            color: #666;
+            font: 12px/1.5 Arial;
+        }
+
+        #star {
+            position: relative;
+            width: 600px;
+            margin: 20px auto;
+        }
+
+        #star ul, #star span {
+            float: left;
+            display: inline;
+            height: 19px;
+            line-height: 19px;
+        }
+
+        #star ul {
+            margin: 0 10px;
+        }
+
+        #star li {
+            float: left;
+            width: 24px;
+            cursor: pointer;
+            text-indent: -9999px;
+            background: url(__PUBLIC__/starsystem/images/star.png) no-repeat;
+        }
+
+        #star strong {
+            color: #f60;
+            padding-left: 10px;
+        }
+
+        #star li.on {
+            background-position: 0 -28px;
+        }
+
+        #star p {
+            position: absolute;
+            top: 20px;
+            width: 159px;
+            height: 60px;
+            display: none;
+            background: url(__PUBLIC__/starsystem/images/icon.gif) no-repeat;
+            padding: 7px 10px 0;
+        }
+
+        #star p em {
+            color: #f60;
+            display: block;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="res layout-subpage">
+
+
+<div id="wrapper" class="wrapper-full ">
+    <!-- Header Container  -->
+    <header id="header" class=" variantleft type_1">
+        <!-- Header Top -->
+        <include file="public/header"/>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-12 ">
+                        <div class="responsive so-megamenu ">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal">
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container">
+                                                <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="{:U('Index/index')}">主 页</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container container">
+        <div class="row">
+            <div class="module menu-category titleLine">
+                <h3 class="modtitle">信息交流</h3>
+            </div>
+
+            <div class="products-list row grid">
+                <volist name="communicate" id="communicate">
+                    <div class="product-layout col-md-4 col-sm-6 col-xs-12">
+                        <div class="product-item-container">
+                            <div class="left-block">
+                                <div class="product-image-container">
+                                    <img data-src="image/demo/shop/product/e11.jpg"
+                                         src="__PUBLIC__/Uploads/commodity_image/{$communicate.small_pic}"
+                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
+                                </div>
+                                <!--end countdown box-->
+                                <!--full quick view block-->
+                                <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
+                                   href="{:U('Communicate/communicate_detail?id='.$communicate['commodity_id'])}"> 查看详情</a>
+                                <!--end full quick view block-->
+                            </div>
+                            <div class="right-block">
+                                <div class="caption">
+                                    <h4><a target="_blank"
+                                           href="{:U('Communicate/communicate_detail?id='.$communicate['commodity_id'])}">{$communicate.name}</a>
+                                    </h4>
+                                    <div class="ratings">
+                                        <div class="rating-box">
+                                            <if condition="($communicate.starnum eq 0)">
+                                                <span style="color: #ebdb2c"> 暂无评价</span>
+                                                <else/>
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($communicate.starnum gt 0)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($communicate.starnum gt 1)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($communicate.starnum gt 2)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($communicate.starnum gt 3)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($communicate.starnum gt 4)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+                                            </if>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="price-new">{$communicate.hintnum}人浏览</span>
+                                        <!--<span class="price-old">$122.00</span>-->
+                                        <!--<span class="label label-percent">-40%</span>-->
+                                    </div>
+                                    <div class="description item-desc hidden">
+                                        <p>{$communicate.intro}</p>
+                                    </div>
+                                </div>
+                            </div><!-- right block -->
+
+                        </div>
+                    </div>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <include file="public/foot"/>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/libs.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/unveil/jquery.unveil.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
+
+
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/so_megamenu.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/addtocart.js"></script>
+<script type="text/javascript" src="__PUBLIC__/frontdesk/js/themejs/application.js"></script>
+
+<script src="__PUBLIC__/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
+</body>
+</html>
+

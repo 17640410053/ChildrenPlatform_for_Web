@@ -79,59 +79,63 @@ class ProjectController extends BaseController
 
     public function project_type($id)
     {
-        $List = M('type');
-        $List2 = M('subsettype');
-        $items = M('commodity');
-        $map['type_id'] = array('neq', $id);
+        if ($id == 8){
+            redirect(U('Communicate/communicate?id='.$id));
+        }else{
+            $List = M('type');
+            $List2 = M('subsettype');
+            $items = M('commodity');
+            $map['type_id'] = array('neq', $id);
 
-        $this->type = $type = $List->where("type_id = $id")->getField('name');
+            $this->type_name = $type = $List->where("type_id = $id")->getField('name');
 
-        //分类查询
-        $parent = $List->select();
-        foreach ($parent as $n => $val) {
-            $parent[$n]['voo'] = $List2->where('type_id = ' . $val['type_id'] . '')->order()->select();
-        }
-        $this->assign('list', $parent);
-
-        //热门查询
-        $hot = $List2->where($map)->order('clickNum desc')->limit(10)->select();
-        $this->assign('hot', $hot);
-
-        //其他热门查询
-        $map['state'] = 0;
-        $other = $items->where($map)->limit(4)->order('hintNum desc')->select();
-        $this->assign('other', $other);
-
-        //页面分类查询
-        $check_state['state'] = 0;
-        $check_state['type_id'] = $id;
-        $item = $items->where($check_state)->order('hintNum desc')->select();
-        $a = i_array_column($item, 'commodity_id');
-        foreach ($a as $n => $val) {
-            $c['commodity_id'] = $val;
-            $c['user_id'] = I('session.user_id');
-            $b = M('collect')->where($c)->Field('state')->select();
-            if ($b == null) {
-                $b[0]['state'] = 0;
+            //分类查询
+            $parent = $List->select();
+            foreach ($parent as $n => $val) {
+                $parent[$n]['voo'] = $List2->where('type_id = ' . $val['type_id'] . '')->order()->select();
             }
-            $item[$n]['voo'] = $b;
+            $this->assign('list', $parent);
+
+            //热门查询
+            $hot = $List2->where($map)->order('clickNum desc')->limit(10)->select();
+            $this->assign('hot', $hot);
+
+            //其他热门查询
+            $map['state'] = 0;
+            $other = $items->where($map)->limit(4)->order('hintNum desc')->select();
+            $this->assign('other', $other);
+
+            //页面分类查询
+            $check_state['state'] = 0;
+            $check_state['type_id'] = $id;
+            $item = $items->where($check_state)->order('hintNum desc')->select();
+            $a = i_array_column($item, 'commodity_id');
+            foreach ($a as $n => $val) {
+                $c['commodity_id'] = $val;
+                $c['user_id'] = I('session.user_id');
+                $b = M('collect')->where($c)->Field('state')->select();
+                if ($b == null) {
+                    $b[0]['state'] = 0;
+                }
+                $item[$n]['voo'] = $b;
+            }
+            $this->assign('item', $item);
+
+            //浏览量+1
+            $List->where("type_id=$id")->setInc('hintNum');
+
+            if (I('session.user_id') != null) {
+                //查询购物车
+                $this->getUserCart();
+
+                //查询收藏数
+                $this->get_collect_num();
+            }
+
+
+            //显示页面
+            $this->display();
         }
-        $this->assign('item', $item);
-
-        //浏览量+1
-        $List->where("type_id=$id")->setInc('hintNum');
-
-        if (I('session.user_id') != null) {
-            //查询购物车
-            $this->getUserCart();
-
-            //查询收藏数
-            $this->get_collect_num();
-        }
-
-
-        //显示页面
-        $this->display();
     }
 
     public function project_child_type($id)
@@ -142,7 +146,7 @@ class ProjectController extends BaseController
         $type_id = $List2->where("subsetType_id = $id")->getField('type_id');
         $map['type_id'] = array('neq', $type_id);
 
-        $this->type = $type = $List->where("type_id = $type_id")->getField('name');
+        $this->type_name = $type = $List->where("type_id = $type_id")->getField('name');
         $this->child_type = $type = $List2->where("subsetType_id = $id")->getField('name');
 
         //分类查询
@@ -244,8 +248,8 @@ class ProjectController extends BaseController
             $temp['message'] = "请填写完整信息！";
             echo json_encode($temp);
         } else {
-            $_POST['small_pic'] = $this->base64_upload($_POST['small_pic']);
-            $_POST['middle_pic'] = $this->base64_upload($_POST['middle_pic']);
+            $_POST['small_pic'] = $this->base64_upload($_POST['small_pic'],"commodity_image");
+            $_POST['middle_pic'] = $this->base64_upload($_POST['middle_pic'],"commodity_image");
             $subsetType_id = I('post.subsetType_id');
             $company_user_id = I('session.company_user_id');
             $_POST['type_id'] = M('subsettype')->where("subsetType_id = $subsetType_id")->getField("type_id");

@@ -85,7 +85,7 @@
                         <ul class="top-link list-inline" id="ur">
                             <li class="account" id="my_account">
                                 <a href="#" class="btn btn-xs dropdown-toggle"
-                                   data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
@@ -97,7 +97,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="wishlist"><a href="#" id="wishlist-total"
+                            <li class="wishlist"><a href="<?php echo U('User/user_collect');?>" id="wishlist-total"
                                                     class="top-link-wishlist"><span> 收藏 (<span id="collect_num"><?php echo ($count_num); ?></span>)</span></a>
                             </li>
                             <li class="checkout"><a href="#" class="top-link-checkout"
@@ -832,7 +832,7 @@
                                         </tbody>
                                     </table>
                                     <p class="text-right"><a
-                                            class="btn btn-mega checkout-cart" href="#"><i
+                                            class="btn btn-mega checkout-cart" href="<?php echo U('Order/checkout_order');?>"><i
                                             class="fa fa-share"></i>去结算</a>
                                     </p>
                                 </div>

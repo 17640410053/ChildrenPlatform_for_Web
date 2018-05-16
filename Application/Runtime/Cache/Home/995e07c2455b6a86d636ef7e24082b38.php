@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($type); ?>-<?php echo ($child_type); ?></title>
+    <title><?php echo ($type_name); ?>-<?php echo ($child_type); ?></title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -903,7 +903,7 @@
         <div id="index_body">
             <div class="main-container container">
                 <ul class="breadcrumb">
-                    <li><a> <?php echo ($type); ?></a></li>
+                    <li><a> <?php echo ($type_name); ?></a></li>
                     <li><a> <?php echo ($child_type); ?></a></li>
                 </ul>
 
