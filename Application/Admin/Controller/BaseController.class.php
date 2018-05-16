@@ -17,4 +17,9 @@ class BaseController extends Controller
             $this->error('无权限访问此页，请先登录', U('Admin/index/login'));
         }
     }
+
+    public function url_image($image_url){
+        $url_user = realpath('./')."\\Public\\Uploads\\$image_url\\";
+        return $url_user;
+    }
 }

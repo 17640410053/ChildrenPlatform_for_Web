@@ -54,6 +54,10 @@ class IndexController extends BaseController
         }
         //浏览量+1
 //        M('index')->where("id = 1")->setInc('pageview');
+
+        //企业查询
+        $company = $company_sql->limit(4)->select();
+        $this->assign('company',$company);
         $this->display();
     }
 

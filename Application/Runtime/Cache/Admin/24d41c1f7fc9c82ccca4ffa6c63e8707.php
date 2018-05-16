@@ -269,7 +269,7 @@
                     <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
                         <li>
                             <a class="active-menu" href="<?php echo U('Project/prolist');?>"> 信息管理</a>
@@ -278,9 +278,6 @@
                             <a href="<?php echo U('Carousel/carousellist');?>"> 轮播图管理</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
             </ul>
 
@@ -323,17 +320,17 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if(is_array($pro)): $i = 0; $__LIST__ = $pro;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pro): $mod = ($i % 2 );++$i;?><tr id="f_<?php echo ($pro["f_id"]); ?>">
-                                            <td><img src="/ChildrenPlatform/Public/Uploads/itempic/<?php echo ($pro["m_pic"]); ?>" width="50"></td>
-                                            <td><?php echo ($pro["f_name"]); ?></td>
-                                            <td><?php echo ($pro["hint"]); ?></td>
+                                    <?php if(is_array($pro)): $i = 0; $__LIST__ = $pro;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pro): $mod = ($i % 2 );++$i;?><tr id="f_<?php echo ($pro["commodity_id"]); ?>">
+                                            <td><img src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($pro["middle_pic"]); ?>" width="50"></td>
+                                            <td><?php echo ($pro["name"]); ?></td>
+                                            <td><?php echo ($pro["hintnum"]); ?></td>
                                             <td><?php echo ($pro["collectnum"]); ?></td>
-                                            <td><?php echo ($pro["star"]); ?><img src="/ChildrenPlatform/Public/backstage/assets/img/material/star.png"
+                                            <td><?php echo ($pro["starnum"]); ?><img src="/ChildrenPlatform/Public/backstage/assets/img/material/star.png"
                                                                 style="margin-bottom: 3.5px"></td>
                                             <td>
-                                                <?php if(($pro["state"] == 0)): ?><span id="state_<?php echo ($pro["f_id"]); ?>" class="label label-success">正常</span>
+                                                <?php if(($pro["state"] == 0)): ?><span id="state_<?php echo ($pro["commodity_id"]); ?>" class="label label-success">正常</span>
                                                     <?php else: ?>
-                                                    <span id="state_<?php echo ($pro["f_id"]); ?>" class="label label-danger">禁用</span><?php endif; ?>
+                                                    <span id="state_<?php echo ($pro["commodity_id"]); ?>" class="label label-danger">禁用</span><?php endif; ?>
                                             </td>
                                             <td>
                                                 <div class="btn-group">
@@ -341,18 +338,18 @@
                                                             data-toggle="dropdown"> 操作 <span class="caret"></span></button>
                                                     <ul class="dropdown-menu">
                                                         <li>
-                                                            <?php if(($pro["state"] == 0)): ?><a id="change_<?php echo ($pro["f_id"]); ?>"
-                                                                   onclick="changeprostate('<?php echo ($pro["f_id"]); ?>',1)"
+                                                            <?php if(($pro["state"] == 0)): ?><a id="change_<?php echo ($pro["commodity_id"]); ?>"
+                                                                   onclick="changeprostate('<?php echo ($pro["commodity_id"]); ?>',1)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>暂停使用</a>
                                                                 <?php else: ?>
-                                                                <a id="change_<?php echo ($pro["f_id"]); ?>"
-                                                                   onclick="changeprostate('<?php echo ($pro["f_id"]); ?>',0)"
+                                                                <a id="change_<?php echo ($pro["commodity_id"]); ?>"
+                                                                   onclick="changeprostate('<?php echo ($pro["commodity_id"]); ?>',0)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>取消禁用</a><?php endif; ?>
                                                         </li>
-                                                        <li><a href="prodetail/id/<?php echo ($pro["f_id"]); ?>"> 查看详情</a></li>
-                                                        <li><a onclick="delpro('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"> 删除项目</a>
+                                                        <li><a href="prodetail/id/<?php echo ($pro["commodity_id"]); ?>"> 查看详情</a></li>
+                                                        <li><a onclick="delpro('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"> 删除项目</a>
                                                         </li>
                                                     </ul>
                                                 </div>

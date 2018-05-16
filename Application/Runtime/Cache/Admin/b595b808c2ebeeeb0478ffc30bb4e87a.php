@@ -299,8 +299,8 @@
                         <div class="panel panel-primary">
                             <div class="number">
                                 <h3>
-                                    <h3> <?php echo ($pageview); ?></h3>
-                                    <small> 访问量</small>
+                                    <h3> <?php echo ($item); ?></h3>
+                                    <small> 项目</small>
                                 </h3>
                             </div>
                             <div class="icon">
@@ -316,8 +316,8 @@
                         <div class="panel panel-primary">
                             <div class="number">
                                 <h3>
-                                    <h3> <?php echo ($item); ?></h3>
-                                    <small> 项目</small>
+                                    <h3> <?php echo ($order); ?></h3>
+                                    <small> 订单</small>
                                 </h3>
                             </div>
                             <div class="icon">

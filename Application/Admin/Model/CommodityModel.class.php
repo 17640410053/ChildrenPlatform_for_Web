@@ -3,7 +3,7 @@ namespace Admin\Model;
 
 use Think\Model;
 
-class ItemsModel extends Model
+class CommodityModel extends Model
 {
     protected $_validate = array(
         array('f_name', '', '该物品已存在', 0, 'unique', self::MODEL_INSERT),

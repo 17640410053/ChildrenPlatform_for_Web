@@ -41,7 +41,7 @@
                     <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="{:U('Project/typelist')}"> 分类管理</a>
                         </li>
                         <li>
                             <a class="active-menu" href="{:U('Project/prolist')}"> 信息管理</a>
@@ -50,9 +50,6 @@
                             <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
             </ul>
 
@@ -87,8 +84,8 @@
                                 <volist name="pro_detail" id="pro">
                                     <div class="form-group">
                                         <label>名 称：</label>
-                                        <span id="f_name">{$pro.f_name}</span>
-                                        <img onclick="up_name('{$pro.f_id}')" href="javascript:;"
+                                        <span id="f_name">{$pro.name}</span>
+                                        <img onclick="up_name('{$pro.commodity_id}')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -96,7 +93,7 @@
                                     <div class="form-group">
                                         <label>价 格：￥</label>
                                         <span id="price">{$pro.price}</span>
-                                        <img onclick="up_price('{$pro.f_id}')" href="javascript:;"
+                                        <img onclick="up_price('{$pro.commodity_id}')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -104,7 +101,7 @@
                                     <div class="form-group">
                                         <label>地 址：</label>
                                         <span id="address"><if condition="($pro.address eq null)">此项目未填写地址！<else/>{$pro.address}</if></span>
-                                        <img onclick="up_address('{$pro.f_id}')" href="javascript:;"
+                                        <img onclick="up_address('{$pro.commodity_id}')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -112,14 +109,14 @@
                                     <div class="form-group">
                                         <label>电 话：</label>
                                         <span id="telephone"><if condition="($pro.telephone eq null)">此项目无联系电话！<else/>{$pro.telephone}</if></span>
-                                        <img onclick="up_telephone('{$pro.f_id}')" href="javascript:;"
+                                        <img onclick="up_telephone('{$pro.commodity_id}')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
                                     </div>
                                     <br>
                                     <div class="form-group" id="data_type">
                                         <label>类 型：</label>
-                                        <span id="type">{$pro.s_id}</span>
+                                        <span id="type">{$pro.subsettype_id}</span>
                                         <img style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png"
                                              onclick="show_up_type()" href="javascript:;">
@@ -129,21 +126,21 @@
                                         <select class="selectbox" style="width: 200px" name="type" id="sel_up_type">
                                             <option value="0" disabled selected>请选择类型</option>
                                             <volist name="list" id="li">
-                                                <optgroup label="{$li.type}">
+                                                <optgroup label="{$li.name}">
                                                     <volist name="li[voo]" id="lio">
-                                                        <option value="{$lio.s_id}">{$lio.type}</option>
+                                                        <option value="{$lio.subsettype_id}">{$lio.name}</option>
                                                     </volist>
                                                 </optgroup>
                                             </volist>
                                         </select>
-                                        <a class="btn btn-default" style="background: #00EEEE" onclick="up_type('{$pro.f_id}')" href="javascript:;">确认</a>
+                                        <a class="btn btn-default" style="background: #00EEEE" onclick="up_type('{$pro.commodity_id}')" href="javascript:;">确认</a>
                                         <a class="btn btn-default" onclick="hide_up_type()" href="javascript:;">取消</a>
                                     </div>
                                     <br>
                                     <div class="form-group">
                                         <label>网络地址：</label>
                                         <a href="{$pro.url}" target="_blank" id="url">{$pro.url}</a>
-                                        <img onclick="up_url('{$pro.f_id}')" href="javascript:;"
+                                        <img onclick="up_url('{$pro.commodity_id}')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="__PUBLIC__/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -154,13 +151,13 @@
                                         <div class="col-sm-9 big-photo" style="margin-left: 5%">
                                             <div id="preview">
                                                 <img id="imghead" border="0"
-                                                     src="__PUBLIC__/Uploads/itempic/{$pro.s_pic}"
+                                                     src="__PUBLIC__/Uploads/commodity_image/{$pro.small_pic}"
                                                      width="100" height="100">
                                             </div>
                                             <input type="file" name="s_img" onchange="previewImage(this)"
                                                    style="display: none;" id="previewImg">
                                             <div id="s_img__up_sum">
-                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px"  onclick="up_s_img('{$pro.f_id}')" href="javascript:;" >确认</a>
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px"  onclick="up_s_img('{$pro.commodity_id}')" href="javascript:;" >确认</a>
                                                 <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()"  href="javascript:;">取消</a>
                                             </div>
                                         </div>
@@ -174,13 +171,13 @@
                                         <div class="col-sm-9 big-photo" style="margin-left: 5%">
                                             <div id="m_preview">
                                                 <img id="m_imghead" border="0"
-                                                     src="__PUBLIC__/Uploads/itempic/{$pro.m_pic}"
+                                                     src="__PUBLIC__/Uploads/commodity_image/{$pro.middle_pic}"
                                                      width="200" height="100">
                                             </div>
                                             <input type="file" name="m_img" onchange="m_previewImage(this)"
                                                    style="display: none;" id="m_previewImg">
                                             <div id="m_img__up_sum">
-                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px" onclick="up_m_img('{$pro.f_id}')" href="javascript:;" >确定</a>
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px" onclick="up_m_img('{$pro.commodity_id}')" href="javascript:;" >确定</a>
                                                 <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()" href="javascript:;">取消</a>
                                             </div>
                                         </div>

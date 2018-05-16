@@ -45,8 +45,6 @@ class OrderController extends BaseController
 
     public function checkout_order()
     {
-        $total_price = "0";
-        $cart_num = "0";
         $this->getUserCart();
         $this->type_query();
         $user_info_sql = M('userinfor');
@@ -65,6 +63,7 @@ class OrderController extends BaseController
         $this->display();
     }
 
+    //添加订单
     public function create_order()
     {
         $cart_sql = M('cart');
@@ -81,7 +80,7 @@ class OrderController extends BaseController
                 $cart[$n]['number'] = $val['commodity_num'];
                 $cart[$n]['telephone'] = I('post.telephone');
                 $cart[$n]['orderTime'] = date('Y-m-d H:i:s');
-                $cart[$n]['state'] = rand(1, 8);
+                $cart[$n]['state'] = 1;
                 $cart[$n]['orderNum'] = date('Ymd') . rand(10000, 99999);
             }
             if (false != $order_sql->addAll($cart)) {

@@ -42,7 +42,7 @@
                     <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="{:U('Project/typelist')}"> 分类管理</a>
                         </li>
                         <li>
                             <a href="{:U('Project/prolist')}"> 信息管理</a>
@@ -51,9 +51,6 @@
                             <a class="active-menu" href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
             </ul>
 
@@ -94,14 +91,14 @@
                                     </thead>
                                     <tbody>
                                     <volist name="carousel" id="ca">
-                                        <tr id="ca_{$ca.c_id}">
-                                            <td><img src="__PUBLIC__/Uploads/carouselpic/{$ca.pic}" width="50"></td>
+                                        <tr id="ca_{$ca.carousel_id}">
+                                            <td><img src="__PUBLIC__/Uploads/carousel_image/{$ca.image}" width="50"></td>
                                             <td>{$ca.name}</td>
                                             <td>
                                                 <if condition="($ca.state eq 0)">
-                                                    <span id="state_ca_{$ca.c_id}" class="label label-success">正常</span>
+                                                    <span id="state_ca_{$ca.carousel_id}" class="label label-success">正常</span>
                                                     <else/>
-                                                    <span id="state_ca_{$ca.c_id}" class="label label-danger">禁用</span>
+                                                    <span id="state_ca_{$ca.carousel_id}" class="label label-danger">禁用</span>
                                                 </if>
                                             </td>
                                             <td>
@@ -111,18 +108,18 @@
                                                     <ul class="dropdown-menu">
                                                         <li>
                                                             <if condition="($ca.state eq 0)">
-                                                                <a id="change_ca_{$ca.c_id}"
-                                                                   onclick="change_state_carousel('{$ca.c_id}',1)"
+                                                                <a id="change_ca_{$ca.carousel_id}"
+                                                                   onclick="change_state_carousel('{$ca.carousel_id}',1)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>暂停使用</a>
                                                                 <else/>
-                                                                <a id="change_ca_{$ca.c_id}"
-                                                                   onclick="change_state_carousel('{$ca.c_id}',0)"
+                                                                <a id="change_ca_{$ca.carousel_id}"
+                                                                   onclick="change_state_carousel('{$ca.carousel_id}',0)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>取消禁用</a>
                                                             </if>
                                                         </li>
-                                                        <li><a onclick="del_carousel('{$ca.c_id}')" href="javascript:;">
+                                                        <li><a onclick="del_carousel('{$ca.carousel_id}')" href="javascript:;">
                                                             删除轮播图</a></li>
                                                     </ul>
                                                 </div>

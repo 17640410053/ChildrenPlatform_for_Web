@@ -883,7 +883,8 @@
                                                     <ul class="megamenu">
                                                         <?php if(is_array($hot)): $i = 0; $__LIST__ = $hot;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$subsetType): $mod = ($i % 2 );++$i;?><li class="item-vertical">
                                                                 <p class="close-menu"></p>
-                                                                <a href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>" class="clearfix">
+                                                                <a href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>"
+                                                                   class="clearfix">
                                                                     <img src="/ChildrenPlatform/Public/Uploads/type_icon/<?php echo ($subsetType["image"]); ?>"
                                                                          alt="icon">
                                                                     <span><?php echo ($subsetType["name"]); ?></span>
@@ -925,7 +926,8 @@
                                                     </li>
                                                     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><li class="with-sub-menu hover">
                                                             <p class="close-menu"></p>
-                                                            <a href="<?php echo U('Project/project_type?id='.$type['type_id']);?>" class="clearfix">
+                                                            <a href="<?php echo U('Project/project_type?id='.$type['type_id']);?>"
+                                                               class="clearfix">
                                                                 <strong><?php echo ($type["name"]); ?></strong>
                                                                 <b class="caret"></b>
                                                             </a>
@@ -935,7 +937,8 @@
                                                                         <div class="col-md-6">
                                                                             <ul class="row-list">
                                                                                 <?php if(is_array($type[voo])): $i = 0; $__LIST__ = $type[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$subsetType): $mod = ($i % 2 );++$i;?><li><a class="subcategory_item"
-                                                                                           href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>"><?php echo ($subsetType["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                                                           href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>"><?php echo ($subsetType["name"]); ?></a>
+                                                                                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -1018,18 +1021,11 @@
                                     <div class="modcontent clearfix">
                                         <div class="policy-detail">
                                             <div class="banner-policy">
-                                                <div class="policy policy1"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    90 day <br> money back </a></div>
-                                                <div class="policy policy2"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    In-store exchange </a></div>
-                                                <div class="policy policy3"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    lowest price guarantee </a></div>
-                                                <div class="policy policy4"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    shopping guarantee </a></div>
+                                                <?php if(is_array($company)): $i = 0; $__LIST__ = $company;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$company): $mod = ($i % 2 );++$i;?><div class="policy"><a href="<?php echo U('Company/company_detail?company_id='.$company['company_id']);?>"><img
+                                                            src="/ChildrenPlatform/Public/uploads/company_image/<?php echo ($company["image"]); ?>">
+                                                        <span
+                                                                class="ico-policy">&nbsp;</span>
+                                                         <br> <?php echo ($company["name"]); ?> </a></div><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </div>
                                         </div>
                                     </div>

@@ -102,7 +102,8 @@
                                                         <volist name="hot" id="subsetType">
                                                             <li class="item-vertical">
                                                                 <p class="close-menu"></p>
-                                                                <a href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}" class="clearfix">
+                                                                <a href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}"
+                                                                   class="clearfix">
                                                                     <img src="__PUBLIC__/Uploads/type_icon/{$subsetType.image}"
                                                                          alt="icon">
                                                                     <span>{$subsetType.name}</span>
@@ -146,7 +147,8 @@
                                                     <volist name="list" id="type">
                                                         <li class="with-sub-menu hover">
                                                             <p class="close-menu"></p>
-                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}" class="clearfix">
+                                                            <a href="{:U('Project/project_type?id='.$type['type_id'])}"
+                                                               class="clearfix">
                                                                 <strong>{$type.name}</strong>
                                                                 <b class="caret"></b>
                                                             </a>
@@ -155,9 +157,11 @@
                                                                     <div class="row">
                                                                         <div class="col-md-6">
                                                                             <ul class="row-list">
-                                                                                <volist name="type[voo]" id="subsetType">
+                                                                                <volist name="type[voo]"
+                                                                                        id="subsetType">
                                                                                     <li><a class="subcategory_item"
-                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}">{$subsetType.name}</a></li>
+                                                                                           href="{:U('Project/project_child_type?id='.$subsetType['subsettype_id'])}">{$subsetType.name}</a>
+                                                                                    </li>
                                                                                 </volist>
                                                                             </ul>
                                                                         </div>
@@ -248,18 +252,13 @@
                                     <div class="modcontent clearfix">
                                         <div class="policy-detail">
                                             <div class="banner-policy">
-                                                <div class="policy policy1"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    90 day <br> money back </a></div>
-                                                <div class="policy policy2"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    In-store exchange </a></div>
-                                                <div class="policy policy3"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    lowest price guarantee </a></div>
-                                                <div class="policy policy4"><a href="#"> <span
-                                                        class="ico-policy">&nbsp;</span>
-                                                    shopping guarantee </a></div>
+                                                <volist name="company" id="company">
+                                                    <div class="policy"><a href="{:U('Company/company_detail?company_id='.$company['company_id'])}"><img
+                                                            src="__PUBLIC__/uploads/company_image/{$company.image}">
+                                                        <span
+                                                                class="ico-policy">&nbsp;</span>
+                                                         <br> {$company.name} </a></div>
+                                                </volist>
                                             </div>
                                         </div>
                                     </div>

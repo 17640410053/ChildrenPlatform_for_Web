@@ -1,5 +1,5 @@
 //删除用户
-function del_user(u_id) {
+function del_user(user_id) {
     PostbirdAlertBox.confirm({
         'title': '提示',
         'content': '删除操作不可逆，确认删除',
@@ -7,11 +7,11 @@ function del_user(u_id) {
         'onConfirm': function () {
             $.ajax({
                 url: "del_user",
-                data: {"u_id": u_id},
+                data: {"user_id": user_id},
                 type: "GET",
                 dataType: "JSON",
                 success: function () {
-                    $("#u_" + u_id).remove();
+                    $("#u_" + user_id).remove();
                 },
                 error: function () {
                     alert("删除失败");
@@ -22,7 +22,7 @@ function del_user(u_id) {
 }
 
 //重置密码
-function editpswd(u_id) {
+function editpswd(user_id) {
     PostbirdAlertBox.confirm({
         'title': '提示',
         'content': '是否重置密码',
@@ -30,7 +30,7 @@ function editpswd(u_id) {
         'onConfirm': function () {
             $.ajax({
                 url: "editpswd",
-                data: {"u_id": u_id},
+                data: {"user_id": user_id},
                 type: "GET",
                 dataType: "JSON",
                 success: function (msg) {
@@ -46,7 +46,7 @@ function editpswd(u_id) {
 }
 
 //修改状态
-function changestate(i_id, state) {
+function changestate(user_id, state) {
     PostbirdAlertBox.confirm({
         'title': '提示',
         'content': '确认修改',
@@ -54,20 +54,20 @@ function changestate(i_id, state) {
         'onConfirm': function () {
             $.ajax({
                 url: "changestate",
-                data: {"i_id": i_id, "state": state},
+                data: {"user_id": user_id, "state": state},
                 type: "POST",
                 dataType: "JSON",
                 success: function () {
                     if (state == 0) {
-                        $("#change_" + i_id).attr("onclick", "changestate('" + i_id + " ',1)");
-                        $("#change_" + i_id).html("暂停使用");
-                        $("#state_" + i_id).attr("class", "label label-success");
-                        $("#state_" + i_id).html("正常");
+                        $("#change_" + user_id).attr("onclick", "changestate('" + user_id + " ',1)");
+                        $("#change_" + user_id).html("暂停使用");
+                        $("#state_" + user_id).attr("class", "label label-success");
+                        $("#state_" + user_id).html("正常");
                     } else {
-                        $("#change_" + i_id).attr("onclick", "changestate('" + i_id + " ',0)");
-                        $("#change_" + i_id).html("取消禁用");
-                        $("#state_" + i_id).attr("class", "label label-danger");
-                        $("#state_" + i_id).html("禁用");
+                        $("#change_" + user_id).attr("onclick", "changestate('" + user_id + " ',0)");
+                        $("#change_" + user_id).html("取消禁用");
+                        $("#state_" + user_id).attr("class", "label label-danger");
+                        $("#state_" + user_id).html("禁用");
                     }
                 },
             })

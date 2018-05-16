@@ -30,6 +30,10 @@
     <script src="/ChildrenPlatform/Public/Ajax/CompanyAjax.js"></script>
     <!-- Libs CSS
 	============================================ -->
+
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
+
     <link rel="stylesheet" href="/ChildrenPlatform/Public/frontdesk/css/bootstrap/css/bootstrap.min.css">
     <link href="/ChildrenPlatform/Public/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/ChildrenPlatform/Public/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
@@ -78,7 +82,7 @@
                         <ul class="top-link list-inline" id="ur">
                             <li class="account" id="my_account">
                                 <a href="#" class="btn btn-xs dropdown-toggle"
-                                   data-toggle="dropdown" id="username"> <span><?php echo (session('username')); ?></span>
+                                   data-toggle="dropdown" id="username"> <span id="username"><?php echo (session('username')); ?></span>
                                     <span
                                             class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu ">
@@ -90,7 +94,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="wishlist"><a href="#" id="wishlist-total"
+                            <li class="wishlist"><a href="<?php echo U('User/user_collect');?>" id="wishlist-total"
                                                     class="top-link-wishlist"><span> 收藏 (<span id="collect_num"><?php echo ($count_num); ?></span>)</span></a>
                             </li>
                             <li class="checkout"><a href="#" class="top-link-checkout"
@@ -825,7 +829,7 @@
                                         </tbody>
                                     </table>
                                     <p class="text-right"><a
-                                            class="btn btn-mega checkout-cart" href="#"><i
+                                            class="btn btn-mega checkout-cart" href="<?php echo U('Order/checkout_order');?>"><i
                                             class="fa fa-share"></i>去结算</a>
                                     </p>
                                 </div>
@@ -922,10 +926,6 @@
                                 </li>
                                 <li>
                                     <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="" class="cutom-parent">查看订单列表</a><span
                                         class="dcjq-icon"></span>
                                 </li>
                             </ul>
@@ -1026,7 +1026,7 @@
                                                     onclick="cart.add('42', '1');"><i class="fa fa-exchange"></i> <span
                                                     class="hidden-xs"> 修改</span></button>
                                             <button class="compare" type="button" data-toggle="tooltip" title="下架商品"
-                                                    onclick="wishlist.add('42');"><i class="fa fa-exchange"></i><span
+                                                    onclick="dercarriage('<?php echo ($goods["commodity_id"]); ?>','<?php echo ($goods["state"]); ?>')"><i class="fa fa-exchange"></i><span
                                                     class="hidden-xs"> 下架</span></button>
                                             <button class="compare" type="button" data-toggle="tooltip" title="删除商品"
                                                     onclick="compare.add('42');"><i class="fa fa-exchange"></i><span
@@ -1147,6 +1147,7 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
+<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>
 </html>

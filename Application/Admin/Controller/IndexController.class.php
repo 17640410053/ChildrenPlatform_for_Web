@@ -7,11 +7,10 @@ class IndexController extends BaseController
 {
     public function index()
     {
-        $this -> pageview = number_format(M('index')->where("id = 1")->getField('pageview'));
-        $this -> item = number_format(M('items')->count());
+        $this -> item = number_format(M('commodity')->count());
+        $this -> order = number_format(M('order')->count());
         $this -> comment = number_format(M('comment')->count());
-        $this -> user = number_format(M('user')->count());
-
+        $this -> user = number_format(M('users')->count());
         $this->display();
     }
 
@@ -32,7 +31,7 @@ class IndexController extends BaseController
             session("flag", "logok");
             session('username',$checkLogin['username']);
             $arr['Status'] = '1';
-            $arr['Text'] = "登录成功<br /><br />欢迎回来";
+            $arr['Text'] = "登录成功<br/><br/>欢迎回来";
         }
         $this->ajaxReturn($arr,json);
     }

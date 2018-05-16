@@ -312,7 +312,7 @@
                                     <label>名 称：</label>
                                     <select class="selectbox" style="width: 200px" name="f_id">
                                         <option value="0" disabled selected>请选择项目</option>
-                                        <?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><option value="<?php echo ($item["f_id"]); ?>"><?php echo ($item["f_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        <?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><option value="<?php echo ($item["commodity_id"]); ?>"><?php echo ($item["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
                                 <br>

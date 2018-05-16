@@ -328,8 +328,8 @@
                                     <label for="exampleInputEmail2">类 型：</label>
                                     <select class="selectbox" style="width: 200px" name="type">
                                         <option value="0" disabled selected>请选择类型</option>
-                                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["type"]); ?>">
-                                                <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["s_id"]); ?>"><?php echo ($lio["type"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["name"]); ?>">
+                                                <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["subsettype_id"]); ?>"><?php echo ($lio["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </optgroup><?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>

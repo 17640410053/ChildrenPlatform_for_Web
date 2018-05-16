@@ -276,9 +276,6 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
-                </li>
             </ul>
 
         </div>
@@ -311,8 +308,8 @@
                             <form class="form-inline" name="up_pro_form" id="up_pro_form" action="<?php echo U('Project/up_img');?>" method="post" enctype="multipart/form-data" onsubmit="return check();">
                                 <?php if(is_array($pro_detail)): $i = 0; $__LIST__ = $pro_detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pro): $mod = ($i % 2 );++$i;?><div class="form-group">
                                         <label>名 称：</label>
-                                        <span id="f_name"><?php echo ($pro["f_name"]); ?></span>
-                                        <img onclick="up_name('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"
+                                        <span id="f_name"><?php echo ($pro["name"]); ?></span>
+                                        <img onclick="up_name('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -320,7 +317,7 @@
                                     <div class="form-group">
                                         <label>价 格：￥</label>
                                         <span id="price"><?php echo ($pro["price"]); ?></span>
-                                        <img onclick="up_price('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"
+                                        <img onclick="up_price('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -328,7 +325,7 @@
                                     <div class="form-group">
                                         <label>地 址：</label>
                                         <span id="address"><?php if(($pro["address"] == null)): ?>此项目未填写地址！<?php else: echo ($pro["address"]); endif; ?></span>
-                                        <img onclick="up_address('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"
+                                        <img onclick="up_address('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -336,14 +333,14 @@
                                     <div class="form-group">
                                         <label>电 话：</label>
                                         <span id="telephone"><?php if(($pro["telephone"] == null)): ?>此项目无联系电话！<?php else: echo ($pro["telephone"]); endif; ?></span>
-                                        <img onclick="up_telephone('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"
+                                        <img onclick="up_telephone('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png">
                                     </div>
                                     <br>
                                     <div class="form-group" id="data_type">
                                         <label>类 型：</label>
-                                        <span id="type"><?php echo ($pro["s_id"]); ?></span>
+                                        <span id="type"><?php echo ($pro["subsettype_id"]); ?></span>
                                         <img style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png"
                                              onclick="show_up_type()" href="javascript:;">
@@ -352,18 +349,18 @@
                                         <label>类 型：</label>
                                         <select class="selectbox" style="width: 200px" name="type" id="sel_up_type">
                                             <option value="0" disabled selected>请选择类型</option>
-                                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["type"]); ?>">
-                                                    <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["s_id"]); ?>"><?php echo ($lio["type"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($i % 2 );++$i;?><optgroup label="<?php echo ($li["name"]); ?>">
+                                                    <?php if(is_array($li[voo])): $i = 0; $__LIST__ = $li[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lio): $mod = ($i % 2 );++$i;?><option value="<?php echo ($lio["subsettype_id"]); ?>"><?php echo ($lio["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                                 </optgroup><?php endforeach; endif; else: echo "" ;endif; ?>
                                         </select>
-                                        <a class="btn btn-default" style="background: #00EEEE" onclick="up_type('<?php echo ($pro["f_id"]); ?>')" href="javascript:;">确认</a>
+                                        <a class="btn btn-default" style="background: #00EEEE" onclick="up_type('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;">确认</a>
                                         <a class="btn btn-default" onclick="hide_up_type()" href="javascript:;">取消</a>
                                     </div>
                                     <br>
                                     <div class="form-group">
                                         <label>网络地址：</label>
                                         <a href="<?php echo ($pro["url"]); ?>" target="_blank" id="url"><?php echo ($pro["url"]); ?></a>
-                                        <img onclick="up_url('<?php echo ($pro["f_id"]); ?>')" href="javascript:;"
+                                        <img onclick="up_url('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;"
                                              style="margin-left:10px "
                                              src="/ChildrenPlatform/Public/frontdesk/image/theme/icons/modify.png">
                                     </div>
@@ -374,13 +371,13 @@
                                         <div class="col-sm-9 big-photo" style="margin-left: 5%">
                                             <div id="preview">
                                                 <img id="imghead" border="0"
-                                                     src="/ChildrenPlatform/Public/Uploads/itempic/<?php echo ($pro["s_pic"]); ?>"
+                                                     src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($pro["small_pic"]); ?>"
                                                      width="100" height="100">
                                             </div>
                                             <input type="file" name="s_img" onchange="previewImage(this)"
                                                    style="display: none;" id="previewImg">
                                             <div id="s_img__up_sum">
-                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px"  onclick="up_s_img('<?php echo ($pro["f_id"]); ?>')" href="javascript:;" >确认</a>
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px"  onclick="up_s_img('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;" >确认</a>
                                                 <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()"  href="javascript:;">取消</a>
                                             </div>
                                         </div>
@@ -394,13 +391,13 @@
                                         <div class="col-sm-9 big-photo" style="margin-left: 5%">
                                             <div id="m_preview">
                                                 <img id="m_imghead" border="0"
-                                                     src="/ChildrenPlatform/Public/Uploads/itempic/<?php echo ($pro["m_pic"]); ?>"
+                                                     src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($pro["middle_pic"]); ?>"
                                                      width="200" height="100">
                                             </div>
                                             <input type="file" name="m_img" onchange="m_previewImage(this)"
                                                    style="display: none;" id="m_previewImg">
                                             <div id="m_img__up_sum">
-                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px" onclick="up_m_img('<?php echo ($pro["f_id"]); ?>')" href="javascript:;" >确定</a>
+                                                <a class="btn btn-default" style="background: #00EEEE;margin-top: 15px" onclick="up_m_img('<?php echo ($pro["commodity_id"]); ?>')" href="javascript:;" >确定</a>
                                                 <a class="btn btn-default" style="margin-top: 15px;margin-left: 5px" onclick="esc_up_img()" href="javascript:;">取消</a>
                                             </div>
                                         </div>

@@ -14,14 +14,14 @@ class CarouselController extends BaseController
     {
         //调用模型层获取数据
         $carouselmodel = M('carousel');
-        $carousel = $carouselmodel->order('c_id desc')->select();
+        $carousel = $carouselmodel->order('carousel_id desc')->select();
         //调用视图层显示数据
         $this->carousel = $carousel;
         $this->display();
     }
 
     public function addcarousel(){
-        $item = M('items');
+        $item = M('commodity');
         $this->items = $item -> select();
         $this->display();
     }
@@ -30,10 +30,10 @@ class CarouselController extends BaseController
     public function del_carousel(){
         $user = M('carousel');
         $c_id = I('c_id');
-        $carousel_img = M('carousel') ->where("c_id = $c_id")->getField("pic");
-        if (false != $user->where("c_id = $c_id")->delete()) {
+        $carousel_img = M('carousel') ->where("carousel_id = $c_id")->getField("image");
+        if (false != $user->where("carousel_id = $c_id")->delete()) {
             if ($carousel_img != "default.jpg"){
-                $carousel_img_url = $this->url_carousel().$carousel_img;
+                $carousel_img_url = $this->url_image("carousel_image").$carousel_img;
                 unlink($carousel_img_url);
             }
             $tempdata = "删除成功！";
@@ -49,7 +49,7 @@ class CarouselController extends BaseController
         $carouselmodel = M('carousel');
         $c_id = I('c_id');
         $carouselmodel->state = I('state');
-        if (false != $carouselmodel->where("c_id=$c_id")->save()) {
+        if (false != $carouselmodel->where("carousel_id=$c_id")->save()) {
             $tempdata = "修改成功！";
         } else {
             $tempdata = "修改失败！";
@@ -61,13 +61,13 @@ class CarouselController extends BaseController
     public function add_carousel()
     {
         $carousel['hint'] = rand(1000, 9999);
-        $carousel['f_id'] = I('post.f_id');
-        $carousel['name'] = M('items') -> where("f_id =".$carousel['f_id'])->getField('f_name');
+        $carousel['commodity_id'] = I('post.f_id');
+        $carousel['name'] = M('commodity_id') -> where("commodity_id =".$carousel['commodity_id'])->getField('name');
         if ($_FILES['file']['error'] == 0) {
             $up_info = $this->img_upload();
             $pic = $up_info['pic']['savename'];
             if ($pic != null) {
-                $carousel['pic'] = $pic;
+                $carousel['image'] = $pic;
             }
             if (false != M('carousel')->add($carousel)) {
                 redirect('carousellist');
@@ -83,7 +83,7 @@ class CarouselController extends BaseController
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 314572800;// 设置附件上传大小
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-        $upload->rootPath = './Public/Uploads/carouselpic/'; // 设置附件上传根目录
+        $upload->rootPath = './Public/Uploads/carousel_image/'; // 设置附件上传根目录
         $upload->saveName = 'uniqid';
         $upload->replace = true;
         $upload->autoSub = false;

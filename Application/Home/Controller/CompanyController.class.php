@@ -41,4 +41,26 @@ class CompanyController extends BaseController
         $this->type_query();
         $this->display();
     }
+
+    public function company_detail($company_id)
+    {
+        $company_sql = M('company');
+        $commodity_sql = M('commodity');
+        $collect_sql = M('collect');
+        $company_detail = $company_sql->where("company_id=$company_id")->find();
+        $this->assign('detail', $company_detail);
+        $company_commodity = $commodity_sql->where("company_id=$company_id")->select();
+        foreach ($company_commodity as $n => $val) {
+            $c['commodity_id'] = $val['commodity_id'];
+            $c['user_id'] = I('session.user_id');
+            $company_commodity[$n]['collect_state'] = $collect_sql->where($c)->getField('state');
+            if ($company_commodity[$n]['collect_state'] == null) {
+                $company_commodity[$n]['collect_state'] = 0;
+            }
+        }
+        $this->assign('commodity', $company_commodity);
+        $this->type_query();
+        $this->getUserCart();
+        $this->display();
+    }
 }

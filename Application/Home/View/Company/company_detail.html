@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title>{$detail.name}</title>
+    <title></title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -26,14 +26,22 @@
     <link rel="shortcut icon" href="__PUBLIC__/frontdesk/ico/favicon.png">
 
 
+    <script>
+        var AppUrl = "__APP__";
+        var check_user_id = "{$Think.session.user_id}"
+    </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="__PUBLIC__/Ajax/CompanyAjax.js"></script>
-    <!-- Libs CSS
-	============================================ -->
+    <script src="__PUBLIC__/Ajax/userAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/CartAjax.js"></script>
+    <script src="__PUBLIC__/Ajax/indexAjax.js"></script>
 
+    <script src="__PUBLIC__/BeatPicker/js/BeatPicker.min.js"></script>
+    <script src="__PUBLIC__/BeatPicker/js/prism.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/BeatPicker/css/BeatPicker.min.css"/>
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/PostbirdAlertBox/css/postbirdAlertBox.css">
-
+    <!-- Libs CSS
+	============================================ -->
     <link rel="stylesheet" href="__PUBLIC__/frontdesk/css/bootstrap/css/bootstrap.min.css">
     <link href="__PUBLIC__/frontdesk/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
@@ -137,151 +145,111 @@
     <div class="main-container container">
         <div class="row">
             <!--Left Part Start -->
-            <aside class="col-sm-4 col-md-3" id="column-left">
                 <div class="module menu-category titleLine">
                     <h3 class="modtitle">{$detail.name}</h3>
-                    <div class="modcontent">
-                        <div class="box-category">
-                            <ul id="cat_accordion" class="list-group">
-                                <li>
-                                    <a href="" class="cutom-parent">查看企业详情</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                                <li>
-                                    <a href="add_commodity" class="cutom-parent">发布商品信息</a><span
-                                        class="dcjq-icon"></span>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
                 </div>
-            </aside>
             <!--Left Part End -->
-            <!--Middle Part Start-->
-            <div id="content" class="col-md-9 col-sm-8">
-                <div class="products-category">
-                    <!-- Filters -->
-                    <div class="product-filter filters-panel">
-                        <div class="row">
-                            <div class="col-md-2 visible-lg">
-                                <div class="view-mode">
-                                    <div class="list-view">
-                                        <button class="btn btn-default grid active" data-view="grid"
-                                                data-toggle="tooltip" data-original-title="九宫格"><i
-                                                class="fa fa-th"></i></button>
-                                        <button class="btn btn-default list" data-view="list" data-toggle="tooltip"
-                                                data-original-title="列表"><i class="fa fa-th-list"></i></button>
+            <div class="products-list row grid">
+                <volist name="commodity" id="commodity">
+                    <div class="product-layout col-md-4 col-sm-6 col-xs-12 " id="my_collect_{$collect.commodity_id}">
+                        <div class="product-item-container">
+                            <div class="left-block">
+                                <div class="product-image-container">
+                                    <img data-src="image/demo/shop/product/e11.jpg"
+                                         src="__PUBLIC__/Uploads/commodity_image/{$commodity.small_pic}"
+                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
+                                </div>
+                                <!--end countdown box-->
+                                <!--full quick view block-->
+                                <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
+                                   href="{:U('Project/project_detail?id='.$commodity['commodity_id'])}"> 查看详情</a>
+                                <!--end full quick view block-->
+                            </div>
+                            <div class="right-block">
+                                <div class="caption">
+                                    <h4><a target="_blank"
+                                           href="{:U('Project/project_detail?id='.$commodity['commodity_id'])}">{$collect.name}</a>
+                                    </h4>
+                                    <div class="ratings">
+                                        <div class="rating-box">
+                                            <if condition="($collect.starnum eq 0)">
+                                                <span style="color: #ebdb2c"> 暂无评价</span>
+                                                <else/>
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($commodity.starnum gt 0)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($commodity.starnum gt 1)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($commodity.starnum gt 2)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($commodity.starnum gt 3)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <if condition="($commodity.starnum gt 4)">
+                                                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <else/>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                                                    </if>
+                                                                                </span>
+                                            </if>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="price-new">￥{$commodity.price}</span>
+                                        <!--<span class="price-old">$122.00</span>-->
+                                        <!--<span class="label label-percent">-40%</span>-->
+                                    </div>
+                                    <div class="description item-desc hidden">
+                                        <p>{$collect.intro}</p>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="button-group">
+                                        <if condition="($commodity.collect_state eq 1)">
+                                            <button class="wishlist" type="button"
+                                                    data-toggle="tooltip"
+                                                    id="collect_btn_{$commodity.commodity_id}"
+                                                    onclick="collect('{$commodity.collect_state}','{$commodity.commodity_id}')">
+                                                <i class="fa fa-heart"></i>
+                                                <span id="collect_font_{$commodity.commodity_id}"> 取消收藏</span>
+                                            </button>
+                                            <else/>
+                                            <button class="wishlist" type="button"
+                                                    id="collect_btn_{$commodity.commodity_id}"
+                                                    onclick="collect('{$commodity.collect_state}','{$commodity.commodity_id}')">
+                                                <i class="fa fa-heart"></i>
+                                                <span id="collect_font_{$commodity.commodity_id}"> 添加到我的收藏</span>
+                                            </button>
+                                        </if>
+                                </div>
+                            </div><!-- right block -->
                         </div>
                     </div>
-                    <!-- //end Filters -->
-                    <!--changed listings-->
-                    <div class="products-list row grid">
-                        <volist name="company_goods" id="goods">
-                            <div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
-                                <div class="product-item-container">
-                                    <div class="left-block">
-                                        <div class="product-image-container">
-                                            <img data-src="image/demo/shop/product/e11.jpg"
-                                                 src="__PUBLIC__/Uploads/commodity_image/{$goods.small_pic}"
-                                                 alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                        </div>
-                                        <!--end countdown box-->
-                                        <!--full quick view block-->
-                                        <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
-                                           href="{:U('Project/project_detail?id='.$goods['commodity_id'])}"> 查看详情</a>
-                                        <!--end full quick view block-->
-                                    </div>
-                                    <div class="right-block">
-                                        <div class="caption">
-                                            <h4><a target="_blank"
-                                                   href="{:U('Project/project_detail?id='.$goods['commodity_id'])}">{$goods.name}</a>
-                                            </h4>
-                                            <div class="ratings">
-                                                <div class="rating-box">
-                                                    <if condition="($goods.starnum eq 0)">
-                                                        <span style="color: #ebdb2c"> 暂无评价</span>
-                                                        <else/>
-                                                        <span class="fa fa-stack">
-                                                                                    <if condition="($goods.starnum gt 0)">
-                                                                                        <i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <else/>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                                                                    </if>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <if condition="($goods.starnum gt 1)">
-                                                                                        <i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <else/>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                                                                    </if>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <if condition="($goods.starnum gt 2)">
-                                                                                        <i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <else/>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                                                                    </if>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <if condition="($goods.starnum gt 3)">
-                                                                                        <i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <else/>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                                                                    </if>
-                                                                                </span>
-
-                                                        <span class="fa fa-stack">
-                                                                                    <if condition="($goods.starnum gt 4)">
-                                                                                        <i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <else/>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                                                                    </if>
-                                                                                </span>
-                                                    </if>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="price-new">￥{$goods.price}</span>
-                                                <!--<span class="price-old">$122.00</span>-->
-                                                <!--<span class="label label-percent">-40%</span>-->
-                                            </div>
-                                            <div class="description item-desc hidden">
-                                                <p>{$goods.intro}</p>
-                                            </div>
-                                        </div>
-                                        <div class="button-group">
-                                            <button class="compare" type="button" data-toggle="tooltip" title="修改商品信息"
-                                                    onclick="cart.add('42', '1');"><i class="fa fa-exchange"></i> <span
-                                                    class="hidden-xs"> 修改</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="下架商品"
-                                                    onclick="dercarriage('{$goods.commodity_id}','{$goods.state}')"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 下架</span></button>
-                                            <button class="compare" type="button" data-toggle="tooltip" title="删除商品"
-                                                    onclick="compare.add('42');"><i class="fa fa-exchange"></i><span
-                                                    class="hidden-xs"> 删除</span></button>
-                                        </div>
-                                    </div><!-- right block -->
-
-                                </div>
-                            </div>
-                        </volist>
-                    </div>                    <!--// End Changed listings-->
-                    <!-- Filters -->
-                    <!-- //end Filters -->
-
-                </div>
-
+                </volist>
             </div>
-
-
+            <!--Middle Part Start-->
         </div>
         <!--Middle Part End-->
     </div>
@@ -302,7 +270,6 @@
 <script type="text/javascript" src="__PUBLIC__/frontdesk/js/countdown/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/frontdesk/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/moment.js"></script>
-<script type="text/javascript" src="__PUBLIC__/frontdesk/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="__PUBLIC__/frontdesk/js/jquery-ui/jquery-ui.min.js"></script>
 
 

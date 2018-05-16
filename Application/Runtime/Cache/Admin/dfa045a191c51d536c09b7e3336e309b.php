@@ -279,9 +279,6 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
-                </li>
             </ul>
 
         </div>
@@ -301,7 +298,7 @@
             </ol>
         </div>
         <div id="page-inner">
-            <div class="row" >
+            <div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
@@ -323,36 +320,38 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr id="u_<?php echo ($user["u_id"]); ?>">
-                                            <td><img src="/ChildrenPlatform/Public/Uploads/userpic/<?php echo ($user ["pic"]); ?>" width="50"></td>
+                                    <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr id="u_<?php echo ($user["user_id"]); ?>">
+                                            <td><img src="/ChildrenPlatform/Public/Uploads/user_image/<?php echo ($user["image"]); ?>" width="50"></td>
                                             <td><?php echo ($user["username"]); ?></td>
                                             <td><?php echo ($user["telephone"]); ?></td>
                                             <td><?php echo ($user["address"]); ?></td>
                                             <td><?php echo ($user["email"]); ?></td>
                                             <td>
-                                                <?php if(($user["state"] == 0)): ?><span id="state_<?php echo ($user["i_id"]); ?>" class="label label-success">正常</span>
+                                                <?php if(($user["state"] == 0)): ?><span id="state_<?php echo ($user["user_id"]); ?>" class="label label-success">正常</span>
                                                     <?php else: ?>
-                                                    <span id="state_<?php echo ($user["i_id"]); ?>" class="label label-danger">禁用</span><?php endif; ?>
+                                                    <span id="state_<?php echo ($user["user_id"]); ?>" class="label label-danger">禁用</span><?php endif; ?>
                                             </td>
                                             <td>
                                                 <div class="btn-group">
                                                     <button class="btn btn-info dropdown-toggle" aria-expanded="false"
-                                                            data-toggle="dropdown"> 操作 <span class="caret"></span></button>
+                                                            data-toggle="dropdown"> 操作 <span class="caret"></span>
+                                                    </button>
                                                     <ul class="dropdown-menu">
                                                         <li>
                                                             <?php if(($user["state"] == 0)): ?><a id="change_<?php echo ($user["i_id"]); ?>"
-                                                                   onclick="changestate('<?php echo ($user["i_id"]); ?>',1)"
+                                                                   onclick="changestate('<?php echo ($user["user_id"]); ?>',1)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>暂停使用</a>
                                                                 <?php else: ?>
                                                                 <a id="change_<?php echo ($user["i_id"]); ?>"
-                                                                   onclick="changestate('<?php echo ($user["i_id"]); ?>',0)"
+                                                                   onclick="changestate('<?php echo ($user["user_id"]); ?>',0)"
                                                                    href="javascript:;"><i
                                                                         class="icon-envelope"></i>取消禁用</a><?php endif; ?>
                                                         </li>
-                                                        <li><a onclick="editpswd('<?php echo ($user["u_id"]); ?>')" href="javascript:;"></i>
+                                                        <li><a onclick="editpswd('<?php echo ($user["user_id"]); ?>')"
+                                                               href="javascript:;"></i>
                                                             密码重置</a></li>
-                                                        <li><a onclick="del_user('<?php echo ($user["u_id"]); ?>')" href="javascript:;">
+                                                        <li><a onclick="del_user('<?php echo ($user["user_id"]); ?>')" href="javascript:;">
                                                             删除用户</a></li>
                                                     </ul>
                                                 </div>

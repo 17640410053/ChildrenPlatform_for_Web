@@ -39,7 +39,7 @@
                     <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="{:U('Project/typelist')}"> 分类管理</a>
                         </li>
                         <li>
                             <a class="active-menu" href="{:U('Project/prolist')}"> 信息管理</a>
@@ -48,9 +48,6 @@
                             <a href="{:U('Carousel/carousellist')}"> 轮播图管理</a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
             </ul>
 
@@ -104,9 +101,9 @@
                                     <select class="selectbox" style="width: 200px" name="type">
                                         <option value="0" disabled selected>请选择类型</option>
                                         <volist name="list" id="li">
-                                            <optgroup label="{$li.type}">
+                                            <optgroup label="{$li.name}">
                                                 <volist name="li[voo]" id="lio">
-                                                    <option value="{$lio.s_id}">{$lio.type}</option>
+                                                    <option value="{$lio.subsettype_id}">{$lio.name}</option>
                                                 </volist>
                                             </optgroup>
                                         </volist>

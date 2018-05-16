@@ -7,7 +7,7 @@ function delpro(f_id) {
         'onConfirm': function () {
             $.ajax({
                 url: "delpro",
-                data: {"f_id": f_id},
+                data: {"commodity_id": f_id},
                 type: "GET",
                 dataType: "JSON",
                 success: function () {
@@ -30,7 +30,7 @@ function changeprostate(f_id, state) {
         'onConfirm': function () {
             $.ajax({
                 url: "changestate",
-                data: {"f_id": f_id, "state": state},
+                data: {"commodity_id": f_id, "state": state},
                 type: "POST",
                 dataType: "JSON",
                 success: function () {
@@ -59,7 +59,7 @@ function up_name(f_id) {
             if (data != '') {
                 $.ajax({
                     url: "../../save_pro",
-                    data: {"f_id": f_id, "f_name": data},
+                    data: {"commodity_id": f_id, "name": data},
                     type: "POST",
                     dataType: "JSON",
                     success: function (msg) {
@@ -97,7 +97,7 @@ function up_price(f_id) {
             if (data != '') {
                 $.ajax({
                     url: "../../save_pro",
-                    data: {"f_id": f_id, "price": data},
+                    data: {"commodity_id": f_id, "price": data},
                     type: "POST",
                     dataType: "JSON",
                     success: function (msg) {
@@ -125,7 +125,7 @@ function up_address(f_id) {
         onConfirm: function (data) {
             $.ajax({
                 url: "../../save_pro",
-                data: {"f_id": f_id, "address": data},
+                data: {"commodity_id": f_id, "address": data},
                 type: "POST",
                 dataType: "JSON",
                 success: function (msg) {
@@ -158,7 +158,7 @@ function up_telephone(f_id) {
                 } else {
                     $.ajax({
                         url: "../../save_pro",
-                        data: {"f_id": f_id, "telephone": data},
+                        data: {"commodity_id": f_id, "telephone": data},
                         type: "POST",
                         dataType: "JSON",
                         success: function (msg) {
@@ -176,7 +176,7 @@ function up_telephone(f_id) {
             } else {
                 $.ajax({
                     url: "../../save_pro",
-                    data: {"f_id": f_id, "telephone": data},
+                    data: {"commodity_id": f_id, "telephone": data},
                     type: "POST",
                     dataType: "JSON",
                     success: function (msg) {
@@ -202,7 +202,7 @@ function up_url(f_id) {
         onConfirm: function (data) {
             $.ajax({
                 url: "../../save_pro",
-                data: {"f_id": f_id, "url": data},
+                data: {"commodity_id": f_id, "url": data},
                 type: "POST",
                 dataType: "JSON",
                 success: function (msg) {
@@ -242,7 +242,7 @@ function up_type(f_id) {//
     if (s_id != null) {
         $.ajax({
             url: "../../up_type",
-            data: {"f_id": f_id, "s_id": s_id},
+            data: {"commodity_id": f_id, "subsettype_id": s_id},
             type: "POST",
             dataType: "JSON",
             success: function (msg) {
@@ -267,11 +267,12 @@ function up_type(f_id) {//
         });
     }
 }
+
 function up_m_img(f_id) {
     var base64 = $('#m_imghead')[0].src;
     $.ajax({
         url: "../../up_img",
-        data: {"f_id": f_id, "m_base64": base64},
+        data: {"commodity_id": f_id, "m_base64": base64},
         type: "POST",
         dataType: "JSON",
         success: function () {
@@ -292,7 +293,7 @@ function up_s_img(f_id) {
     var base64 = $('#imghead')[0].src;
     $.ajax({
         url: "../../up_img",
-        data: {"f_id": f_id, "s_base64": base64},
+        data: {"commodity_id": f_id, "s_base64": base64},
         type: "POST",
         dataType: "JSON",
         success: function () {
@@ -305,6 +306,134 @@ function up_s_img(f_id) {
                     $("#s_img__up_sum").hide();
                 }
             })
+        }
+    });
+}
+
+function del_type(type_id) {
+    PostbirdAlertBox.prompt({
+        title: '请输入delete确认',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data == "delete"){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/del_type",
+                    data: {"type_id": type_id},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                                $('#type_'+type_id).remove();
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误")
+                    }
+                });
+            }else {
+                alert("取消操作")
+            }
+        }
+    });
+}
+
+function del_subset_type(subsettype_id) {
+    PostbirdAlertBox.prompt({
+        title: '请输入delete确认',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data == "delete"){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/del_subset_type",
+                    data: {"subsettype_id": subsettype_id},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                                $('#type_'+subsettype_id).remove();
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误")
+                    }
+                });
+            }else {
+                alert("取消操作")
+            }
+        }
+    });
+}
+
+function update_type(type_id) {
+    PostbirdAlertBox.prompt({
+        title: '输入需要修改的名称',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data != ""){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/update_type",
+                    data: {"type_id": type_id,"name":data},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                                $('#name_type_'+type_id).html(data);
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误！")
+                    }
+                });
+            }else {
+                alert("名称不能为空！")
+            }
+        }
+    });
+}
+
+function update_subset_type(type_id) {
+    PostbirdAlertBox.prompt({
+        title: '输入需要修改的名称',
+        okBtn: '提交',
+        onConfirm: function (data) {
+            if (data != ""){
+                $.ajax({
+                    url: AppUrl + "/Admin/Project/update_subset_type",
+                    data: {"subsetType_id": type_id,"name":data},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确认',
+                            'onConfirm': function () {
+                                $('#name_type_'+type_id).html(data);
+                            }
+                        })
+                    },
+                    error:function () {
+                        alert("网络错误！")
+                    }
+                });
+            }else {
+                alert("名称不能为空！")
+            }
         }
     });
 }

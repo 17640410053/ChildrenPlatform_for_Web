@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta content="" name="description"/>
     <meta content="webthemez" name="author"/>
-    <title>用户列表</title>
-    <!-- Bootstrap Styles-->
+    <title>分类管理</title>
+    <script>
+    var AppUrl = "/ChildrenPlatform";
+    </script>
+
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <script src="/ChildrenPlatform/Public/Ajax/projectAjax.js"></script>
+
     <!-- Bootstrap Styles-->
     <link href="/ChildrenPlatform/Public/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
     <!-- FontAwesome Styles-->
@@ -20,7 +25,7 @@
     <link href="/ChildrenPlatform/Public/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
     <!-- TABLE STYLES-->
     <link href="/ChildrenPlatform/Public/backstage/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
-    <script src="/ChildrenPlatform/Public/Ajax/carouselAjax.js"></script>
+
 </head>
 
 <body>
@@ -264,16 +269,16 @@
                 </li>
 
                 <li>
-                    <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
+                    <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
+                            <a class="active-menu" href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
                         <li>
                             <a href="<?php echo U('Project/prolist');?>"> 信息管理</a>
                         </li>
                         <li>
-                            <a class="active-menu" href="<?php echo U('Carousel/carousellist');?>"> 轮播图管理</a>
+                            <a href="<?php echo U('Carousel/carousellist');?>"> 轮播图管理</a>
                         </li>
                     </ul>
                 </li>
@@ -286,13 +291,14 @@
     <div id="page-wrapper">
         <div class="header">
             <h1 class="page-header">
-                轮播图管理
+                分类管理
                 <small> 操作员：<?php echo (session('username')); ?></small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?php echo U('Index/index');?>"> 主页</a></li>
-                <li class="active"> 轮播图管理</li>
-                <li> <a href="<?php echo U('Carousel/addcarousel');?>"> 添加轮播图</a></li>
+                <li class="active"> 分类管理</li>
+                <li><a href="<?php echo U('Project/subset_type_list');?>"> 次级分类</a></li>
+                <li><a href="<?php echo U('Project/add_type');?>"> 添加分类</a></li>
             </ol>
         </div>
         <div id="page-inner">
@@ -301,46 +307,32 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            项目列表
+                            分类列表
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                     <tr>
-                                        <th>图片</th>
-                                        <th>名称</th>
-                                        <th>状态</th>
+                                        <th>分类</th>
+                                        <th>浏览量</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if(is_array($carousel)): $i = 0; $__LIST__ = $carousel;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ca): $mod = ($i % 2 );++$i;?><tr id="ca_<?php echo ($ca["carousel_id"]); ?>">
-                                            <td><img src="/ChildrenPlatform/Public/Uploads/carousel_image/<?php echo ($ca["image"]); ?>" width="50"></td>
-                                            <td><?php echo ($ca["name"]); ?></td>
-                                            <td>
-                                                <?php if(($ca["state"] == 0)): ?><span id="state_ca_<?php echo ($ca["carousel_id"]); ?>" class="label label-success">正常</span>
-                                                    <?php else: ?>
-                                                    <span id="state_ca_<?php echo ($ca["carousel_id"]); ?>" class="label label-danger">禁用</span><?php endif; ?>
-                                            </td>
+                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr id="type_<?php echo ($list["type_id"]); ?>">
+                                            <td id="name_type_<?php echo ($list["type_id"]); ?>"><?php echo ($list["name"]); ?></td>
+                                            <td><?php echo ($list["clicknum"]); ?>浏览</td>
                                             <td>
                                                 <div class="btn-group">
                                                     <button class="btn btn-info dropdown-toggle" aria-expanded="false"
-                                                            data-toggle="dropdown"> 操作 <span class="caret"></span></button>
+                                                            data-toggle="dropdown"> 操作 <span class="caret"></span>
+                                                    </button>
                                                     <ul class="dropdown-menu">
-                                                        <li>
-                                                            <?php if(($ca["state"] == 0)): ?><a id="change_ca_<?php echo ($ca["carousel_id"]); ?>"
-                                                                   onclick="change_state_carousel('<?php echo ($ca["carousel_id"]); ?>',1)"
-                                                                   href="javascript:;"><i
-                                                                        class="icon-envelope"></i>暂停使用</a>
-                                                                <?php else: ?>
-                                                                <a id="change_ca_<?php echo ($ca["carousel_id"]); ?>"
-                                                                   onclick="change_state_carousel('<?php echo ($ca["carousel_id"]); ?>',0)"
-                                                                   href="javascript:;"><i
-                                                                        class="icon-envelope"></i>取消禁用</a><?php endif; ?>
-                                                        </li>
-                                                        <li><a onclick="del_carousel('<?php echo ($ca["carousel_id"]); ?>')" href="javascript:;">
-                                                            删除轮播图</a></li>
+                                                        <li><a onclick="del_type('<?php echo ($list["type_id"]); ?>')" href="javascript:;">
+                                                            删除分类</a></li>
+                                                        <li><a onclick="update_type('<?php echo ($list["type_id"]); ?>')" href="javascript:;">
+                                                            修改分类</a></li>
                                                     </ul>
                                                 </div>
                                             </td>
@@ -355,6 +347,9 @@
         </div>
     </div>
 </div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
 <script src="/ChildrenPlatform/Public/backstage/assets/js/jquery-1.10.2.js"></script>
 <!-- Bootstrap Js -->
 <script src="/ChildrenPlatform/Public/backstage/assets/js/bootstrap.min.js"></script>
@@ -370,8 +365,8 @@
 </script>
 <!-- Custom Js -->
 <script src="/ChildrenPlatform/Public/backstage/assets/js/custom-scripts.js"></script>
-<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
+<script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 </body>
 
 </html>

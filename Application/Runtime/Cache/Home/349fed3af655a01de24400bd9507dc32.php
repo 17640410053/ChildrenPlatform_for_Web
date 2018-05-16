@@ -4,7 +4,7 @@
 
     <!-- Basic page needs
 	============================================ -->
-    <title><?php echo ($type); ?></title>
+    <title></title>
     <meta charset="utf-8">
     <meta name="keywords" content=""/>
     <meta name="author" content="Magentech">
@@ -13,12 +13,31 @@
     <!-- Mobile specific metas
     ============================================ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ChildrenPlatform/Public/frontdesk/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/ChildrenPlatform/Public/frontdesk/ico/favicon.png">
+
+
     <script>
         var AppUrl = "/ChildrenPlatform";
         var check_user_id = "<?php echo (session('user_id')); ?>"
     </script>
     <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
+    <script src="/ChildrenPlatform/Public/Ajax/CartAjax.js"></script>
     <script src="/ChildrenPlatform/Public/Ajax/indexAjax.js"></script>
+
+    <script src="/ChildrenPlatform/Public/BeatPicker/js/BeatPicker.min.js"></script>
+    <script src="/ChildrenPlatform/Public/BeatPicker/js/prism.js"></script>
+    <link rel="stylesheet" href="/ChildrenPlatform/Public/BeatPicker/css/BeatPicker.min.css"/>
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
     <!-- Libs CSS
@@ -47,6 +66,7 @@
 
 
 <div id="wrapper" class="wrapper-full ">
+    <!-- Header Container  -->
     <header id="header" class=" variantleft type_1">
         <div class="header-top compact-hidden">
     <div class="container">
@@ -859,11 +879,11 @@
                                                     <li class="home hover">
                                                         <a href="<?php echo U('Index/index');?>">主 页</a>
                                                     </li>
-                                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$mt): $mod = ($i % 2 );++$i;?><li class="with-sub-menu hover">
+                                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><li class="with-sub-menu hover">
                                                             <p class="close-menu"></p>
-                                                            <a href="<?php echo U('Project/project_type?id='.$mt['type_id']);?>"
+                                                            <a href="<?php echo U('Project/project_type?id='.$type['type_id']);?>"
                                                                class="clearfix">
-                                                                <strong><?php echo ($mt["name"]); ?></strong>
+                                                                <strong><?php echo ($type["name"]); ?></strong>
                                                                 <b class="caret"></b>
                                                             </a>
                                                             <div class="sub-menu" style="width: 15%; ">
@@ -871,8 +891,8 @@
                                                                     <div class="row">
                                                                         <div class="col-md-6">
                                                                             <ul class="row-list">
-                                                                                <?php if(is_array($mt[voo])): $i = 0; $__LIST__ = $mt[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$lv): $mod = ($i % 2 );++$i;?><li><a class="subcategory_item"
-                                                                                           href="<?php echo U('Project/project_child_type?id='.$lv['subsettype_id']);?>"><?php echo ($lv["name"]); ?></a>
+                                                                                <?php if(is_array($type[voo])): $i = 0; $__LIST__ = $type[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$subsetType): $mod = ($i % 2 );++$i;?><li><a class="subcategory_item"
+                                                                                           href="<?php echo U('Project/project_child_type?id='.$subsetType['subsettype_id']);?>"><?php echo ($subsetType["name"]); ?></a>
                                                                                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
                                                                             </ul>
                                                                         </div>
@@ -889,7 +909,6 @@
                         </div>
                     </div>
                     <!-- //end Main menu -->
-
                 </div>
             </div>
 
@@ -898,186 +917,104 @@
         <!-- Navbar switcher -->
         <!-- //end Navbar switcher -->
     </header>
-
-    <div id="search_div" style="min-height: 500px">
-        <div id="index_body">
-            <div class="main-container container">
-                <ul class="breadcrumb">
-                    <li><a href="#"> <?php echo ($type); ?></a></li>
-                </ul>
-                <div class="row">
-                    <!--Left Part Start -->
-                    <aside class="col-sm-4 col-md-3" id="column-left">
-                        <div class="module menu-category titleLine">
-                            <h3 class="modtitle"> 热门推荐</h3>
-                            <div class="modcontent">
-                                <div class="box-category">
-                                    <ul id="cat_accordion" class="list-group">
-                                        <?php if(is_array($hot)): $i = 0; $__LIST__ = $hot;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hot): $mod = ($i % 2 );++$i;?><li class=""><a href="<?php echo U('Project/project_child_type?id='.$hot['subsettype_id']);?>"
-                                                            class="cutom-parent"><?php echo ($hot["name"]); ?></a>
-                                                <span class="dcjq-icon"></span></li><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    </ul>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="module latest-product titleLine">
-                            <h3 class="modtitle"> 其他推荐</h3>
-                            <div class="modcontent ">
-                                <?php if(is_array($other)): $i = 0; $__LIST__ = $other;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$other): $mod = ($i % 2 );++$i;?><div class="product-latest-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <a href="<?php echo U('Project/project_detail?id='.$other['commodity_id']);?>"
-                                                   target="_blank"><img
-                                                        src="/ChildrenPlatform/Public/uploads/commodity_image/<?php echo ($other["small_pic"]); ?>"
-                                                        alt="<?php echo ($other["name"]); ?>"
-                                                        class="img-responsive"
-                                                        style="width: 100px; height: 100px;"></a>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="caption" style="margin-top: 12px">
-                                                    <h4><a href="<?php echo U('Project/project_detail?id='.$other['commodity_id']);?>"
-                                                           target="_blank"> <?php echo ($other["name"]); ?></a></h4>
-
-                                                    <div class="price">
-                                                        <span class="price-new"> ￥<?php echo ($other["price"]); ?></span>
-                                                    </div>
-                                                    <div class="ratings">
-                                                        <div class="rating-box">
-                                                            <?php if(($other["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                                <?php else: ?>
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($other["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($other["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($other["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($other["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($other["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-                            </div>
-                        </div>
-                    </aside>
-
-                    <div id="content" class="col-md-9 col-sm-8">
-                        <div class="products-category">
-                            <div class="products-list row grid">
-                                <?php if(is_array($item)): $i = 0; $__LIST__ = $item;if( count($__LIST__)==0 ) : echo "暂无匹配结果！" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 ">
-                                        <div class="product-item-container">
-                                            <div class="left-block">
-                                                <div class="product-image-container lazy second_img ">
-                                                    <img data-src="/ChildrenPlatform/Public/uploads/commodity_image/<?php echo ($item["small_pic"]); ?>" src=""
-                                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
-                                                </div>
-                                                <a class="quickview visible-lg"
-                                                   href="<?php echo U('Project/project_detail?id='.$item['commodity_id']);?>"
-                                                   target="_blank">
-                                                    马上浏览</a>
-                                            </div>
-
-
-                                            <div class="right-block">
-                                                <div class="caption">
-                                                    <h4><a href="<?php echo U('Project/project——detail?id='.$item['commodity_id']);?>">
-                                                        <?php echo ($item["name"]); ?></a></h4>
-                                                    <div class="ratings">
-                                                        <div class="rating-box">
-                                                            <?php if(($item["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
-                                                                <?php else: ?>
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($item["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($item["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($item["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($item["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span>
-
-                                                                <span class="fa fa-stack">
-                                                                                    <?php if(($item["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
-                                                                                        <?php else: ?>
-                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
-                                                                                </span><?php endif; ?>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="price">
-                                                        <span class="price-new"> ￥<?php echo ($item["price"]); ?></span>
-                                                        <!--<span class="price-old">$122.00</span>-->
-                                                        <!--<span class="label label-percent">-40%</span>-->
-                                                    </div>
-                                                </div>
-                                                <div class="button-group">
-                                                    <?php if(is_array($item[voo])): $i = 0; $__LIST__ = $item[voo];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$collect): $mod = ($i % 2 );++$i; if(($collect["state"] == 1)): ?><button class="wishlist" type="button"
-                                                                    data-toggle="tooltip"
-                                                                    id="collect_btn_<?php echo ($item["commodity_id"]); ?>"
-                                                                    onclick="collect('<?php echo ($collect["state"]); ?>','<?php echo ($item["commodity_id"]); ?>')">
-                                                                <i class="fa fa-heart"></i>
-                                                                <span id="collect_font_<?php echo ($item["commodity_id"]); ?>"> 取消收藏</span>
-                                                            </button>
-                                                            <?php else: ?>
-                                                            <button class="wishlist" type="button"
-                                                                    id="collect_btn_<?php echo ($item["commodity_id"]); ?>"
-                                                                    onclick="collect('<?php echo ($collect["state"]); ?>','<?php echo ($item["commodity_id"]); ?>')">
-                                                                <i class="fa fa-heart"></i>
-                                                                <span id="collect_font_<?php echo ($item["commodity_id"]); ?>"> 添加到我的收藏</span>
-                                                            </button><?php endif; endforeach; endif; else: echo "暂无匹配结果！" ;endif; ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </div>
-                        </div>
-                    </div>
+    <!-- //Header Container  -->
+    <!-- Main Container  -->
+    <div class="main-container container">
+        <div class="row">
+            <!--Left Part Start -->
+                <div class="module menu-category titleLine">
+                    <h3 class="modtitle"><?php echo ($detail["name"]); ?></h3>
                 </div>
-            </div>
-        </div>
-    </div>
+            <!--Left Part End -->
+            <div class="products-list row grid">
+                <?php if(is_array($commodity)): $i = 0; $__LIST__ = $commodity;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$commodity): $mod = ($i % 2 );++$i;?><div class="product-layout col-md-4 col-sm-6 col-xs-12 " id="my_collect_<?php echo ($collect["commodity_id"]); ?>">
+                        <div class="product-item-container">
+                            <div class="left-block">
+                                <div class="product-image-container">
+                                    <img data-src="image/demo/shop/product/e11.jpg"
+                                         src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($commodity["small_pic"]); ?>"
+                                         alt="Apple Cinema 30&quot;" class="img-responsive"/>
+                                </div>
+                                <!--end countdown box-->
+                                <!--full quick view block-->
+                                <a class="quickview  visible-lg" data-fancybox-type="iframe" target="_blank"
+                                   href="<?php echo U('Project/project_detail?id='.$commodity['commodity_id']);?>"> 查看详情</a>
+                                <!--end full quick view block-->
+                            </div>
+                            <div class="right-block">
+                                <div class="caption">
+                                    <h4><a target="_blank"
+                                           href="<?php echo U('Project/project_detail?id='.$commodity['commodity_id']);?>"><?php echo ($collect["name"]); ?></a>
+                                    </h4>
+                                    <div class="ratings">
+                                        <div class="rating-box">
+                                            <?php if(($collect["starnum"] == 0)): ?><span style="color: #ebdb2c"> 暂无评价</span>
+                                                <?php else: ?>
+                                                <span class="fa fa-stack">
+                                                                                    <?php if(($commodity["starnum"] > 0)): ?><i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <?php else: ?>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
+                                                                                </span>
 
+                                                <span class="fa fa-stack">
+                                                                                    <?php if(($commodity["starnum"] > 1)): ?><i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <?php else: ?>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <?php if(($commodity["starnum"] > 2)): ?><i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <?php else: ?>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <?php if(($commodity["starnum"] > 3)): ?><i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <?php else: ?>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
+                                                                                </span>
+
+                                                <span class="fa fa-stack">
+                                                                                    <?php if(($commodity["starnum"] > 4)): ?><i class="fa fa-star fa-stack-1x"></i>
+                                                                                        <?php else: ?>
+                                                                                        <i class="fa fa-star-o fa-stack-1x"></i><?php endif; ?>
+                                                                                </span><?php endif; ?>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="price-new">￥<?php echo ($commodity["price"]); ?></span>
+                                        <!--<span class="price-old">$122.00</span>-->
+                                        <!--<span class="label label-percent">-40%</span>-->
+                                    </div>
+                                    <div class="description item-desc hidden">
+                                        <p><?php echo ($collect["intro"]); ?></p>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                        <?php if(($commodity["collect_state"] == 1)): ?><button class="wishlist" type="button"
+                                                    data-toggle="tooltip"
+                                                    id="collect_btn_<?php echo ($commodity["commodity_id"]); ?>"
+                                                    onclick="collect('<?php echo ($commodity["collect_state"]); ?>','<?php echo ($commodity["commodity_id"]); ?>')">
+                                                <i class="fa fa-heart"></i>
+                                                <span id="collect_font_<?php echo ($commodity["commodity_id"]); ?>"> 取消收藏</span>
+                                            </button>
+                                            <?php else: ?>
+                                            <button class="wishlist" type="button"
+                                                    id="collect_btn_<?php echo ($commodity["commodity_id"]); ?>"
+                                                    onclick="collect('<?php echo ($commodity["collect_state"]); ?>','<?php echo ($commodity["commodity_id"]); ?>')">
+                                                <i class="fa fa-heart"></i>
+                                                <span id="collect_font_<?php echo ($commodity["commodity_id"]); ?>"> 添加到我的收藏</span>
+                                            </button><?php endif; ?>
+                                </div>
+                            </div><!-- right block -->
+                        </div>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+            <!--Middle Part Start-->
+        </div>
+        <!--Middle Part End-->
+    </div>
+    <!-- Footer Container -->
     <footer class="footer-container">
     <section class="footer-top">
         <div class="container content">
@@ -1149,7 +1086,13 @@
         </div>
     </div>
 </footer>
+    <!-- //end Footer Container -->
+
 </div>
+
+<!-- Include Libs & Plugins
+	============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/owl-carousel/owl.carousel.js"></script>
@@ -1169,8 +1112,6 @@
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/addtocart.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/application.js"></script>
 <script type="text/javascript" src="/ChildrenPlatform/Public/frontdesk/js/themejs/cpanel.js"></script>
-
-
 <script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>

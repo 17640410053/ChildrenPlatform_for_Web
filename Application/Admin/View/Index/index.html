@@ -37,7 +37,7 @@
                     <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="{:U('Project/typelist')}"> 分类管理</a>
                         </li>
                         <li>
                             <a href="{:U('Project/prolist')}"> 信息管理</a>
@@ -47,9 +47,6 @@
                         </li>
 
                     </ul>
-                </li>
-                <li>
-                    <a href="{:U('Comment/commentlist')}"><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
             </ul>
         </div>
@@ -74,8 +71,8 @@
                         <div class="panel panel-primary">
                             <div class="number">
                                 <h3>
-                                    <h3> {$pageview}</h3>
-                                    <small> 访问量</small>
+                                    <h3> {$item}</h3>
+                                    <small> 项目</small>
                                 </h3>
                             </div>
                             <div class="icon">
@@ -91,8 +88,8 @@
                         <div class="panel panel-primary">
                             <div class="number">
                                 <h3>
-                                    <h3> {$item}</h3>
-                                    <small> 项目</small>
+                                    <h3> {$order}</h3>
+                                    <small> 订单</small>
                                 </h3>
                             </div>
                             <div class="icon">

@@ -26,3 +26,48 @@ function add_commodity() {
         }
     })
 }
+
+function dercarriage(commodity_id, state) {
+    if (state == 0) {
+        PostbirdAlertBox.confirm({
+            'title': '提示',
+            'content': "你确定要下架吗",
+            'okBtn': '确认',
+            'onConfirm': function () {
+                $.ajax({
+                    url: AppUrl + "/Home/Company/dercarriage",
+                    data: {"commodity_id": commodity_id, "state": state},
+                    type: "POST",
+                    dataType: "JSON",
+                    success: function (msg) {
+                        PostbirdAlertBox.alert({
+                            'title': '提示',
+                            'content': msg,
+                            'okBtn': '确定',
+                            'onConfirm': function () {
+
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    } else {
+        $.ajax({
+            url: AppUrl + "/Home/Company/dercarriage",
+            data: {"commodity_id": commodity_id, "state": state},
+            type: "POST",
+            dataType: "JSON",
+            success: function (msg) {
+                PostbirdAlertBox.alert({
+                    'title': '提示',
+                    'content': msg,
+                    'okBtn': '确定',
+                    'onConfirm': function () {
+
+                    }
+                });
+            }
+        });
+    }
+}
