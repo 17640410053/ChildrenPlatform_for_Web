@@ -270,8 +270,13 @@
                         <li>
                             <a href="<?php echo U('Carousel/carousellist');?>"> 轮播图管理</a>
                         </li>
-
                     </ul>
+                </li>
+                <li>
+                    <a href="<?php echo U('Comment/commentlist');?>"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Order/order_list');?>"><i class="fa fa-desktop"></i> 订单管理</a>
                 </li>
             </ul>
         </div>

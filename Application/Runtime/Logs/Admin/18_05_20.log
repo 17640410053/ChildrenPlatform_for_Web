@@ -1,0 +1,666 @@
+[ 2018-05-20T21:41:54+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-05-20T21:41:54+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2018-05-20T21:59:33+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.3598s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '73b07d76fa37bebacc35c43f03bd6231'  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 36 行.
+
+[ 2018-05-20T21:59:37+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0864s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-05-20T21:59:39+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-05-20T22:00:14+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/add_user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0249s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('13420088195','ecbabc7a1975309d4733cf2bea2083fa','2018-05-20 22:00:09') [ RunTime:0.2214s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13420088195' AND `password` = 'ecbabc7a1975309d4733cf2bea2083fa' AND `loginTime` = '2018-05-20 22:00:09' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0143s ]
+SQL: UPDATE `userinfor` SET `user_id`='27',`telephone`='13420088195',`username`='用户_846136',`email`='3868530@sohu.com',`gender`='1',`image`='2.jpg',`address`='成都' WHERE ( user_id=27 ) [ RunTime:0.0736s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('13610585021','27de41f180784b2804182ab2a63c2c77','2018-05-20 22:00:11') [ RunTime:0.0706s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13610585021' AND `password` = '27de41f180784b2804182ab2a63c2c77' AND `loginTime` = '2018-05-20 22:00:11' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `userinfor` SET `user_id`='28',`telephone`='13610585021',`username`='用户_893927',`email`='3986083@Hotmail.com',`gender`='1',`image`='25.jpg',`address`='银川' WHERE ( user_id=28 ) [ RunTime:0.0908s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('18358510131','e82833878213b6328124ec53587f9415','2018-05-20 22:00:11') [ RunTime:0.0705s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '18358510131' AND `password` = 'e82833878213b6328124ec53587f9415' AND `loginTime` = '2018-05-20 22:00:11' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `userinfor` SET `user_id`='29',`telephone`='18358510131',`username`='用户_918234',`email`='9399322@163.com',`gender`='0',`image`='28.jpg',`address`='芜湖' WHERE ( user_id=29 ) [ RunTime:0.0797s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15526622314','04b60098755813e04c32e069a6a3d77c','2018-05-20 22:00:11') [ RunTime:0.2064s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15526622314' AND `password` = '04b60098755813e04c32e069a6a3d77c' AND `loginTime` = '2018-05-20 22:00:11' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `userinfor` SET `user_id`='30',`telephone`='15526622314',`username`='用户_501138',`email`='6542327@qq.com',`gender`='1',`image`='21.jpg',`address`='邯郸' WHERE ( user_id=30 ) [ RunTime:0.0797s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('13842217407','9e43931b292cee03de601f560f9cd016','2018-05-20 22:00:11') [ RunTime:0.0704s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13842217407' AND `password` = '9e43931b292cee03de601f560f9cd016' AND `loginTime` = '2018-05-20 22:00:11' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `userinfor` SET `user_id`='31',`telephone`='13842217407',`username`='用户_427914',`email`='5876007@163.com',`gender`='1',`image`='9.jpg',`address`='保定' WHERE ( user_id=31 ) [ RunTime:0.1739s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15824609069','ac5ab3dc8b8514829a76255855127cab','2018-05-20 22:00:11') [ RunTime:0.0709s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15824609069' AND `password` = 'ac5ab3dc8b8514829a76255855127cab' AND `loginTime` = '2018-05-20 22:00:11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `userinfor` SET `user_id`='32',`telephone`='15824609069',`username`='用户_402014',`email`='9758850@sohu.com',`gender`='1',`image`='19.jpg',`address`='桂林' WHERE ( user_id=32 ) [ RunTime:0.0697s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('18917959594','c3a398b1dbdbfdeec00dbc0d53688c20','2018-05-20 22:00:12') [ RunTime:0.0710s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '18917959594' AND `password` = 'c3a398b1dbdbfdeec00dbc0d53688c20' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `userinfor` SET `user_id`='33',`telephone`='18917959594',`username`='用户_986898',`email`='7809600@qq.com',`gender`='1',`image`='30.jpg',`address`='六安' WHERE ( user_id=33 ) [ RunTime:0.0805s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('13942626647','c22ce22c6a3d89b99f7c932af59366d7','2018-05-20 22:00:12') [ RunTime:0.0821s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13942626647' AND `password` = 'c22ce22c6a3d89b99f7c932af59366d7' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `userinfor` SET `user_id`='34',`telephone`='13942626647',`username`='用户_691174',`email`='2877014@139.com',`gender`='0',`image`='8.jpg',`address`='宿州' WHERE ( user_id=34 ) [ RunTime:0.0788s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15230563659','70b66a076aed7d379a08d325c21813f5','2018-05-20 22:00:12') [ RunTime:0.0804s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15230563659' AND `password` = '70b66a076aed7d379a08d325c21813f5' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `userinfor` SET `user_id`='35',`telephone`='15230563659',`username`='用户_705017',`email`='2786926@Hotmail.com',`gender`='1',`image`='22.jpg',`address`='秦皇岛' WHERE ( user_id=35 ) [ RunTime:0.0781s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15155115356','113c8e2a8f379b9408c647d6c41af573','2018-05-20 22:00:12') [ RunTime:0.0710s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15155115356' AND `password` = '113c8e2a8f379b9408c647d6c41af573' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `userinfor` SET `user_id`='36',`telephone`='15155115356',`username`='用户_649179',`email`='7578887@Tom.com',`gender`='1',`image`='2.jpg',`address`='石家庄' WHERE ( user_id=36 ) [ RunTime:0.0800s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15860421752','be9b3cd039017613bce908c75563c148','2018-05-20 22:00:12') [ RunTime:0.0595s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15860421752' AND `password` = 'be9b3cd039017613bce908c75563c148' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `userinfor` SET `user_id`='37',`telephone`='15860421752',`username`='用户_414401',`email`='1249664@21cn.com',`gender`='0',`image`='9.jpg',`address`='黄山站' WHERE ( user_id=37 ) [ RunTime:0.0912s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15052846679','a8f278c150fa819fecf5cb650ac34ea0','2018-05-20 22:00:12') [ RunTime:0.0708s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15052846679' AND `password` = 'a8f278c150fa819fecf5cb650ac34ea0' AND `loginTime` = '2018-05-20 22:00:12' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `userinfor` SET `user_id`='38',`telephone`='15052846679',`username`='用户_566946',`email`='9828338@21cn.com',`gender`='1',`image`='11.jpg',`address`='深圳' WHERE ( user_id=38 ) [ RunTime:0.0801s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('18327542419','8809ab600ee713254a1746c2ece31b1c','2018-05-20 22:00:13') [ RunTime:0.0708s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '18327542419' AND `password` = '8809ab600ee713254a1746c2ece31b1c' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `userinfor` SET `user_id`='39',`telephone`='18327542419',`username`='用户_730615',`email`='5477478@yeah.net',`gender`='0',`image`='7.jpg',`address`='秦皇岛' WHERE ( user_id=39 ) [ RunTime:0.0797s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('18250270385','f14f08828a7e22f13612c475cb326250','2018-05-20 22:00:13') [ RunTime:0.0707s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '18250270385' AND `password` = 'f14f08828a7e22f13612c475cb326250' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `userinfor` SET `user_id`='40',`telephone`='18250270385',`username`='用户_824411',`email`='2009918@Tom.com',`gender`='1',`image`='30.jpg',`address`='天津' WHERE ( user_id=40 ) [ RunTime:0.0801s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('18577480773','4f31a062b491e9d79d719029a8e9e092','2018-05-20 22:00:13') [ RunTime:0.0814s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '18577480773' AND `password` = '4f31a062b491e9d79d719029a8e9e092' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `userinfor` SET `user_id`='41',`telephone`='18577480773',`username`='用户_854046',`email`='7674194@qq.com',`gender`='1',`image`='5.jpg',`address`='中山' WHERE ( user_id=41 ) [ RunTime:0.0797s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('14481339721','eb554256853494fe201bb98b5d70444a','2018-05-20 22:00:13') [ RunTime:0.0706s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '14481339721' AND `password` = 'eb554256853494fe201bb98b5d70444a' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `userinfor` SET `user_id`='42',`telephone`='14481339721',`username`='用户_714987',`email`='1864898@Tom.com',`gender`='0',`image`='6.jpg',`address`='贵阳' WHERE ( user_id=42 ) [ RunTime:0.0685s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('13190450134','7cff9b38f2fff3b1eabbd618a34873a0','2018-05-20 22:00:13') [ RunTime:0.0711s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '13190450134' AND `password` = '7cff9b38f2fff3b1eabbd618a34873a0' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `userinfor` SET `user_id`='43',`telephone`='13190450134',`username`='用户_112524',`email`='3357116@Gmail.com',`gender`='1',`image`='19.jpg',`address`='宣城' WHERE ( user_id=43 ) [ RunTime:0.0703s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15971119689','f86577d64c9f936f808f25f31ebc8828','2018-05-20 22:00:13') [ RunTime:0.0710s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15971119689' AND `password` = 'f86577d64c9f936f808f25f31ebc8828' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `userinfor` SET `user_id`='44',`telephone`='15971119689',`username`='用户_839215',`email`='3913574@yeah.net',`gender`='0',`image`='21.jpg',`address`='成都' WHERE ( user_id=44 ) [ RunTime:0.0702s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15919525146','3c779e9ac34d1bf04a6a0699acf301da','2018-05-20 22:00:13') [ RunTime:0.0711s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15919525146' AND `password` = '3c779e9ac34d1bf04a6a0699acf301da' AND `loginTime` = '2018-05-20 22:00:13' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `userinfor` SET `user_id`='45',`telephone`='15919525146',`username`='用户_302725',`email`='1833587@126.com',`gender`='0',`image`='5.jpg',`address`='大连' WHERE ( user_id=45 ) [ RunTime:0.0702s ]
+SQL: INSERT INTO `users` (`telephone`,`password`,`loginTime`) VALUES ('15018160095','3afc65f437d9f890f62f5ab85d70eec9','2018-05-20 22:00:14') [ RunTime:0.0713s ]
+SQL: SELECT `user_id` FROM `users` WHERE `telephone` = '15018160095' AND `password` = '3afc65f437d9f890f62f5ab85d70eec9' AND `loginTime` = '2018-05-20 22:00:14' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `userinfor` SET `user_id`='46',`telephone`='15018160095',`username`='用户_741381',`email`='4407409@yahoo.com',`gender`='0',`image`='23.jpg',`address`='杭州' WHERE ( user_id=46 ) [ RunTime:0.0810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2018-05-20T22:00:16+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2018-05-20T22:29:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-05-20T22:29:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-05-20T22:29:39+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '73b07d76fa37bebacc35c43f03bd6231'  [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 36 行.
+
+[ 2018-05-20T22:29:43+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-05-20T22:29:48+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-05-20T22:34:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/del_user?user_id=46
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0179s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 46 ) LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `users` WHERE ( user_id = 46 ) [ RunTime:0.6353s ]
+ERR: Think\Controller:url_user方法不存在！
+
+[ 2018-05-20T22:36:18+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000488s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+

@@ -987,7 +987,7 @@
                                             <?php if(($order["state"] == 5)): ?><lable>退货中</lable><?php endif; ?>
                                             <?php if(($order["state"] == 6)): ?><lable>退货成功</lable><?php endif; ?>
                                             <?php if(($order["state"] == 7)): ?><lable>退款中</lable><?php endif; ?>
-                                            <?php if(($order["state"] == 8)): ?><lable>交易成功</lable><?php endif; ?>
+                                            <?php if(($order["state"] == 8)): ?><lable>退款成功</lable><?php endif; ?>
                                         </td>
                                         <td id="operation_<?php echo ($order["order_id"]); ?>" style="vertical-align: middle">
                                             <?php if(($order["state"] == 0)): ?><lable><a>取消订单</a></lable><?php endif; ?>

@@ -52,6 +52,12 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a class="active-menu" href="{:U('Comment/commentlist')}"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Order/order_list')}"><i class="fa fa-desktop"></i> 订单管理</a>
+                </li>
             </ul>
 
         </div>
@@ -92,8 +98,8 @@
                                     <tbody>
                                     <volist name="item" id="it">
                                         <tr>
-                                            <td><img src="__PUBLIC__/Uploads/itempic/{$it.m_pic}" width="50"></td>
-                                            <td>{$it.f_name}</td>
+                                            <td><img src="__PUBLIC__/Uploads/commodity_image/{$it.middle_pic}" width="50"></td>
+                                            <td>{$it.name}</td>
                                             <td>{$it.comment_num}</td>
                                             <td>
                                                 <if condition="($it.state eq 0)">
@@ -104,7 +110,7 @@
                                             </td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a  href="{:U('Comment/commentdetail?id='.$it['f_id'])}">
+                                                    <a  href="{:U('Comment/commentdetail?id='.$it['commodity_id'])}">
                                                     <button class="btn btn-info dropdown-toggle" aria-expanded="false"> 查看评论</button>
                                                     </a>
                                                 </div>

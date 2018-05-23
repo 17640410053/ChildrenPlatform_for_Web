@@ -267,7 +267,7 @@
                     <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
                         <li>
                             <a href="<?php echo U('Project/prolist');?>"> 信息管理</a>
@@ -279,6 +279,9 @@
                 </li>
                 <li>
                     <a class="active-menu" href="<?php echo U('Comment/commentlist');?>"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Order/order_list');?>"><i class="fa fa-desktop"></i> 订单管理</a>
                 </li>
             </ul>
 
@@ -319,8 +322,8 @@
                                     </thead>
                                     <tbody>
                                     <?php if(is_array($item)): $i = 0; $__LIST__ = $item;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$it): $mod = ($i % 2 );++$i;?><tr>
-                                            <td><img src="/ChildrenPlatform/Public/Uploads/itempic/<?php echo ($it["m_pic"]); ?>" width="50"></td>
-                                            <td><?php echo ($it["f_name"]); ?></td>
+                                            <td><img src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($it["middle_pic"]); ?>" width="50"></td>
+                                            <td><?php echo ($it["name"]); ?></td>
                                             <td><?php echo ($it["comment_num"]); ?></td>
                                             <td>
                                                 <?php if(($it["state"] == 0)): ?><span class="label label-success">正常</span>
@@ -329,7 +332,7 @@
                                             </td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a  href="<?php echo U('Comment/commentdetail?id='.$it['f_id']);?>">
+                                                    <a  href="<?php echo U('Comment/commentdetail?id='.$it['commodity_id']);?>">
                                                     <button class="btn btn-info dropdown-toggle" aria-expanded="false"> 查看评论</button>
                                                     </a>
                                                 </div>

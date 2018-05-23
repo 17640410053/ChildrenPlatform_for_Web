@@ -1,4 +1,5 @@
 <?php
+
 namespace Api\Controller;
 
 use Think\Controller;
@@ -9,6 +10,17 @@ class HomeController extends BaseController
     public function comp()
     {
         $data = M('commodity')->order("hintNum desc")->select();
+        foreach ($data as $n => $val) {
+            $data[$n]['type'] = M('type')->where('type_id = ' . $val['type_id'] . '')->order()->getField('name');
+            $data[$n]['child_type'] = M('subsettype')->where('subsetType_id = ' . $val['subsettype_id'] . '')->order()->getField('name');
+        }
+        $this->ajaxReturn($data);
+    }
+
+    public function compPartition()
+    {
+        $id = $_GET['id'];
+        $data = M('commodity')->where("subsetType_id = $id")->order("hintNum desc")->select();
         foreach ($data as $n => $val) {
             $data[$n]['type'] = M('type')->where('type_id = ' . $val['type_id'] . '')->order()->getField('name');
             $data[$n]['child_type'] = M('subsettype')->where('subsetType_id = ' . $val['subsettype_id'] . '')->order()->getField('name');

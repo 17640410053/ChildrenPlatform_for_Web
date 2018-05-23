@@ -1,0 +1,1354 @@
+[ 2018-05-17T08:00:21+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-05-17T08:00:22+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-05-17T08:00:31+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1483s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '73b07d76fa37bebacc35c43f03bd6231'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 36 行.
+
+[ 2018-05-17T08:00:35+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-05-17T08:00:40+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-05-17T08:00:48+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/subset_type_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `subsettype`  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 7 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 8 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-05-17T08:00:54+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000518s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000868s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2018-05-17T08:02:00+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Order/order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `order` ORDER BY order_id desc  [ RunTime:0.0014s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000694s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2018-05-17T08:02:05+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0247s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.1050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000903s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2018-05-17T08:02:22+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/commentlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 21 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 35 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 12 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 36 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 30 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 31 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 23 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 19 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 33 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 18 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 34 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 37 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 15 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 28 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 14 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 39 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 29 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 41 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 56 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 57 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2018-05-17T08:02:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0233s ]
+SQL: SELECT * FROM `commodity` ORDER BY commodity_id desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000782s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-05-17T08:02:46+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/changestate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0220s ]
+SQL: UPDATE `commodity` SET `state`='1' WHERE ( commodity_id=57 ) [ RunTime:0.1352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001667s ]
+
+[ 2018-05-17T09:50:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-05-17T09:50:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2018-05-17T09:50:28+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '73b07d76fa37bebacc35c43f03bd6231'  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 36 行.
+
+[ 2018-05-17T09:50:32+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000528s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2018-05-17T09:50:45+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000359s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000587s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2018-05-17T09:51:00+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-05-17T09:51:15+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `commodity` ORDER BY commodity_id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-05-17T09:51:33+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/uploadpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-05-17T09:51:46+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/commentlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 22 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 21 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 35 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 38 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 32 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 30 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 24 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 31 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 23 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 33 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 18 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 34 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 37 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 28 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 14 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 39 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 29 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 41 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 57 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-05-17T09:52:05+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/commentdetail/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0092s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id = 22 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `comment` WHERE ( commodity_id = 22 )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0085s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-05-17T09:52:16+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Order/order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `order` ORDER BY order_id desc  [ RunTime:0.0009s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000688s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2018-05-17T11:22:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+
+[ 2018-05-17T11:22:24+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-05-17T11:22:35+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'root' AND `password` = '73b07d76fa37bebacc35c43f03bd6231'  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant json - assumed 'json' F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\IndexController.class.php 第 36 行.
+
+[ 2018-05-17T11:22:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `commodity` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-05-17T11:22:42+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `userinfor` ORDER BY user_id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 336 行.
+NOTIC: [8] Undefined index: state F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+NOTIC: [8] Undefined index: i_id F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\dfa045a191c51d536c09b7e3336e309b.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-05-17T11:22:47+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/changestate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-05-17T11:22:52+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Users/del_user?user_id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0108s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 26 ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2] Illegal offset type in isset or empty F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `users` WHERE ( user_id = 26 ) [ RunTime:0.1596s ]
+ERR: Think\Controller:url_user方法不存在！
+
+[ 2018-05-17T11:22:59+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `commodity` ORDER BY commodity_id desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2018-05-17T11:23:04+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/changestate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0127s ]
+SQL: UPDATE `commodity` SET `state`='0' WHERE ( commodity_id=57 ) [ RunTime:0.0768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-05-17T11:23:06+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/uploadpro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Model.class.php 第 222 行.
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+NOTIC: [8] Use of undefined constant voo - assumed 'voo' F:\wamp\www\ChildrenPlatform\Application\Runtime\Cache\Admin\6322342fece5b1ecdf4c3e38eb46275b.php 第 335 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-05-17T11:23:38+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/up_pro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0058s ]
+SQL: SELECT `type_id` FROM `subsettype` WHERE ( subsettype_id = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: file F:\wamp\www\ChildrenPlatform\Application\Admin\Controller\ProjectController.class.php 第 103 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\wamp\www\ChildrenPlatform\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0073s ]
+SQL: INSERT INTO `commodity` (`name`,`type_id`,`subsetType_id`,`hintNum`,`collectNum`,`starNum`,`price`,`telephone`,`address`,`url`,`company_id`,`small_pic`,`middle_pic`) VALUES ('123','1','2','9727','270','4','123','132','123','123','1','5afcf5ba9345a.jpg','5afcf5ba93b43.jpg') [ RunTime:0.0843s ]
+
+[ 2018-05-17T11:23:40+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/prolist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `commodity` ORDER BY commodity_id desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2018-05-17T11:23:45+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/delpro?commodity_id=58
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0065s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=58 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `middle_pic` FROM `commodity` WHERE ( commodity_id=58 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `commodity` WHERE ( commodity_id=58 ) [ RunTime:0.2867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-05-17T11:23:49+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2018-05-17T11:24:00+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/add_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0061s ]
+SQL: INSERT INTO `type` (`name`) VALUES ('测试') [ RunTime:0.1507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2018-05-17T11:24:02+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 9 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-05-17T11:24:12+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/add_subset_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0106s ]
+SQL: INSERT INTO `subsettype` (`type_id`,`name`) VALUES ('9','测试子类') [ RunTime:0.1505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-05-17T11:24:16+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/subset_type_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `subsettype`  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 7 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `type` WHERE ( type_id = 9 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-05-17T11:24:30+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `subsettype` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 4 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 8 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `subsettype` WHERE ( type_id = 9 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-05-17T11:24:44+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Project/del_type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: DELETE FROM `type` WHERE ( type_id=9 ) [ RunTime:0.1525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-05-17T11:24:47+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/commentlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `commodity` ORDER BY hintNum desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 21 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 35 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 12 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 38 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 32 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 30 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 24 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 31 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 23 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 19 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 33 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 18 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 34 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 37 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 15 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 28 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 14 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 39 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 29 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 41 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( commodity_id = 57 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-05-17T11:24:50+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/commentdetail/id/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0066s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id = 22 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `comment` WHERE ( commodity_id = 22 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0044s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `image` FROM `userinfor` WHERE ( user_id = 3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-05-17T11:24:55+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Comment/del_comment?r_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0110s ]
+SQL: DELETE FROM `comment` WHERE ( comment_id = 5 ) [ RunTime:0.1394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2018-05-17T11:24:57+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Order/order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `commodity` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `userinfor` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `order` ORDER BY order_id desc  [ RunTime:0.0005s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=37 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=37 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=24 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=29 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=31 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=30 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=40 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=35 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=36 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=39 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `username` FROM `userinfor` WHERE ( user_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `small_pic` FROM `commodity` WHERE ( commodity_id=15 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-05-17T11:25:07+08:00 ] 127.0.0.1 /ChildrenPlatform/Admin/Order/sure_state
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0116s ]
+SQL: UPDATE `order` SET `state`='6' WHERE ( order_id=69 ) [ RunTime:0.1688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+

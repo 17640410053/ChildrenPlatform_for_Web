@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta content="" name="description"/>
     <meta content="webthemez" name="author"/>
-    <title><?php echo ($item_name); ?></title>
+    <title>订单列表</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/bootstrap.min.css">
     <link rel="stylesheet" href="/ChildrenPlatform/Public/PostbirdAlertBox/css/postbirdAlertBox.css">
+    <script src="/ChildrenPlatform/Public/Ajax/userAjax.js"></script>
+
+    <script>
+        var AppUrl = "/ChildrenPlatform";
+    </script>
+
+
+    <script src="/ChildrenPlatform/Public/Ajax/OrderAjax.js"></script>
     <!-- Bootstrap Styles-->
     <link href="/ChildrenPlatform/Public/backstage/assets/css/bootstrap.css" rel="stylesheet"/>
     <!-- FontAwesome Styles-->
     <link href="/ChildrenPlatform/Public/backstage/assets/css/font-awesome.css" rel="stylesheet"/>
     <!-- Morris Chart Styles-->
-    <script>
-        var AppUrl = "/ChildrenPlatform"
-    </script>
+
     <!-- Custom Styles-->
     <link href="/ChildrenPlatform/Public/backstage/assets/css/custom-styles.css" rel="stylesheet"/>
     <!-- TABLE STYLES-->
     <link href="/ChildrenPlatform/Public/backstage/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
-    <script src="/ChildrenPlatform/Public/Ajax/commentAjax.js"></script>
+
 </head>
 
 <body>
@@ -267,7 +273,7 @@
 
                 <li>
                     <a href="#"><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
+                    <ul class="nav nav-second-level">
                         <li>
                             <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
@@ -280,10 +286,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="active-menu" href="<?php echo U('Comment/commentlist');?>"><i class="fa fa-desktop"></i> 评论管理</a>
+                    <a href="<?php echo U('Comment/commentlist');?>"><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
                 <li>
-                    <a href="<?php echo U('Order/order_list');?>"><i class="fa fa-desktop"></i> 订单管理</a>
+                    <a class="active-menu" href="<?php echo U('Order/order_list');?>"><i class="fa fa-desktop"></i> 订单管理</a>
                 </li>
             </ul>
 
@@ -294,13 +300,12 @@
     <div id="page-wrapper">
         <div class="header">
             <h1 class="page-header">
-                评论管理
+                订单管理
                 <small> 操作员：<?php echo (session('username')); ?></small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?php echo U('Index/index');?>"> 主页</a></li>
-                <li><a href="<?php echo U('Comment/commentlist');?>"> 评论管理</a></li>
-                <li class="active"> <?php echo ($item_name); ?></li>
+                <li class="active"> 订单管理</li>
             </ol>
         </div>
         <div id="page-inner">
@@ -309,27 +314,76 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            评论列表
+                            项目列表
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                     <tr>
-                                        <th>用户头像</th>
-                                        <th>用户名</th>
-                                        <th>评论内容</th>
+                                        <th>购买用户</th>
+                                        <th>商品图片</th>
+                                        <th>购买商品</th>
+                                        <th>购买数量</th>
+                                        <th>联系电话</th>
+                                        <th>总价</th>
+                                        <th>状态</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$co): $mod = ($i % 2 );++$i;?><tr id="co_<?php echo ($co["comment_id"]); ?>">
-                                            <td><img src="/ChildrenPlatform/Public/Uploads/user_image/<?php echo ($co["u_pic"]); ?>" width="50"></td>
-                                            <td><?php echo ($co["u_name"]); ?></td>
-                                            <td><?php echo ($co["details"]); ?></td>
+                                    <?php if(is_array($order)): $i = 0; $__LIST__ = $order;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$order): $mod = ($i % 2 );++$i;?><tr id="order_<?php echo ($order["order_id"]); ?>">
+                                            <td><?php echo ($order["username"]); ?></td>
+                                            <td><img src="/ChildrenPlatform/Public/Uploads/commodity_image/<?php echo ($order["commodity_image"]); ?>"
+                                                     width="50"></td>
+                                            <td><?php echo ($order["commodity_name"]); ?></td>
+                                            <td><?php echo ($order["number"]); ?></td>
+                                            <td><?php echo ($order["telephone"]); ?></td>
+                                            <td><?php echo ($order["price"]); ?></td>
+                                            <td>
+                                                <?php if(($order["state"] == 0)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-danger">未支付</span><?php endif; ?>
+                                                <?php if(($order["state"] == 1)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">等待发货</span><?php endif; ?>
+                                                <?php if(($order["state"] == 2)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">等待收货</span><?php endif; ?>
+                                                <?php if(($order["state"] == 3)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">等待验货</span><?php endif; ?>
+                                                <?php if(($order["state"] == 4)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">交易成功</span><?php endif; ?>
+                                                <?php if(($order["state"] == 5)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-danger">退货中</span><?php endif; ?>
+                                                <?php if(($order["state"] == 6)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">退货成功</span><?php endif; ?>
+                                                <?php if(($order["state"] == 7)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-danger">退款中</span><?php endif; ?>
+                                                <?php if(($order["state"] == 8)): ?><span id="state_<?php echo ($order["order_id"]); ?>"
+                                                          class="label label-success">退款成功</span><?php endif; ?>
+                                            </td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false" onclick="del_comment('<?php echo ($co["comment_id"]); ?>')"> 删除</button>
+                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false"
+                                                            data-toggle="dropdown"> 操作 <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <?php if(($order["state"] == 5)): ?><li id="action_<?php echo ($order["order_id"]); ?>">
+                                                                <a id="change_<?php echo ($order["order_id"]); ?>"
+                                                                   onclick="sure_state('<?php echo ($order["order_id"]); ?>','6')"
+                                                                   href="javascript:;"><i
+                                                                        class="icon-envelope"></i>确认退货</a>
+                                                            </li><?php endif; ?>
+                                                        <?php if(($order["state"] == 7)): ?><li id="action_<?php echo ($order["order_id"]); ?>">
+                                                                <a id="change_<?php echo ($order["order_id"]); ?>"
+                                                                   onclick="sure_state('<?php echo ($order["order_id"]); ?>','8')"
+                                                                   href="javascript:;"><i
+                                                                        class="icon-envelope"></i>确认退款</a>
+                                                            </li><?php endif; ?>
+                                                        <li><a></i>
+                                                            查看详情</a></li>
+                                                        <li><a onclick="del_order('<?php echo ($order["order_id"]); ?>')"
+                                                               href="javascript:;">
+                                                            删除订单</a></li>
+                                                    </ul>
                                                 </div>
                                             </td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -358,6 +412,7 @@
 </script>
 <!-- Custom Js -->
 <script src="/ChildrenPlatform/Public/backstage/assets/js/custom-scripts.js"></script>
+
 <script src="/ChildrenPlatform/Public/PostbirdAlertBox/js/postbirdAlertBox.min.js"></script>
 
 </body>

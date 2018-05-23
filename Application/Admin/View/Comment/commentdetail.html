@@ -57,6 +57,9 @@
                 <li>
                     <a class="active-menu" href="{:U('Comment/commentlist')}"><i class="fa fa-desktop"></i> 评论管理</a>
                 </li>
+                <li>
+                    <a href="{:U('Order/order_list')}"><i class="fa fa-desktop"></i> 订单管理</a>
+                </li>
             </ul>
 
         </div>
@@ -96,13 +99,13 @@
                                     </thead>
                                     <tbody>
                                     <volist name="comment" id="co">
-                                        <tr id="co_{$co.r_id}">
-                                            <td><img src="__PUBLIC__/Uploads/userpic/{$co.u_pic}" width="50"></td>
+                                        <tr id="co_{$co.comment_id}">
+                                            <td><img src="__PUBLIC__/Uploads/user_image/{$co.u_pic}" width="50"></td>
                                             <td>{$co.u_name}</td>
                                             <td>{$co.details}</td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false" onclick="del_comment('{$co.r_id}')"> 删除</button>
+                                                    <button class="btn btn-info dropdown-toggle" aria-expanded="false" onclick="del_comment('{$co.comment_id}')"> 删除</button>
                                                 </div>
                                             </td>
                                         </tr>

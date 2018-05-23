@@ -264,7 +264,7 @@
                     <a><i class="fa fa-sitemap"></i> 项目管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse in">
                         <li>
-                            <a href="#"> 分类管理</a>
+                            <a href="<?php echo U('Project/typelist');?>"> 分类管理</a>
                         </li>
                         <li>
                             <a class="active-menu" href="<?php echo U('Project/prolist');?>"> 信息管理</a>
@@ -275,7 +275,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-desktop"></i> 评论管理</a>
+                    <a href="<?php echo U('Comment/commentlist');?>"><i class="fa fa-desktop"></i> 评论管理</a>
+                </li>
+                <li>
+                    <a href="<?php echo U('Order/order_list');?>"><i class="fa fa-desktop"></i> 订单管理</a>
                 </li>
             </ul>
 

@@ -25,4 +25,15 @@ class OrderController extends BaseController
             echo self::json("404", "网络繁忙", "");
         }
     }
+
+    public function userOrder(){
+        $order_sql = M('order');
+        $user_id = $_GET['user_id'];
+        $order = $order_sql->where("user_id = $user_id") ->select();
+        foreach ($order as $n => $val) {
+            $order[$n]['commodity_name'] = M('commodity')->where('commodity_id = ' . $val['commodity_id'] . '')->order()->getField('name');
+            $order[$n]['commodity_image'] = M('commodity')->where('commodity_id = ' . $val['commodity_id'] . '')->order()->getField('small_pic');
+        }
+        $this->ajaxReturn($order);
+    }
 }
