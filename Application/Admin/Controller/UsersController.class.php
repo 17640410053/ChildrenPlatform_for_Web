@@ -52,7 +52,7 @@ class UsersController extends BaseController
         $user = M('users');
         $user_id = I('user_id');
         $user_img = M('userinfor')->where("user_id = $user_id")->getField("image");
-        if (false != $user->where("user_id = $user_id")->delete()) {
+        if (false !== $user->where("user_id = $user_id")->delete()) {
             if ($user_img != "default.jpg") {
                 $user_img_url = $this->url_user("user_image") . $user_img;
                 unlink($user_img_url);
