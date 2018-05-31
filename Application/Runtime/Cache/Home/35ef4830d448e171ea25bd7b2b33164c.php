@@ -382,7 +382,7 @@
 <div class="regbox">
     <div class="regbox2">
         <div class="reg5">
-            <h2>儿童信息交流平台</h2>
+            <h2>儿童生活娱乐信息平台</h2>
             <a class="close">×</a>
         </div>
         <div class="reg51">
@@ -693,7 +693,7 @@
 <div class="box">
     <div class="box2">
         <div class="login5">
-            <h2>儿童信息交流平台</h2>
+            <h2>儿童生活娱乐信息平台</h2>
             <a class="close">×</a>
         </div>
         <div class="login51">
